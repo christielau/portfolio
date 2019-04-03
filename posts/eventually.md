@@ -7,7 +7,7 @@ tags:
   - hackathon
   - automation
 ---
-	![eventually concept](http://christielau.me/images/portfolio/modals/m-eventually.png)
+![eventually concept](http://christielau.me/images/portfolio/modals/m-eventually.png)
 
 ## Problem space:
 Too many clutter of To-Dos in our camera roll, e.g. event posters.
