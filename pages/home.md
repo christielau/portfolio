@@ -7,7 +7,7 @@ navtitle: Home
 tags:
   - nav
 ---
-# Hello, I'm Christie :raising_hand:
+# Hello, I'm Christie! :)
 
 I'm a London-based user experience and service designer with psychology and human-computer interaction background.
 Using research insights, I design products and services to address user needs and business objectives.
@@ -19,4 +19,5 @@ I'm a Skillshare teacher and my class ["How to Create a Storyboard: Bring Your P
 I will be speaking at General Assembly's latest event [Evolving into Fintech as a UXer](https://www.eventbrite.co.uk/e/evolving-into-fintech-as-a-uxer-tickets-59760055936). See you there! 
 
 Find me on [Twitter](https://twitter.com/cC_L/)
+
 Find me on [Linkedin](https://www.linkedin.com/in/lauchristie/)
