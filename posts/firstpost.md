@@ -1,27 +1,24 @@
 ---
-title: This is my first post
-summary: Why contemplating our mortality can be a powerful catalyst for change
-date: 2015-01-01
+title: User research & optimisation for an all-in-one business admin solution
+summary: Through usability tests and user behaviour data (e.g. heatmap, visitor recording, traffic flow) collected via Visual Web Optimiser and Google Analytics, we identified 4 key areas for optimising lead acquisition. The suggested improvements were sent to the client in a report, and we have liaised with the client's copywriters and developers in order to execute the suggested solutions.
+date: 2016-09-03
 tags:
-  - post
-  - tech
-  - environment
-  - politics
-  - sport
+  - SaaS
+  - Usability test
+  - Data analysis
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+[See my process in pdf](http://christielau.me/download/Christie-Lau-UX-portfolio-Saas.pdf)
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+## Client: All-in-one business management solution
+Our client is a software-as-a-service company, providing admin, bookkeeping, tax and legal services. Small business owners & freelance creatives can enjoy keeping all these in one place and have a dedicated account manager, instead of using loads of different providers to handle different aspect of business management. Pretty cool time and hassle saver. 
 
-## Section Header
+## The problem to be solved:
+**Increase lead acquisition conversion rate**
+Our client sought our agency's help in increasing the conversion rate of qualified marketing lead acquisition on their website. They've identified telesales as their best channel in closing the sale so improving the lead acquisition rate would have a direct impact on their sales. 
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+## Process:
+A problem solution fit analysis workshop was run to understand our client's value proposition, what solution they think they're solving, and their business objective. From then on, within our team, we defined the scope of the engagement. While my colleagues focused on top-level lead acquisition and awareness generation, I focused on user research. The aim of this research would help to improve the conversion rate of qualified marketing lead, understand user expectation of the brand, and gain specific feedback on the enquiry and pricing tool interaction. 
 
-``` text/2-3
-// this is a command
-function myCommand() {
-	let counter = 0;
-	counter++;
-}
-```
-Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+## Outcome
+The conversion rate of qualified marketing lead had increased by 120% at the end of the 12 week engagement period. We have refined the value proposition and persona document based on results of the split tests and other marketing activities so our client can use these as a starting point for future marketing activities. The suggested improvements and final tested prototype were sent to the client in a report, and we have liaised with the client's copywriters and developers in order to execute the suggested solutions.
+The videos and insights from usability tests helped our client to understand the users' pain points, and assisted our team to modify the design, copywriting, and marketing strategy in our agile marketing process. 
