@@ -8,10 +8,9 @@
 		<header>
 			<em>
 				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
+				<br>
+				<small> {{ metadata.subtitle }} </small>
 			</em>
-			<small>
-			{{ metadata.subtitle }}
-			</small>
 			{% include "components/nav.njk" %}
 		</header>
 
