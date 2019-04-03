@@ -1,20 +1,22 @@
 ---
 layout: layouts/home.njk
-title: Home
+title: Christie Lau, UX & Service Design
 date: 2016-01-01T00:00:00.000Z
 permalink: /
 navtitle: Home
 tags:
   - nav
 ---
-# Welcome
+# Hello, I'm Christie :raising_hand:
 
-This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
+I'm a London-based user experience and service designer with psychology and human-computer interaction background.
+Using research insights, I design products and services to address user needs and business objectives.
 
-Includes [Netlify CMS](https://www.netlifycms.org) for WYSIWYG content editing, and [Netlify Forms](https://www.netlify.com/docs/form-handling) for processing your site's form data.
+I'm a Skillshare teacher and my class ["How to Create a Storyboard: Bring Your Product/Service Concept to Life in 20 minutes"](https://skl.sh/2TOE5Qc) has won the grand prize in the Skillshare Contest for First Time Business and Technology Teachers. 
 
-For more info on installation and usage, view the [project repo]({{ pkg.repository.url }}) on Github.
+[Watch my class now >](https://skl.sh/2TOE5Qc)
 
-Or click the button below to deploy your own copy of this project to Netlify.
+I will be speaking at General Assembly's latest event [Evolving into Fintech as a UXer](https://www.eventbrite.co.uk/e/evolving-into-fintech-as-a-uxer-tickets-59760055936). See you there! 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+Find me on [Twitter](https://twitter.com/cC_L/)
+Find me on [Linkedin](https://www.linkedin.com/in/lauchristie/)
