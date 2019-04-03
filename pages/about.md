@@ -1,5 +1,5 @@
 ---
-title: About us
+title: About Christie
 tags:
   - nav
 navtitle: About
@@ -8,20 +8,45 @@ date: 2017-01-01
 permalink: /about/index.html
 ---
 
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from service design to digital marketing between my two degrees. After my master degree, I have led the user-centred design process for 10+ start-ups within my first 12 months working in Rebel Hack Studios. It was great fun helping the best UK startups grow exponentially through optimising conversion rates and end-to-end experiences.
 
-## Our services
+My empirical psychology background and my experience in business and marketing drive my design process. I conduct user research using qualitative and quantitative methods. Then I provide tested design products and services that address user needs and business KPIs.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+## Education
 
-### Blue-sky thinking
+*University College London*
+### MSc in Human-Computer Interaction with Ergonomics, 2014-2015
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+My MSc thesis project investigated the validity of numerical gamer ratings, in collaboration with Sony Computer Entertainment Europe.
 
-#### Management frameworks
+*University College London*
+###B Sc in Psychology, 2009-2012
 
-Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+Immersive exposure and practice in theories and research methods in psychology, including applied decision making, cognitive psychology, and organisational behaviour.
 
-##### Regulatory convergence
+## Work
+### Tobias & Tobias
+UX Design Consultant, *April 2018 - Present*
 
-Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+Current project: Concept design and MVP delivery for a leading European investment bank
+
+Other exciting work: 
+- Facilitated a 3-week process for answering critical business questions through design, prototyping, and testing ideas with users for a rising fintech start-up
+- Involved in stakeholder workshop facilitation, user research, and prototyping for a well-known education publisher
+
+### IBM iX
+UX Design Lead, *November 2017 - Present*
+
+UX Design Lead (contract) at Foreign and Commonwealth Office, leading user research and design for a new digital service for diplomats.
+
+Activities including interpreting user journey and business processes into screens on Sketch and Invision, running user research and data analysis.
+
+### Rebel Hack Studios
+UX Designer, *February 2016 - June 2017*
+
+I have the privilege to work with many exciting start-ups clients, from enterprise solutions, fashion apps to games, shaping their early stage design and growth strategies.
+
+### PhotoVoice
+Digital Designer, *September 2013 - December 2014*
+
+I focused on mobile responsiveness optimisation of the charity's website and newsletter. Co-facilitated a participatory photography workshop in China as an ethnographic study on local water use, in partnership with Overseas Development Institute.
