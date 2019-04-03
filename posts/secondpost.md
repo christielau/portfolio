@@ -1,15 +1,16 @@
 ---
-title: This is my second post
-summary: Why contemplating our mortality can be a powerful catalyst for change
+title: Technology in a Community Garden
+summary: How can we connect and engage growers of different expertise in a community garden?
 date: 2016-01-01
 tags:
-  - post
-  - sport
+  - User research
+  - Physical prototyping
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+![GardenTech](http://christielau.me/images/portfolio/modals/m-communitygarden.jpg)
 
-## Section Header
+From the user research we found that the gardening community is reluctant to adopt technology - particularly that might disrupt their approaches to gardening and the sense of community amongst gardeners.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+However we also found that far being from being technophobes, a majority of our gardeners (especially the younger ones) were open to the use of technology if it supported their general approach to gardening. Sketches were done on “smart” sensor-meter sticks that measure
+and shows sunlight, soil moisture and time since planting. 
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+[Details (Opens in PDF)] (http://christielau.me/download/CommunityGarden.pdf)
