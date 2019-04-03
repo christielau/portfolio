@@ -14,35 +14,37 @@ My empirical psychology background and my experience in business and marketing d
 
 ## Education
 
-*University College London*
-### MSc in Human-Computer Interaction with Ergonomics, 2014-2015
 
+### MSc in Human-Computer Interaction with Ergonomics, 2014-2015
+*University College London*
 My MSc thesis project investigated the validity of numerical gamer ratings, in collaboration with Sony Computer Entertainment Europe.
 
+### BSc in Psychology, 2009-2012
 *University College London*
-###B Sc in Psychology, 2009-2012
 
 Immersive exposure and practice in theories and research methods in psychology, including applied decision making, cognitive psychology, and organisational behaviour.
 
 ## Work
-### Tobias & Tobias
-UX Design Consultant, *April 2018 - Present*
+### UX Designer, [Tobias & Tobias](http://www.tobiasandtobias.com/)
+ *April 2018 - Present*
 
-Current project: Concept design and MVP delivery for a leading European investment bank
+I'm having great fun at Tobias & Tobias, a design consultancy who has worked extensively with the financial industry.
+My current project (Oct 2018 - Present): Concept design and MVP delivery for a leading European investment bank
 
 Other exciting work: 
 - Facilitated a 3-week process for answering critical business questions through design, prototyping, and testing ideas with users for a rising fintech start-up
 - Involved in stakeholder workshop facilitation, user research, and prototyping for a well-known education publisher
 
-### IBM iX
-UX Design Lead, *November 2017 - Present*
+### UX Design Lead, [IBM iX](https://www.ibm.com/services/ibmix/)
+*November 2017 - April 2018*
 
 UX Design Lead (contract) at Foreign and Commonwealth Office, leading user research and design for a new digital service for diplomats.
 
 Activities including interpreting user journey and business processes into screens on Sketch and Invision, running user research and data analysis.
 
-### Rebel Hack Studios
-UX Designer, *February 2016 - June 2017*
+### UX Designer, [Rebel Hack Studios](https://rebelhack.com/)
+*February 2016 - June 2017*
+(The original title was 'Growth UX Designer' but I found it too edgy.)
 
 I have the privilege to work with many exciting start-ups clients, from enterprise solutions, fashion apps to games, shaping their early stage design and growth strategies.
 
