@@ -7,7 +7,7 @@ tags:
   - Usability test
   - Data analysis
 ---
-[See my process in pdf](http://christielau.me/download/Christie-Lau-UX-portfolio-Saas.pdf)
+[See my process in pdf](https://2018-christie-portfolio.netlify.com/download/Christie-Lau-UX-portfolio-Saas.pdf)
 
 ## Client: All-in-one business management solution
 Our client is a software-as-a-service company, providing admin, bookkeeping, tax and legal services. Small business owners & freelance creatives can enjoy keeping all these in one place and have a dedicated account manager, instead of using loads of different providers to handle different aspect of business management. Pretty cool time and hassle saver. 
