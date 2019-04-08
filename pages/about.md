@@ -17,7 +17,7 @@ My empirical psychology background and my experience in business and marketing d
 
 ### MSc in Human-Computer Interaction with Ergonomics, 2014-2015
 *University College London*
-My MSc thesis project investigated the validity of numerical gamer ratings, in collaboration with Sony Computer Entertainment Europe.
+My MSc thesis project investigated the [validity of numerical gamer ratings](https://2018-christie-portfolio.netlify.com/download/MasterSummary.pdf), in collaboration with Sony Computer Entertainment Europe.
 
 ### BSc in Psychology, 2009-2012
 *University College London*
@@ -46,9 +46,9 @@ Activities including interpreting user journey and business processes into scree
 *February 2016 - June 2017*
 (The original title was 'Growth UX Designer' but I found it too edgy.)
 
-I have the privilege to work with many exciting start-ups clients, from enterprise solutions, fashion apps to games, shaping their early stage design and growth strategies.
+I have the privilege to work with many exciting start-ups clients, from enterprise solutions, fashion apps to games, shaping their early stage design and growth strategies. [Here is what I've learnt in Rebel Hack](https://medium.com/@cC_L/things-ive-learned-as-a-ux-designer-in-a-marketing-agency-40f3cb4b56ae)
 
-### PhotoVoice
-Digital Designer, *September 2013 - December 2014*
+### Digital Designer, [PhotoVoice](https://photovoice.org/)
+*September 2013 - December 2014*
 
-I focused on mobile responsiveness optimisation of the charity's website and newsletter. Co-facilitated a participatory photography workshop in China as an ethnographic study on local water use, in partnership with Overseas Development Institute.
+I focused on mobile responsiveness optimisation of the charity's website and newsletter. Co-facilitated a participatory photography workshop in China as an [ethnographic study on local water use](http://developmentprogress.odi.org/photography/china.html), in partnership with [Overseas Development Institute](https://photovoice.org/development_progress/).
