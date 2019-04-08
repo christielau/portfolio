@@ -32,10 +32,6 @@ code {
 	line-height: 1.5;
 }
 
-a[href]{
-	target="_blank";
-}
-
 a[href],
 a[href]:visited {
 	color: var(--blue);
