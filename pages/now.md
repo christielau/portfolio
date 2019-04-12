@@ -1,5 +1,5 @@
 ---
-title: About Christie
+title: What I’m doing now
 tags:
   - nav
 navtitle: Now
