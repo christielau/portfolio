@@ -7,17 +7,19 @@ section: about
 date: 2017-01-01
 permalink: /about/index.html
 ---
+To me, user experience (UX) includes UI, product, interaction, and service/business. (I'm in Don Norman's camp of UX definition.)
 
-I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from service design to digital marketing between my two degrees. After my master degree, I have led the user-centred design process for 10+ start-ups within my first 12 months working in Rebel Hack Studios. It was great fun helping the best UK startups grow exponentially through optimising conversion rates and end-to-end experiences.
+## My journey
+
+I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from design to marketing between my two degrees. After my master degree, I grew my design and research repertoire while working with a wide range of clients. Currently I'm creating people-centric solutions at design consultancy [Tobias & Tobias](#Work).
 
 My empirical psychology background and my experience in business and marketing drive my design process. I conduct user research using qualitative and quantitative methods. Then I provide tested design products and services that address user needs and business KPIs.
 
 ## Education
 
-
 ### MSc in Human-Computer Interaction with Ergonomics, 2014-2015
 *University College London*
-My MSc thesis project investigated the [validity of numerical gamer ratings](https://2018-christie-portfolio.netlify.com/download/MasterSummary.pdf), in collaboration with Sony Computer Entertainment Europe.
+My MSc thesis project investigated the <a href="https://2018-christie-portfolio.netlify.com/download/MasterSummary.pdf" target="_blank">validity of numerical gamer ratings</a>, in collaboration with Sony Computer Entertainment Europe.
 
 ### BSc in Psychology, 2009-2012
 *University College London*
@@ -25,7 +27,7 @@ My MSc thesis project investigated the [validity of numerical gamer ratings](htt
 Immersive exposure and practice in theories and research methods in psychology, including applied decision making, cognitive psychology, and organisational behaviour.
 
 ## Work
-### UX Designer, [Tobias & Tobias](http://www.tobiasandtobias.com/)
+### UX Designer, <a href="http://www.tobiasandtobias.com/?ref=christie" target="_blank">Tobias & Tobias</a>
  *April 2018 - Present*
 
 I'm having great fun at Tobias & Tobias, a design consultancy who has worked extensively with the financial industry.
@@ -35,20 +37,27 @@ Other exciting work:
 - Facilitated a 3-week process for answering critical business questions through design, prototyping, and testing ideas with users for a rising fintech start-up
 - Involved in stakeholder workshop facilitation, user research, and prototyping for a well-known education publisher
 
-### UX Design Lead, [IBM iX](https://www.ibm.com/services/ibmix/)
+### UX Design Lead, <a href="https://www.ibm.com/services/ibmix/" target="_blank">IBM iX</a>
 *November 2017 - April 2018*
 
 UX Design Lead (contract) at Foreign and Commonwealth Office, leading user research and design for a new digital service for diplomats.
 
-Activities including interpreting user journey and business processes into screens on Sketch and Invision, running user research and data analysis.
+Activities including interpreting user journey and business processes into screens on Sketch and Invision, running user research and data analysis. <a href="https://www.gov.uk/service-manual/service-standard" target="_blank">GDS standard</a> and the <a href="https://www.gov.uk/service-manual/design" target="_blank">service manual</a> became my best friends. 
 
-### UX Designer, [Rebel Hack Studios](https://rebelhack.com/)
+### UX Designer, <a href="https://rebelhack.com/" target="_blank">Rebel Hack Studios</a>
 *February 2016 - June 2017*
 (The original title was 'Growth UX Designer' but I found it too edgy.)
 
-I have the privilege to work with many exciting start-ups clients, from enterprise solutions, fashion apps to games, shaping their early stage design and growth strategies. [Here is what I've learnt in Rebel Hack](https://medium.com/@cC_L/things-ive-learned-as-a-ux-designer-in-a-marketing-agency-40f3cb4b56ae)
+After my master degree, I have led the user-centred design process for 10+ start-ups within my first 12 months working in Rebel Hack Studios. It was rewarding helping the best UK startups grow exponentially through optimising conversion rates and end-to-end experiences. 
 
-### Digital Designer, [PhotoVoice](https://photovoice.org/)
+I have the privilege to work with seed funded to Series A clients, ranging from enterprise solutions, fashion apps to games, shaping their early stage design and growth strategies. <a href="https://medium.com/@cC_L/things-ive-learned-as-a-ux-designer-in-a-marketing-agency-40f3cb4b56ae" target="_blank">Here is what I've learnt in Rebel Hack</a>
+
+### Digital Designer, <a href="https://photovoice.org/" target="_blank">PhotoVoice</a>
 *September 2013 - December 2014*
 
-I focused on mobile responsiveness optimisation of the charity's website and newsletter. Co-facilitated a participatory photography workshop in China as an [ethnographic study on local water use](http://developmentprogress.odi.org/photography/china.html), in partnership with [Overseas Development Institute](https://photovoice.org/development_progress/).
+I focused on mobile responsiveness optimisation of the charity's website and newsletter. Co-facilitated a participatory photography workshop in China as an <a href="http://developmentprogress.odi.org/photography/china.html" target="_blank">ethnographic study on local water use</a>, in partnership with <a href="https://photovoice.org/development_progress/" target="_blank">Overseas Development Institute</a>.
+
+### Marketing Manager, 20-20 Optical Store
+*December 2011 - June 2013*
+In charge of design and marketing: store-front window and shop floor display, print and digital design, social media, photography, branding, and beyond. 
+Bonus: Adjusted the arms on customers' glasses, advised customers on luxury optical and fashion brands.
