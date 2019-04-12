@@ -8,7 +8,7 @@ tags:
   - nav
 ---
 <div>
-  <span><img src="https://static.skillshare.com/uploads/users/8591088/user-image-large.png" height="100px" style="border-radius: 100%" alt="Christie Lau Profile Picture"> </span>
+  <span><img src="https://static.skillshare.com/uploads/users/8591088/user-image-large.png" height="100px" style="border-radius: 100%;" alt="Christie Lau Profile Picture"> </span>
   <span># Hello, I'm Christie! <i class="twa twa-2x twa-information-desk-person"></i></span>
 </div>
 
