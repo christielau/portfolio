@@ -13,12 +13,11 @@ tags:
 <tbody>
 <tr>
 <td><img src="https://static.skillshare.com/uploads/users/8591088/user-image-large.png" height="100px" width="100px" style="border-radius: 100%;" alt="Christie Lau Profile Picture"> </td>
-<td>I'm a London-based designer and researcher with psychology and human-computer interaction background.
-  
-Using qualitative and quantitative research insights, I design products and services to address user needs and business objectives.</td>
+<td>I'm a London-based designer and researcher with psychology and human-computer interaction background.</td>
 </tr>
 </tbody>
 </table>
+Using qualitative and quantitative research insights, I design products and services to address user needs and business objectives.
 
 I'm a Skillshare teacher and my class  <a href="https://skl.sh/2TOE5Qc" target="_blank">"How to Create a Storyboard: Bring Your Product/Service Concept to Life in 20 minutes"</a> has won the grand prize in the Skillshare Contest for First Time Business and Technology Teachers. <i class="twa twa-eyes"></i> 
 
