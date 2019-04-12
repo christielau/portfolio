@@ -9,6 +9,8 @@ tags:
 ---
 # Hello, I'm Christie! <i class="twa twa-2x twa-information-desk-person"></i>
 
+![Christie Lau profile picture](https://static.skillshare.com/uploads/users/8591088/user-image-large.png?1614774270 =100 "Profile picture")
+
 I'm a London-based designer and researcher with psychology and human-computer interaction background.
 Using qualitative and quantitative research insights, I design products and services to address user needs and business objectives.
 
