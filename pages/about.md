@@ -59,5 +59,6 @@ I focused on mobile responsiveness optimisation of the charity's website and new
 
 ### Marketing Manager, 20-20 Optical Store
 *December 2011 - June 2013*
+
 In charge of design and marketing: store-front window and shop floor display, print and digital design, social media, photography, branding, and beyond. 
 Bonus: Adjusted the arms on customers' glasses, advised customers on luxury optical and fashion brands.
