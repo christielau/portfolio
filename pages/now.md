@@ -13,7 +13,7 @@ I'm designing a data-science-in-production platform for a leading European inves
 
 I'll be speaking at General Assembly's event <a href="https://www.eventbrite.co.uk/e/evolving-into-fintech-as-a-uxer-tickets-59760055936" target="_blank">Evolving into Fintech as a UXer</a> on 25th April! #savethedate
 
-It's spring now and I"m geminating pea seeds. Something exciting: I started a wormery on my balcony since early March and it is (or should I say they are) doing well. 
+It's spring now and I'm geminating pea seeds. Something exciting: I started a wormery on my balcony since early March and it is (or should I say they are) doing well. 
 
 ## Current interest
 - Enterprise solutions
