@@ -1,7 +1,7 @@
 ---
 title: Technology in a Community Garden
 summary: How can we connect and engage growers of different expertise in a community garden?
-date: 2016-01-01
+date: 2014-10-20
 tags:
   - User research
   - Physical prototyping

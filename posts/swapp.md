@@ -1,7 +1,7 @@
 ---
 title: Pre-product market fit research
 summary: To test initial traction and define the market size of a fashion marketplace app, I helped created landing pages for different niches, ran surveys to understand the demographics and their fashion habits, and conducted usability tests on the prelaunch app.
-date: 2017-01-01
+date: 2017-02-01
 tags:
   - Mobile app
   - Prototyping
