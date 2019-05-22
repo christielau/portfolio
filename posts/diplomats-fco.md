@@ -11,8 +11,6 @@ tags:
   - Workshop Delivery
 ---
 
-![New service for diplomats](/static/img/work-diplomats-fco.png)
-
 ## Client: Foreign and Commonwealth Office
 
 ## The problem to be solved:
