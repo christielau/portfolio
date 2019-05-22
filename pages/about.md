@@ -19,6 +19,7 @@ My empirical psychology background and my experience in business and marketing d
 
 ### MSc in Human-Computer Interaction with Ergonomics, 2014-2015
 *University College London*
+
 My MSc thesis project investigated the <a href="https://2018-christie-portfolio.netlify.com/download/MasterSummary.pdf" target="_blank">validity of numerical gamer ratings</a>, in collaboration with Sony Computer Entertainment Europe.
 
 ### BSc in Psychology, 2009-2012
@@ -29,7 +30,7 @@ Immersive exposure and practice in theories and research methods in psychology, 
 ## Work
 ### UX Designer, <a href="http://www.tobiasandtobias.com/?ref=christie" target="_blank">Tobias & Tobias</a>
  *April 2018 - Present*
-
+ 
 I'm having great fun at Tobias & Tobias, a design consultancy who has worked extensively with the financial industry.
 My current project (Oct 2018 - Present): Concept design and MVP delivery for a leading European investment bank
 

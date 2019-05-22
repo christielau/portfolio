@@ -14,9 +14,16 @@ tags:
 ## Client: Foreign and Commonwealth Office
 
 ## The problem to be solved:
-Cumbersome online and offline processes for both diplomats and back-end staff. 
+A set of regular processes that span across many platforms and channels (online and offline) for both diplomats and back-end staff. 
+<i class="twa twa-unamused"> High operational cost </i>
+<i class="twa twa-unamused"> Wasting diplomats' time to chase things up</i>
+<i class="twa twa-unamused"> Error prone and errors are costly </i>
 
-## Process:
+## Challenges
+- Absence of APIs for many of the external services
+- A number of processes are manual
+
+## Process
 - User research with diplomats and back-end staff
 - Rapid prototyping with Sketch and Invision
 - Iterative sprints of design refinement
@@ -25,4 +32,5 @@ Cumbersome online and offline processes for both diplomats and back-end staff.
 - Inclusive design and following GDS <a href="https://www.gov.uk/service-manual/design" target="_blank">service manual</a> standards
 
 ## Outcome
-MVP delivery for beta-testers
+- A platform weaving together online and offline processes to guide diplomats through the main task at hand, taking into account the different levels of intergration for each process
+- MVP delivery for beta-testers
