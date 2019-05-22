@@ -7,11 +7,9 @@ tags:
   - User research
   - Physical prototyping
 ---
-![GardenTech](https://2018-christie-portfolio.netlify.com/images/portfolio/modals/m-communitygarden.jpg)
 
 From the user research we found that the gardening community is reluctant to adopt technology - particularly that might disrupt their approaches to gardening and the sense of community amongst gardeners.
 
-However we also found that far being from being technophobes, a majority of our gardeners (especially the younger ones) were open to the use of technology if it supported their general approach to gardening. Sketches were done on “smart” sensor-meter sticks that measure
-and shows sunlight, soil moisture and time since planting. 
+However we also found that far being from being technophobes, a majority of our gardeners (especially the younger ones) were open to the use of technology if it supported their general approach to gardening. Sketches were done on “smart” sensor-meter sticks that measure and shows sunlight, soil moisture and time since planting. 
 
-[Details (Opens in PDF)](https://2018-christie-portfolio.netlify.com/download/CommunityGarden.pdf)
+<button href="https://2018-christie-portfolio.netlify.com/download/CommunityGarden.pdf" target="_blank"> Details (Opens in PDF)</button>
