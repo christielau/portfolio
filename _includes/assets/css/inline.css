@@ -90,6 +90,7 @@ header > em {
 /* Header Nav */
 header nav ul :first-child {
 	margin-left: 0;
+	padding:0;
 }
 
 header nav li {
