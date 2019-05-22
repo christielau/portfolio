@@ -10,7 +10,6 @@ tags:
   - Stakeholder Management
   - Workshop Delivery
 ---
-![New service for diplomats](https://images1.the-dots.com/2279938/tobias-tobias-deck.png?p=projectImageFullJpg)
 
 ![New service for diplomats](/static/img/work-diplomats-fco.png)
 

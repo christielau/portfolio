@@ -15,6 +15,7 @@ section: post
 
   {% if tags %}
     <p>
+    <img src="{{image}}" alt="{{ title }}" />
     {% for tag in tags %}
       {%- if tag != "post" -%}
         {% set tagUrl %}/tags/{{ tag }}/{% endset %}
