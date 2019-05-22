@@ -74,8 +74,8 @@ pre {
 }
 
 ul {
-	padding: 0;
-	list-style: none;
+	/*padding: 0;*/
+	/*list-style: none;*/
 }
 
 /* Header Logo (style as h2) */
@@ -180,7 +180,7 @@ button {
 	cursor: pointer;
 }
 
-img {
+.work-hero-img {
 	width:100%;
 }
 
