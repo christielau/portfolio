@@ -12,4 +12,5 @@ From the user research we found that the gardening community is reluctant to ado
 
 However we also found that far being from being technophobes, a majority of our gardeners (especially the younger ones) were open to the use of technology if it supported their general approach to gardening. Sketches were done on “smart” sensor-meter sticks that measure and shows sunlight, soil moisture and time since planting. 
 
-<button href="https://2018-christie-portfolio.netlify.com/download/CommunityGarden.pdf" target="_blank"> Details (Opens in PDF)</button>
+
+<a href="https://2018-christie-portfolio.netlify.com/download/CommunityGarden.pdf" target="_blank" class="button"> Details (Opens in PDF)</a>
