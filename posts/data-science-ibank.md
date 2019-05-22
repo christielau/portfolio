@@ -1,5 +1,5 @@
 ---
-title: Self-service protal and a community for data scientists in a leading investment bank
+title: Self-service portal and a community for data scientists in a leading investment bank
 summary: 
 date: 2019-04-01
 tags:

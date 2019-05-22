@@ -181,7 +181,7 @@ button {
 	cursor: pointer;
 }
 
-article img {
+body > main > article > img {
 	width:100%;
 }
 
