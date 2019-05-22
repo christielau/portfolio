@@ -185,6 +185,15 @@ button {
 	cursor: pointer;
 }
 
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
 main > article > img, article img, section article img{
 	width:100%;
 }
