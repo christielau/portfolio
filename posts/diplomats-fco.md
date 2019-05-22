@@ -11,7 +11,7 @@ tags:
 ---
 ![New service for diplomats](https://images1.the-dots.com/2279938/tobias-tobias-deck.png?p=projectImageFullJpg)
 
-![New service for diplomats](work-diplomats-fco.png)
+![New service for diplomats](static/img/work-diplomats-fco.png)
 
 ## Client: Foreign and Commonwealth Office
 
