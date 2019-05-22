@@ -1,9 +1,9 @@
 <footer>
   <small>
-  Christie Lau - a London-based user experience designer and researcher. Psychologist, photographer, urban farmer, and matcha lover.
+  {{ author.name or metadata.author.name }} - a London-based user experience designer and researcher. Psychologist, photographer, urban farmer, and matcha lover.
   <br>
-  <a href="mailto:hello@christielau.me">Email</a> | 
-  <a href="https://twitter.com/cc_l" target="_blank">Twitter</a> | 
-  <a href="https://uk.linkedin.com/in/lauchristie" target="_blank">Linkedin</a> | 
+  <a href="mailto:{{ author.email or metadata.author.email }}">Email</a> | 
+  <a href="{{ author.Twitter or metadata.author.Twitter }}" target="_blank">Twitter</a> | 
+  <a href="{{ author.LinkedIn or metadata.author.LinkedIn }}" target="_blank">Linkedin</a> | 
   </small>
 </footer>
