@@ -12,8 +12,8 @@ tags:
 ---
 
 ## Client: A leading investment bank
-Q: Why would a bank need UX people in a data science project? 
-A: Banks are very risk adversed. The industry needs UX people to help them reduce costs and risks.
+>Q: Why would a bank need UX people in a data science project? 
+>A: Banks are very risk adversed. The industry needs UX people to help them reduce costs and risks.
 
 ## The problem to be solved
 - Disparate tools and data
