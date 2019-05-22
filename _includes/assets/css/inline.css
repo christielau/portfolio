@@ -185,7 +185,7 @@ button {
 	cursor: pointer;
 }
 
-main > article > img {
+main > article > img, main > section > img {
 	width:100%;
 }
 
