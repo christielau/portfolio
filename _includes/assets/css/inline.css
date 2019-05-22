@@ -73,7 +73,7 @@ pre {
 	margin: .5em 0;
 }
 
-ul {
+main > article > ul {
 	/*padding: 0;*/
 	/*list-style: none;*/
 }
@@ -90,7 +90,7 @@ header > em {
 /* Header Nav */
 header nav ul :first-child {
 	margin-left: 0;
-	padding:0;
+	padding: 0;
 }
 
 header nav li {
@@ -181,7 +181,7 @@ button {
 	cursor: pointer;
 }
 
-body > main > article > img {
+main > article > img {
 	width:100%;
 }
 
