@@ -10,7 +10,7 @@ tags:
   - Workshop Delivery
 ---
 
-##Client: A leading investment bank
+## Client: A leading investment bank
 
 ## The problem to be solved:
 - Disparate tools and data
