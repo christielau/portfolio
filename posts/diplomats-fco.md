@@ -2,7 +2,7 @@
 title: New digital service for diplomats
 summary: I led the research and delivery of a new digital service for diplomats.
 date: 2018-04-01
-hero-image: /static/img/work-diplomats-fco.png
+image: /static/img/work-diplomats-fco.png
 tags:
   - Enterprise Product
   - Minimum Viable Product 

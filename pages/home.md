@@ -7,7 +7,7 @@ navtitle: Home
 tags:
   - nav
 ---
-# Hello, I'm Christie! <i class="twa twa-2x twa-information-desk-person"></i>
+# Hello, I'm Christie! <i class="twa twa-information-desk-person"></i>
 
 <table>
 <tbody>
