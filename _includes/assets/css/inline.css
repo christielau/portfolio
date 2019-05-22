@@ -185,7 +185,7 @@ button {
 	cursor: pointer;
 }
 
-main > article > img, main > section > img {
+main > article > img, article > img, section > article:nth-child(*) > img{
 	width:100%;
 }
 
