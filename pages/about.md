@@ -4,12 +4,13 @@ tags:
   - nav
 navtitle: About
 section: about
+CV: static/doc/Christie-Lau-CV.pdf
 date: 2019-04-01
 permalink: /about/index.html
 ---
 To me, user experience (UX) includes UI, product, interaction, and service/business. (I'm in Don Norman's camp of UX definition.)
 
-[See my CV in A4 format](static/doc/Christie-Lau-CV.pdf)
+[See my CV in A4 format](cv)
 
 ## My journey
 
