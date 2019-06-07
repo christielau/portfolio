@@ -9,6 +9,8 @@ permalink: /about/index.html
 ---
 To me, user experience (UX) includes UI, product, interaction, and service/business. (I'm in Don Norman's camp of UX definition.)
 
+[See my CV in A4 format](static/doc/Christie-Lau-CV.pdf)
+
 ## My journey
 
 I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from design to marketing between my two degrees. After my master degree, I grew my design and research repertoire while working with a wide range of clients. Currently I'm creating people-centric solutions at design consultancy [Tobias & Tobias](#Work).
