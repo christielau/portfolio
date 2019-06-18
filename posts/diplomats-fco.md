@@ -5,7 +5,7 @@ date: 2018-04-01
 image: /static/img/work-diplomats-fco.png
 tags:
   - Enterprise Product
-  - Minimum Viable Product 
+  - Minimum Viable Product
   - User Research
   - Stakeholder Management
   - Workshop Delivery
@@ -14,10 +14,10 @@ tags:
 ## Client: Foreign and Commonwealth Office
 
 ## The problem to be solved:
-A set of regular processes that span across many platforms and channels (online and offline) for both diplomats and back-end staff. 
-<i class="twa twa-unamused"> High operational cost </i>
-<i class="twa twa-unamused"> Wasting diplomats' time to chase things up</i>
-<i class="twa twa-unamused"> Error prone and errors are costly </i>
+A set of regular processes that span across many platforms and channels (online and offline) for both diplomats and back-end staff.
+<i class="twa twa-unamused"></i> High operational cost
+<i class="twa twa-unamused"></i> Wasting diplomats' time to chase things up
+<i class="twa twa-unamused"></i> Error prone and errors are costly
 
 ## Challenges
 - Absence of APIs for many of the external services
