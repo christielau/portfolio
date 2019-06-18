@@ -15,8 +15,11 @@ tags:
 
 ## The problem to be solved:
 A set of regular processes that span across many platforms and channels (online and offline) for both diplomats and back-end staff.
+
 <i class="twa twa-unamused"></i> High operational cost
+
 <i class="twa twa-unamused"></i> Wasting diplomats' time to chase things up
+
 <i class="twa twa-unamused"></i> Error prone and errors are costly
 
 ## Challenges
