@@ -8,6 +8,8 @@ section: contact
 date: 2040-01-01
 permalink: /contact/index.html
 ---
-The best way to reach me is via email - hello@christielau.me
+The best way to reach me is via email - hello [at] christielau.me
 
-I'm really keen to know what brought you here, feel free to drop me a note below and I will do my best to reply within a reasonable timeframe.
+[LinkedIn](https://www.linkedin.com/in/lauchristie/) – Connect with me the professional way
+[Twitter](https://twitter.com/cC_L) – Interesting articles I've come across
+<!--- [Behance](https://www.behance.net/christie-lau) – Case studies of projects --->
