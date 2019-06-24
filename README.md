@@ -1,4 +1,21 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
+# Christie Lau's Portfolio
+
+## What is it?
+christielau.me is a repository of some of my best work in line with my current career interests. 
+
+It is a playround for the various things I'm exploring: 
+* Templating language Nunjucks
+* Static site generator [Eleventy](https://www.11ty.io/)
+* HTML/CSS/JS
+* Font pairing
+* Creating a brand identity & colour scheme 
+
+## Tech
+
+I'm using [Eleventy Netlify Boilerplate](https://templates.netlify.com/template/eleventy-netlify-boilerplate/), a simple template for building a fast, static website using the [Eleventy](https://www.11ty.io/) static site generator, with [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
+
+
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
 
 # Eleventy Netlify Boilerplate
 
@@ -122,3 +139,4 @@ If you need any help with setting up Netlify CMS, you can reach out to the Netli
 ## [Browser support](#browser-support)
 
 This template uses relatively new features such as [CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) and [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Variables) therefore you should probably consider providing fallbacks for older or less capable browsers before using this template in a production environment.
+ -->
