@@ -3,7 +3,7 @@
 ## What is it?
 christielau.me is a repository of some of my best work in line with my current career interests. 
 
-It is a playround for the various things I'm exploring: 
+It is a playground for the various things I'm exploring: 
 * Templating language Nunjucks
 * Static site generator [Eleventy](https://www.11ty.io/)
 * HTML/CSS/JS
