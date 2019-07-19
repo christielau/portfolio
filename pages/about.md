@@ -18,7 +18,7 @@ My empirical psychology background and my experience in business and marketing d
 
 
 <form action="/static/doc/Christie-Lau-CV.pdf">
-    <button type="submit" name="submit">See my CV</button>
+    <button type="submit">See my CV</button>
 </form>
 
 ## Education
