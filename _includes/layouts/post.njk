@@ -2,32 +2,22 @@
 layout: layouts/base.njk
 section: post
 ---
+<div class="casestudy">
+  {% include "components/casestudydata.njk" %}
+  <main>
+    <article>
+      {# <h1>{{ title }}</h1> #}
 
-<article>
-  <h1>{{ title }}</h1>
-  <p>
-    <small>
-      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
-    </small>
-  </p>
+        <img src="{{ image }}" alt="{{ title }}" />
 
-  <img src="{{ image }}" alt="{{ title }}" />
+      {{ layoutContent | safe }}
 
-  {{ layoutContent | safe }}
+    </article>
 
-  {% if tags %}
-    <p>
-    {% for tag in tags %}
-      {%- if tag != "post" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-    </p>
-  {% endif %}
+    <nav>
+      <a href="{{ '/work/' | url }}">← See all my work</a>
+    </nav>
+  </main>
+</div>
 
-</article>
 
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>

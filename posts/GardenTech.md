@@ -4,7 +4,7 @@ summary: How can we connect and engage growers of different expertise in a commu
 date: 2014-10-20
 image: https://2018-christie-portfolio.netlify.com/images/portfolio/modals/m-communitygarden.jpg
 tags:
-  - User research
+  - User Research
   - Physical prototyping
 ---
 

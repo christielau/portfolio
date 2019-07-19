@@ -1,11 +1,21 @@
 ---
 layout: layouts/base.njk
-section: blog
-permalink: /blog/index.html
+section: Work
+permalink: /work/index.html
 ---
+<div class="mainpage">
+<main>
 <h1>{{ title }}</h1>
 
 {{ layoutContent | safe }}
 
+
+
 {% set postslist = collections.posts %}
 {% include "components/postslist.njk" %}
+
+</main>
+{% include "components/sidebar.njk" %}
+</div>
+
+

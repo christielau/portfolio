@@ -11,9 +11,15 @@ To me, user experience (UX) includes UI, product, interaction, and service/busin
 
 ## My journey
 
-I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from design to marketing between my two degrees. After my master degree, I grew my design and research repertoire while working with a wide range of clients. Currently I'm creating people-centric solutions at design consultancy [Tobias & Tobias](#Work).
+I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from design to marketing between my two degrees. After my master degree, I grew my design and research repertoire while working with a wide range of clients. Currently I'm creating people-centric solutions at design consultancy [Tobias & Tobias](#work).
 
 My empirical psychology background and my experience in business and marketing drive my design process. I conduct user research using qualitative and quantitative methods. Then I provide tested design products and services that address user needs and business KPIs.
+
+
+
+<form action="/static/doc/Christie-Lau-CV.pdf">
+    <button type="submit" name="submit">See my CV</button>
+</form>
 
 ## Education
 

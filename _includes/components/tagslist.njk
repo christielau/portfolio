@@ -1,0 +1,4 @@
+{% for tag in collections.tagList  | reverse %}
+  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+  <a href="{{ tagUrl | url }}" class="tag" rel="tag">{{ tag }}</a>
+{% endfor %}

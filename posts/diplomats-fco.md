@@ -7,8 +7,10 @@ tags:
   - Enterprise Product
   - Minimum Viable Product
   - User Research
+  - Usability test
   - Stakeholder Management
   - Workshop Delivery
+  - Desktop web app
 ---
 
 ## Client: Foreign and Commonwealth Office

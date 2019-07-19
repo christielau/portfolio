@@ -6,7 +6,9 @@ image: /static/img/work-data-science-ibank.png
 tags:
   - Enterprise Product
   - Minimum Viable Product 
+  - Desktop web app
   - User Research
+  - Usability test
   - Stakeholder Management
   - Workshop Delivery
 ---

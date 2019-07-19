@@ -1,7 +1,9 @@
+/* styles */
+
 :root {
-	--turkey: #FFF0EB;
+	--turkey: #FCF6E3;
 	--white: white;
-	--blue: blue;
+	--blue: #1E50FF;
 }
 
 *, *:before, *:after {
@@ -13,19 +15,121 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-}
-
-body {
-	display: grid;
-	height: 100vh;
-	grid-template-rows: auto 1fr auto;
 	background-color: var(--turkey);
 }
 
-main {
-	max-width: 37.5em;
+/* Layout styles mobile -----------------------------------*/
+body {
+	/*display: grid;
+	height: 100vh;
+	grid-template-columns: 3fr 1fr;*/
+	/*grid-template-rows: auto 1fr auto;*/
+	/*grid-template-areas: 
+    "header header"
+    "main sidebar"
+    "footer footer";
+	*/
+	display: grid;
+	height: 100vh;
+	grid-template-areas: 
+    "header"
+    "wrapper"
+    "footer";
+}
+.mainpage {
+    display: grid;
+   	grid-template-areas:
+   	"main"
+   	"sidebar";
+   }
+
+.casestudy {
+    display: grid;
+   	grid-template-areas:
+   	"main"
+   	"casestudydata";
+   }
+
+/* Layout styles -----------------------------------*/
+@media screen and (min-width:768px) {
+  body {
+    padding:0 2em;
+    height: 100vh;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+      "header header"
+      "wrapper wrapper"
+      "footer footer";
+       }
+   .mainpage {
+    grid-template-columns: 3fr 1fr;
+   	grid-template-areas:"main sidebar";
+   }
+	.casestudy {
+    grid-template-columns: 1fr 3fr;
+   	grid-template-areas:"casestudydata main ";
+   }
+
+   }
+
+@media screen and (min-width:1200px) {
+  body {
+  	padding:0 3em;
+    height: 100vh;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+      "header header"
+      "wrapper wrapper"
+      "footer footer";
+       }
+    .mainpage {
+    grid-template-columns: 3fr 1fr;
+   	grid-template-areas:"main sidebar";
+   }
+   .casestudy {
+    grid-template-columns: 1fr 3fr;
+   	grid-template-areas:"casestudydata main ";
+   }
+    :root {
+		font-size: 2rem;
+	}
+   }
+
+  section {
+    break-inside: avoid;
+  }
 }
 
+/* grid layout name -----------------------------------*/
+header {
+  grid-area: header;
+  width: 100%
+}
+.wrapper{
+	grid-area: wrapper;
+}
+main {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.casestudydata {
+  grid-area: casestudydata;
+}
+footer {
+  grid-area: footer;
+}
+
+/* Layout paddings -----------------------------------*/
+header, main,
+.sidebar,
+.casestudydata,
+footer {
+	padding: 1em;
+}
+
+/* -----------------------------------*/
 p,
 pre,
 code {
@@ -41,13 +145,8 @@ a[href]:not(:hover) {
 	text-decoration: none;
 }
 
-header,
-main,
-footer {
-	padding: 1em;
-}
-
 main {
+	max-width: 40em;
 	padding-bottom: 2em;
 }
 
@@ -73,9 +172,9 @@ pre {
 	margin: .5em 0;
 }
 
-main > article > ul {
-	/*padding: 0;*/
-	/*list-style: none;*/
+ul {
+	padding: 0;
+	list-style: none;
 }
 
 /* Header Logo (style as h2) */
@@ -87,14 +186,16 @@ header > em {
 	font-style: normal;
 }
 
-/* Header Nav */
-header nav ul{
-	padding: 0;
+header > em > small {
+	display: block;
+	font-size: .5em;
+	font-weight: normal;
+	font-style: normal;
 }
 
+/* Header Nav */
 header nav ul :first-child {
 	margin-left: 0;
-	padding: 0;
 }
 
 header nav li {
@@ -111,12 +212,21 @@ header nav li a[data-current="current item"] {
 	text-decoration: underline;
 }
 
+/* sidebar, casestudydata */
+.sidebar > h3,
+.casestudydata > h3{
+	margin: 0 0 .67em 0;
+}
+
 /* Posts List */
 article {
 	margin-bottom: 1em;
 	padding-bottom: 1em;
 	border-bottom: 1px solid #eee;
 	border-bottom: 1px solid var(--white);
+}
+main > article > img, article img, section article img{
+	width:100%;
 }
 
 main > section > article > * {
@@ -185,21 +295,9 @@ button {
 	cursor: pointer;
 }
 
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    color: initial;
-}
-
-main > article > img, article img, section article img{
-	width:100%;
-}
-
 @media screen and (min-width:768px) {
 	:root {
 		font-size: 1.1rem;
 	}
 }
+

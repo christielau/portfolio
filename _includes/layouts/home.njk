@@ -3,4 +3,9 @@ layout: layouts/base.njk
 section: home
 ---
 
+<div class="mainpage">
+<main>
 {{ layoutContent | safe }}
+</main>
+{% include "components/sidebar.njk" %}
+</div>
