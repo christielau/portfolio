@@ -7,7 +7,9 @@ section: now
 date:  2019-07-25
 permalink: /now/index.html
 ---
-Inspired by <a href="https://sivers.org/nowff" target="_blank">Derek Sivers</a>, this page includes a sample of what I’m thinking about and working on right now. Last updated: 2019-05-02
+<small> Inspired by <a href="https://sivers.org/nowff" target="_blank">Derek Sivers</a>, this page includes a sample of what I’m thinking about and working on right now. </small>
+##### Last updated: <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
+
 
 ## My work
 Open to new opportunities <i class="twa twa-sunny"></i>

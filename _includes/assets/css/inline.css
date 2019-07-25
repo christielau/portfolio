@@ -1,9 +1,12 @@
 /* styles */
 
 :root {
+		/*--turkey: lemonchiffon;
+		--blue: blue;*/
 	--turkey: #FCF6E3;
 	--white: white;
 	--blue: #1E50FF;
+	--bluehover: #1538b2;
 }
 
 *, *:before, *:after {
@@ -195,7 +198,7 @@ pre {
 
 ul {
 	padding: 0;
-	list-style: none;
+	list-style: disc inside;
 }
 
 /* Header Logo (style as h2) */
@@ -316,9 +319,27 @@ button {
 	cursor: pointer;
 }
 
+button:hover {
+	border: 1px solid var(--bluehover);
+	background-color: var(--bluehover);
+	font-weight: bold;
+}
+
 @media screen and (min-width:768px) {
 	:root {
 		font-size: 1.1rem;
 	}
+}
+
+/* blockquote */
+
+blockquote {
+  border-left: 10px solid gold;
+  margin: 1.5em 0;
+  padding: 0.5em 0 0.5em 1em;
+}
+
+blockquote p {
+  display: inline;
 }
 

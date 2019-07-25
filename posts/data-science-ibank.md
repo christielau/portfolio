@@ -14,16 +14,15 @@ tags:
 ---
 
 ## Client: A leading investment bank
->Q: Why would a bank need UX people in a data science project? 
->A: Banks are very risk adversed. The industry needs UX people to help them reduce costs and risks.
+> Q: Why would a bank need UX people in a data science project? 
+> A: Banks are very risk adversed. The industry needs UX people to help them reduce costs and risks.
 
 ## The problem to be solved
 - Disparate tools and data
 - Difficult process to get anything done
 - Fear of overspending and exhausting resources
 
-Some stats for you: 
-> "The reason data scientists are hired in the first place is to develop algorithms and build machine learning models. Yet 80 percent of a data scientist’s valuable time is spent simply finding, cleaning and reorganizing huge amounts of data."
+> The reason data scientists are hired in the first place is to develop algorithms and build machine learning models. Yet 80 percent of a data scientist’s valuable time is spent simply finding, cleaning and reorganizing huge amounts of data.
 
 Too much time spent on finding stuff = Wasting data scientists' time = Wasting money
 

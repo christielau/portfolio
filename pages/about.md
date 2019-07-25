@@ -24,7 +24,7 @@ I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Er
 
 My empirical psychology background and my experience in business and marketing drive my design process. I conduct user research using qualitative and quantitative methods. Then I provide tested design products and services that address user needs and business KPIs.
 
-To me, user experience (UX) includes UI, product, interaction, and service/business. (I'm in Don Norman's camp of UX definition.)
+> To me, user experience (UX) includes UI, product, interaction, and service/business. (I'm in Don Norman's camp of UX definition.)
 
 ## Education
 
