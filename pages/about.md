@@ -7,19 +7,24 @@ section: about
 date: 2019-04-01
 permalink: /about/index.html
 ---
-To me, user experience (UX) includes UI, product, interaction, and service/business. (I'm in Don Norman's camp of UX definition.)
+
+
+## CV
+Scan my work history in the good old A4 pdf style <i class="twa twa-eyes"></i>
+<form action="/static/doc/Christie-Lau-CV.pdf" style="margin: 0em 0em; padding: 0;">
+    <button type="submit">See my CV</button>
+</form>
+... or let me share with you my journey <i class="twa twa-sailboat"></i>
+
+
 
 ## My journey
 
-I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from design to marketing between my two degrees. After my master degree, I grew my design and research repertoire while working with a wide range of clients. Currently I'm creating people-centric solutions at design consultancy [Tobias & Tobias](#work).
+I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from design to marketing between my two degrees. After my master degree, I grew my design and research repertoire while working with a wide range of clients. Most recently I helped creating people-centric solutions at design consultancy [Tobias & Tobias](#work).
 
 My empirical psychology background and my experience in business and marketing drive my design process. I conduct user research using qualitative and quantitative methods. Then I provide tested design products and services that address user needs and business KPIs.
 
-
-
-<form action="/static/doc/Christie-Lau-CV.pdf">
-    <button type="submit">See my CV</button>
-</form>
+To me, user experience (UX) includes UI, product, interaction, and service/business. (I'm in Don Norman's camp of UX definition.)
 
 ## Education
 
@@ -34,8 +39,8 @@ My MSc thesis project investigated the <a href="https://2018-christie-portfolio.
 Immersive exposure and practice in theories and research methods in psychology, including applied decision making, cognitive psychology, and organisational behaviour.
 
 ## Work
-### UX Designer, <a href="http://www.tobiasandtobias.com/?ref=christie" target="_blank">Tobias & Tobias</a>
- *April 2018 - Present*
+### Lead UX Designer, <a href="http://www.tobiasandtobias.com/?ref=christie" target="_blank">Tobias & Tobias</a>
+ *April 2018 - June 2019*
 
 I'm having great fun at Tobias & Tobias, a design consultancy who has worked extensively with the financial industry.
 My current project (Oct 2018 - Present): Concept design and MVP delivery for a leading European investment bank

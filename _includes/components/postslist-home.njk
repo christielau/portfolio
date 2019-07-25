@@ -1,0 +1,36 @@
+<h2>Recent projects <i class="twa twa-information-desk-person"></i></h2>
+<section class="postslist-home">
+	
+	{% for post in postslist | reverse %}
+	{% for tag in post.data.tags %}
+	{%- if tag == "Stakeholder Management" -%}
+	
+		<article{% if post.url == url %} data-current="current item"{% endif %}>
+		{% if post.data.image %}
+			<a href="{{ post.url | url }}">
+			<img src="{{ post.data.image }}" alt="{{ post.data.title }}" />
+			</a>
+			{% endif %}
+			<h3>
+				<a href="{{ post.url | url }}">
+					{% if post.data.title %}
+						{{ post.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h3>
+			{% if post.data.summary %}
+				<p>
+					{{ post.data.summary }}
+				</p>
+			{% endif %}
+		</article>
+	{%- endif -%}
+	{% endfor %}
+	{% endfor %}
+
+</section>
+    <nav>
+      <a href="{{ '/work/' | url }}">See all my projects <i class="twa twa-eyes"></i></a>
+    </nav>

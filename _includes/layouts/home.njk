@@ -6,6 +6,9 @@ section: home
 <div class="mainpage">
 <main>
 {{ layoutContent | safe }}
+
+{% set postslist = collections.posts %}
+{% include "components/postslist-home.njk" %}
 </main>
 {% include "components/sidebar.njk" %}
 </div>
