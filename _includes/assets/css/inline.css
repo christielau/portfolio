@@ -49,8 +49,8 @@ body {
 .casestudy {
     display: grid;
    	grid-template-areas:
-   	"main"
-   	"casestudydata";
+   	"casestudydata"
+   	"main";
    }
 
 
