@@ -2,6 +2,8 @@
 title: Self-service portal and a community for data scientists in a leading investment bank
 summary: Why would banks need UX people in a data science project? 
 date: 2019-04-01
+client: Leading European Investment bank
+timeframe: 8 months
 image: /static/img/work-data-science-ibank.png
 tags:
   - Enterprise Product
@@ -13,7 +15,6 @@ tags:
   - Workshop Delivery
 ---
 
-## Client: A leading investment bank
 > Q: Why would a bank need UX people in a data science project? 
 > A: Banks are very risk adversed. The industry needs UX people to help them reduce costs and risks.
 

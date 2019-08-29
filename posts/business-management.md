@@ -2,6 +2,8 @@
 title: User research & optimisation for an all-in-one business admin solution
 summary: Through usability tests and user behaviour data (e.g. heatmap, visitor recording, traffic flow) collected via Visual Web Optimiser and Google Analytics, we identified 4 key areas for optimising lead acquisition. The suggested improvements were sent to the client in a report, and we have liaised with the client's copywriters and developers in order to execute the suggested solutions.
 date: 2016-04-01
+client: SAAS start-up 
+timeframe: 3 months
 image: https://images1.the-dots.com/834459/screen-shot-2017-05-14-at-23-20-51.png?p=projectImageFullJpg
 tags:
   - SaaS

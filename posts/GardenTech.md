@@ -2,6 +2,7 @@
 title: Technology in a Community Garden
 summary: How can we connect and engage growers of different expertise in a community garden?
 date: 2014-10-20
+timeframe: 2 months
 image: https://2018-christie-portfolio.netlify.com/images/portfolio/modals/m-communitygarden.jpg
 tags:
   - User Research

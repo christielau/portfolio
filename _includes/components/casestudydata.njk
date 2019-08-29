@@ -3,6 +3,14 @@
 	      <p>
 	      	<small>
           <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
+          {% if client %}
+          <br>
+          Client: {{ client }}
+          {% endif %}
+          {% if timeframe %}
+          <br>
+          Timeframe: {{ timeframe }}
+          {% endif %}
 	</small>
     </p>
 

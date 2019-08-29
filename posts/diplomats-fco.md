@@ -2,6 +2,8 @@
 title: New digital service for diplomats
 summary: I led the research and delivery of a new digital service for diplomats.
 date: 2018-04-01
+client: Foreign and Commonwealth Office
+timeframe: 6 months
 image: /static/img/work-diplomats-fco.png
 tags:
   - Enterprise Product
@@ -13,7 +15,6 @@ tags:
   - Desktop web app
 ---
 
-## Client: Foreign and Commonwealth Office
 
 ## The problem to be solved:
 A set of regular processes that span across many platforms and channels (online and offline) for both diplomats and back-end staff.

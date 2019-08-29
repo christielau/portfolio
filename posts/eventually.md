@@ -2,6 +2,7 @@
 title: Eventual.ly - Winner of Hack The Visual Hackathon 2015
 summary: Turn photos into calendar events by OCR and contextual search.
 date: 2015-06-27
+timeframe: 48 hours
 image: https://image.slidesharecdn.com/pptfinallink-150628122616-lva1-app6891/95/eventually-presentation-hackthevisual-1-638.jpg?cb=1435520336
 tags:
   - internet of things
