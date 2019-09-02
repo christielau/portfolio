@@ -42,8 +42,8 @@ Immersive exposure and practice in theories and research methods in psychology, 
 ### Lead UX Designer, <a href="http://www.tobiasandtobias.com/?ref=christie" target="_blank">Tobias & Tobias</a>
  *April 2018 - June 2019*
 
-I'm having great fun at Tobias & Tobias, a design consultancy who has worked extensively with the financial industry.
-My current project (Oct 2018 - Present): Concept design and MVP delivery for a leading European investment bank
+I had great fun at Tobias & Tobias, a design consultancy who has worked extensively with the financial industry.
+From Oct 2018 - June 2019 I led a project in concept design and MVP delivery for a leading European investment bank.
 
 Other exciting work:
 - Facilitated a 3-week process for answering critical business questions through design, prototyping, and testing ideas with users for a rising fintech start-up
