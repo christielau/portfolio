@@ -4,7 +4,7 @@ tags:
   - nav
 navtitle: Now
 section: now
-date:  2019-07-25
+date:  2019-09-20
 permalink: /now/index.html
 ---
 <small> Inspired by <a href="https://sivers.org/nowff" target="_blank">Derek Sivers</a>, this page includes a sample of what I’m thinking about and working on right now. </small>
@@ -14,7 +14,10 @@ permalink: /now/index.html
 ## My work
 Open to new opportunities <i class="twa twa-sunny"></i>
 
-I've recently finished my project for an European investment bank, in which I designed a data-science-in-production platform harnessing the potentials of large-scale data systems in a commercially viable manner. 
+I've recently joined Capco, a financial services consultancy, as a design consultant. :) 
+Let me know if you want to join Capco too.
+
+I was a design advisor in the Build your own bank hackathon as part of 2019's National Coding Week. 
 
 
 ## Current interest
@@ -25,14 +28,14 @@ I've recently finished my project for an European investment bank, in which I de
 * [Edible container gardening](#My-garden), food waste and plastic waste reduction
 
 
-## Open to... 
-* Speaking at your event
-* Running workshops at your hackathon
-* Becoming a UX mentor
-* Joining a charity board
+## I would love to...
+* Speak at your event
+* Run workshops + advise at your hackathon
+* Become a UX mentor
+* Join a charity board
 
 
 ## My balcony garden <i class="twa twa-herb"></i>
 + Propagating pilea peperomioides and aloe vera
-+ Growing leafy salads
-+ Something exciting: I started a wormery on my balcony since early March and the worms have been doing great. Thank you guys. 
++ Growing leafy salads (Pak Choi, Rocket leaves) and herbs
++ Keeping a wormery on my balcony (Est. March 2019)

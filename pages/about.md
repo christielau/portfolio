@@ -39,6 +39,10 @@ My MSc thesis project investigated the <a href="https://2018-christie-portfolio.
 Immersive exposure and practice in theories and research methods in psychology, including applied decision making, cognitive psychology, and organisational behaviour.
 
 ## Work
+### Consultant, Capco
+ *September 2019 - now*
+ Help building design capabilities under Capco Digital
+
 ### Lead UX Designer, <a href="http://www.tobiasandtobias.com/?ref=christie" target="_blank">Tobias & Tobias</a>
  *April 2018 - June 2019*
 
