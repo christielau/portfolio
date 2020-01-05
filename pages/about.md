@@ -20,11 +20,11 @@ Scan my work history in the good old A4 pdf style <i class="twa twa-eyes"></i>
 
 ## My journey
 
-I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from design to marketing between my two degrees. After my master degree, I grew my design and research repertoire while working with a wide range of clients. Most recently I helped creating people-centric solutions at design consultancy [Tobias & Tobias](#work).
+I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from design to marketing between my two degrees. After my master degree, I grew my design and research repertoire while working with a wide range of clients. Recently I have joined Capco and trained over 80 clients from investment banks on design thinking.
 
 My empirical psychology background and my experience in business and marketing drive my design process. I conduct user research using qualitative and quantitative methods. Then I provide tested design products and services that address user needs and business KPIs.
 
-> To me, user experience (UX) includes UI, product, interaction, and service/business. (I'm in Don Norman's camp of UX definition.)
+> To me, user experience (UX) includes UI, product, interaction, and service design. (I'm in Don Norman's camp of UX definition.)
 
 ## Education
 
