@@ -9,16 +9,16 @@ permalink: /about/index.html
 ---
 
 
-## CV
+# CV
 Scan my work history in the good old A4 pdf style <i class="twa twa-eyes"></i>
 <form action="/static/doc/Christie-Lau-CV.pdf" style="margin: 0em 0em; padding: 0;">
     <button type="submit">See my CV</button>
 </form>
-... or let me share with you my journey <i class="twa twa-sailboat"></i>
+... or let me share with you my journey. <span>&#x26F5;</span>
 
 
 
-## My journey
+# My journey
 
 I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from design to marketing between my two degrees. After my master degree, I grew my design and research repertoire while working with a wide range of clients. Recently I have joined Capco and trained over 80 clients from investment banks on design thinking.
 
@@ -51,6 +51,7 @@ Immersive exposure and practice in theories and research methods in psychology, 
  Previous projects:
  * Strategy and proposition design for a Tier 1 European investment bank, introducing design thinking and co-creation methodologies across operations
 
+
 ### Lead UX Designer, <a href="http://www.tobiasandtobias.com/?ref=christie" target="_blank">Tobias & Tobias</a>
  *April 2018 - June 2019*
 
@@ -61,12 +62,15 @@ Immersive exposure and practice in theories and research methods in psychology, 
  * Facilitated a 3-week process for answering critical business questions through design, prototyping, and testing ideas with users for a rising fintech start-up
  * Involved in stakeholder workshop facilitation, user research, and prototyping for a well-known education publisher
 
+
 ### UX Design Lead, <a href="https://www.ibm.com/services/ibmix/" target="_blank">IBM iX</a>
 *November 2017 - April 2018*
 
 UX Design Lead (contract) at Foreign and Commonwealth Office, leading user research and design for a new digital service for diplomats.
 
 Activities including interpreting user journey and business processes into screens on Sketch and Invision, running user research and data analysis. <a href="https://www.gov.uk/service-manual/service-standard" target="_blank">GDS standard</a> and the <a href="https://www.gov.uk/service-manual/design" target="_blank">service manual</a> became my best friends.
+
+
 
 ### UX Designer, <a href="https://rebelhack.com/" target="_blank">Rebel Hack Studios</a>
 *February 2016 - June 2017*
@@ -76,10 +80,12 @@ After my master degree, I have led the user-centred design process for 10+ start
 
 I have the privilege to work with seed funded to Series A clients, ranging from enterprise solutions, fashion apps to games, shaping their early stage design and growth strategies. <a href="https://medium.com/@cC_L/things-ive-learned-as-a-ux-designer-in-a-marketing-agency-40f3cb4b56ae" target="_blank">Here is what I've learnt in Rebel Hack</a>
 
+
 ### Digital Designer, <a href="https://photovoice.org/" target="_blank">PhotoVoice</a>
 *September 2013 - December 2014*
 
 I focused on mobile responsiveness optimisation of the charity's website and newsletter. Co-facilitated a participatory photography workshop in China as an <a href="http://developmentprogress.odi.org/photography/china.html" target="_blank">ethnographic study on local water use</a>, in partnership with <a href="https://photovoice.org/development_progress/" target="_blank">Overseas Development Institute</a>.
+
 
 ### Marketing Manager, 20-20 Optical Store
 *December 2011 - June 2013*

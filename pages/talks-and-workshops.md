@@ -8,9 +8,9 @@ date: 2020-06-13
 permalink: /talks-and-workshops/index.html
 ---
 
-# Talks
 I enjoy talking about my design experience in the financial services industry, design thinking, and useful tools to get ideas off the ground. I've given talks and workshops in English to various audiences ranging from design enthusiasts to partners, and I'm equally happy to deliver in Cantonese or Mandarin Chinese. If you'd like to invite me to speak at your event, please [get in touch](/contact).
 
+# Talks
 ## Design in fintech and the financial services industy
 Presented at: 
 * <a href="https://www.bigmarker.com/tech-circus-tv/UX-Crunch-at-Home-Designing-for-Fintech" target="_blank">Designing for Fintech</a> at <a href="https://techcircus.io/future_events/ux-crunch/" target="_blank">UX Crunch (Tech Circus)</a>, June 2020
