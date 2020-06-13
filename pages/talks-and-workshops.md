@@ -4,7 +4,7 @@ tags:
   - nav
 navtitle: Talks & Workshops
 section: Talks & Workshops
-date: 2020-06-13
+date: 2030-01-01
 permalink: /talks-and-workshops/index.html
 ---
 
