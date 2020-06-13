@@ -7,7 +7,7 @@ navtitle: Home
 tags:
   - nav
 ---
-# Hello, I'm Christie! 
+# Hello, I'm Christie. 
 
 <table>
 <tbody>
@@ -19,7 +19,5 @@ tags:
 </table>
 Using qualitative and quantitative research insights, I design products and services to address user needs and business objectives.
 
-I'm a Skillshare teacher and my class  <a href="https://skl.sh/2TOE5Qc" target="_blank">"How to Create a Storyboard: Bring Your Product/Service Concept to Life in 20 minutes"</a> has won the grand prize in the Skillshare Contest for First Time Business and Technology Teachers. <i class="twa twa-eyes"></i> 
+I'm a design mentor at Springboard and Skillshare teacher and my class  <a href="https://skl.sh/2TOE5Qc" target="_blank">"How to Create a Storyboard: Bring Your Product/Service Concept to Life in 20 minutes"</a> has won the grand prize in the Skillshare Contest for First Time Business and Technology Teachers. <i class="twa twa-eyes"></i> 
 <a href="https://skl.sh/2TOE5Qc" target="_blank">Watch my class now ></a>
-
-Recently I spoke in General Assembly's event <a href="https://www.eventbrite.co.uk/e/evolving-into-fintech-as-a-uxer-tickets-59760055936" target="_blank">Evolving into Fintech as a UXer</a>. Videos coming soon. <i class="twa twa-blush"></i>

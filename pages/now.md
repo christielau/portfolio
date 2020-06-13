@@ -20,14 +20,14 @@ Alonside my project, I help raise awareness of design within Capco and run desig
 
 Outside work, I'm a UX mentor on Springboard and I enjoy meeting with my mentees 1-on-1 each week to provide technical guidance, career advice, and accountability. 
 
-[Open to new opportunities <i class="twa twa-sunny"></i>](###What-I-want-to-do-more-of)
+[Open to new opportunities <i class="twa twa-sunny"></i>](###-What-I-want-to-do-more-of)
 
 ## Current interest
 * Design workplace experiences to change people’s work-life from core to surface
 * Design beyond human-centred design: planet-centric design
 * Empathise with people via research and participatory methods
 * Make sense of chaos: Information architecture
-* [Grow my food](#My-balcony-garden), food waste and plastic waste reduction
+* [Grow my food](###-My-balcony-garden), food waste and plastic waste reduction
 
 ### What I want to do more of
 * Play with our hands: Tangible user interfaces
