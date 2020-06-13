@@ -22,7 +22,7 @@ Scan my work history in the good old A4 pdf style <i class="twa twa-eyes"></i>
 
 I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from design to marketing between my two degrees. After my master degree, I grew my design and research repertoire while working with a wide range of clients. Recently I have joined Capco and trained over 80 clients from investment banks on design thinking.
 
-My empirical psychology background and my experience in business and marketing drive my design process. I conduct user research using qualitative and quantitative methods. Then I provide tested design products and services that address user needs and business KPIs.
+My empirical psychology background and my experience in business and marketing drive my design process. I conduct user research using qualitative and quantitative methods. Then I provide tested design products and services that address user needs and business KPIs. Workplace user experience excites me and I thrive on crafting holistic, surface-to-core experiences for both internal and external users.
 
 > To me, user experience (UX) includes UI, product, interaction, and service design. (I'm in Don Norman's camp of UX definition.)
 
@@ -39,19 +39,27 @@ My MSc thesis project investigated the <a href="https://2018-christie-portfolio.
 Immersive exposure and practice in theories and research methods in psychology, including applied decision making, cognitive psychology, and organisational behaviour.
 
 ## Work
-### Consultant, Capco
+
+### Consultant, <a href="https://www.capco.com/?ref=christie" target="_blank">Capco</a>
  *September 2019 - now*
- Help building design capabilities under Capco Digital
+
+ Current project: 
+ * Design for internal and external users of private banking services at a global bank
+ * Help building design capabilities under Capco Digital
+ * Run design thinking training for colleagues and external clients
+ 
+ Previous projects:
+ * Strategy and proposition design for a Tier 1 European investment bank, introducing design thinking and co-creation methodologies across operations
 
 ### Lead UX Designer, <a href="http://www.tobiasandtobias.com/?ref=christie" target="_blank">Tobias & Tobias</a>
  *April 2018 - June 2019*
 
-I had great fun at Tobias & Tobias, a design consultancy who has worked extensively with the financial industry.
-From Oct 2018 - June 2019 I led a project in concept design and MVP delivery for a leading European investment bank.
-
-Other exciting work:
-- Facilitated a 3-week process for answering critical business questions through design, prototyping, and testing ideas with users for a rising fintech start-up
-- Involved in stakeholder workshop facilitation, user research, and prototyping for a well-known education publisher
+ I had great fun at Tobias & Tobias, a design consultancy who has worked extensively with the financial industry.
+ From Oct 2018 - June 2019 I led a project in concept design and MVP delivery for a leading European investment bank.
+ 
+ Other exciting work:
+ * Facilitated a 3-week process for answering critical business questions through design, prototyping, and testing ideas with users for a rising fintech start-up
+ * Involved in stakeholder workshop facilitation, user research, and prototyping for a well-known education publisher
 
 ### UX Design Lead, <a href="https://www.ibm.com/services/ibmix/" target="_blank">IBM iX</a>
 *November 2017 - April 2018*
