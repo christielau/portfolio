@@ -7,7 +7,7 @@ navtitle: Home
 tags:
   - nav
 ---
-# Hello, I'm Christie. <span>&#x1f481; &#x1f3fb;</span>
+# Hello, I'm Christie. <span>&#x1f481; &#x200D;</span>
 
 <table>
 <tbody>

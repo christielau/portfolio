@@ -9,15 +9,16 @@ tags:
   - hackathon
   - automation
 ---
-![eventually concept](https://2018-christie-portfolio.netlify.com/images/portfolio/modals/m-eventually.png)
 
-## Problem space:
+## Problem space
 Too many clutter of To-Dos in our camera roll, e.g. event posters.
 
-## How it works:
+## How it works
 Eventual.ly is an automated solution for users, extracting information from images. Take a picture of a poster and the event will be created on your calendar with the correct date and time.
 
-## What's next for Eventual.ly:
+![eventually concept](https://2018-christie-portfolio.netlify.com/images/portfolio/modals/m-eventually.png)
+
+## What's next for Eventual.ly
 Seamless sharing with friends
 Event managers can monitor poster exposure
 Developers can create powerful connections with users via Eventual.ly 

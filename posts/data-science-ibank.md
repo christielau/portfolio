@@ -13,6 +13,7 @@ tags:
   - Usability test
   - Stakeholder Management
   - Workshop Delivery
+  - Co-Design
 ---
 
 > Q: Why would a bank need UX people in a data science project? 
