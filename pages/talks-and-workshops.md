@@ -2,7 +2,7 @@
 title: Talks & Workshops
 tags:
   - nav
-navtitle: Talks & Workshops
+navtitle: Talks
 section: Talks & Workshops
 date: 2030-01-01
 permalink: /talks-and-workshops/index.html

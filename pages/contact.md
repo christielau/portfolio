@@ -15,5 +15,5 @@ The best way to reach me is via email - hello [at] christielau.me
 [Twitter](https://twitter.com/cC_L) – Interesting articles I've come across
 <!--- [Behance](https://www.behance.net/christie-lau) – Case studies of projects --->
 
-## Request my portfolio in pdf
-I'm happy to send over more details regarding my case studies and show you more work examples. Drop me a line below or via email. 
+## Request access to my portfolio
+I'm happy to show you more of my work and tell you more about my ways of working. Drop me a line below or via email and I'll get back to you as soon as I can. <span>&#x1F60A;</span>	
