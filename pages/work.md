@@ -12,3 +12,5 @@ Below are some of the projects I've worked on. You'll find out about my process 
 A lot of my design work is sensitive. This means I'm unable to share it publicly. If you want to see more of my work, please [get in touch](/contact). <span>&#x1F4E8;</span>
 
 <!-- If you want to gain access, please [get in touch](/contact). -->
+
+
