@@ -1,8 +1,6 @@
 /* styles */
 
 :root {
-		/*--turkey: lemonchiffon;
-		--blue: blue;*/
 	--turkey: #FCF6E3;
 	--white: white;
 	--blue: #1E50FF;
@@ -83,9 +81,11 @@ body {
 
    }
 
-@media screen and (min-width:1200px) {
+
+@media screen and (min-width:1240px) {
   body {
-  	padding:0 3em;
+  	margin: auto;
+  	max-width: 1240px;
     height: 100vh;
     grid-template-columns: 3fr 1fr;
     grid-template-areas: 
