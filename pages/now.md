@@ -4,7 +4,7 @@ tags:
   - nav
 navtitle: Now
 section: now
-date:  2020-06-13
+date:  2020-09-15
 permalink: /now/index.html
 ---
 <small> Inspired by <a href="https://sivers.org/nowff" target="_blank">Derek Sivers</a>, this page includes a sample of what I’m thinking about and working on right now. </small>
