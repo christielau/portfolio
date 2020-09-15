@@ -20,7 +20,7 @@ Scan my work history in the good old A4 pdf style <i class="twa twa-eyes"></i>
 
 # My journey
 
-I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from design to marketing between my two degrees. After my master degree, I grew my design and research repertoire while working with a wide range of clients. Recently I have joined Capco and trained over 80 clients from investment banks on design thinking.
+I graduated in BSc Psychology in 2012 and MSc Human-Computer Interaction with Ergonomics in 2015, both at UCL. I worked in different areas in business, from design to marketing between my two degrees. After my master degree, I grew my design and research repertoire while working with a wide range of clients. Recently I have joined Capco and trained over 80 clients from tier-1 global banks on design thinking.
 
 My empirical psychology background and my experience in business and marketing drive my design process. I conduct user research using qualitative and quantitative methods. Then I provide tested design products and services that address user needs and business KPIs. Workplace user experience excites me and I thrive on crafting holistic, surface-to-core experiences for both internal and external users.
 
@@ -44,7 +44,7 @@ Immersive exposure and practice in theories and research methods in psychology, 
  *September 2019 - now*
 
  Current project: 
- * Design for internal and external users of private banking services at a global bank
+ * Product design of private banking services at a global bank for both internal users and external clients
  * Help building design capabilities under Capco Digital
  * Run design thinking training for colleagues and external clients
  

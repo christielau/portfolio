@@ -8,7 +8,7 @@ section: contact
 date: 2040-01-01
 permalink: /contact/index.html
 ---
-The best way to reach me is via email - hello [at] christielau.me
+The best way to reach me is via email - hello [at] christielau [dot] me
 
 [LinkedIn](https://www.linkedin.com/in/lauchristie/) – Connect with me the professional way
 

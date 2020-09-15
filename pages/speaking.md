@@ -8,7 +8,7 @@ date: 2030-01-01
 permalink: /speaking/index.html
 ---
 
-I enjoy talking about my design experience in the financial services industry, design thinking, and useful tools to get ideas off the ground. I've given talks and workshops in English to various audiences ranging from design enthusiasts to partners, and I'm equally happy to deliver in Cantonese or Mandarin Chinese. If you'd like to invite me to speak at your event, please [get in touch](/contact).
+I enjoy talking about my design experience in the financial services industry, design thinking, and useful tools to get ideas off the ground. I've given talks and workshops in English to various audiences ranging from design enthusiasts to consultancy partners, and I'm equally happy to deliver in Cantonese or Mandarin Chinese. If you'd like to invite me to speak at your event, please [get in touch](/contact).
 
 # Talks
 ## Design in fintech and the financial services industy
