@@ -1,7 +1,7 @@
 /* styles */
 
 :root {
-	--turkey: #FCF6E3;
+	--turkey: *#FCF6E3*;
 	--white: white;
 	--blue: #1E50FF;
 	--bluehover: #1538b2;
@@ -50,6 +50,12 @@ body {
    	"casestudydata"
    	"main";
    }
+.hero {
+    display: grid;
+   	grid-template-areas:
+   	"profilepic"
+   	"herocontent";
+   }
 
 
 /* Layout styles -----------------------------------*/
@@ -57,45 +63,61 @@ body {
   body {
     padding:0 2em;
     height: 100vh;
-    grid-template-columns: 3fr 1fr;
     grid-template-areas: 
-      "header header"
-      "wrapper wrapper"
-      "footer footer";
+      "header"
+      "wrapper"
+      "footer";
        }
    .mainpage {
     grid-template-columns: 3fr 1fr;
    	grid-template-areas:"main sidebar";
    }
+   .homepage{
+   	grid-template-areas:
+   	"hero"
+   	"mainpage";
+   }
+
+   .hero {
+   	padding:0 6em;
+   	/*Cannot make this part work. Currently breaks the whole tempalte. TBC. */
+   	/*    display: grid;
+    grid-template-columns: 1fr 1fr;
+   	grid-template-areas:
+   	"profilepic herocontent";*/
+   }
 	.casestudy {
     grid-template-columns: 1fr 3fr;
-   	grid-template-areas:"casestudydata main ";
+   	grid-template-areas:"casestudydata main";
    }
    .postslist-home {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 1em;
-	grid-template-areas: 
-    "article article";
-}
+	grid-template-areas: "article article";
+	}
 
    }
 
 
 @media screen and (min-width:1240px) {
   body {
+  	padding:0 8em;
   	margin: auto;
   	max-width: 1240px;
     height: 100vh;
-    grid-template-columns: 3fr 1fr;
     grid-template-areas: 
-      "header header"
-      "wrapper wrapper"
-      "footer footer";
+      "header"
+      "wrapper"
+      "footer";
        }
     .mainpage {
     grid-template-columns: 3fr 1fr;
    	grid-template-areas:"main sidebar";
+   }
+
+   .hero {
+   	padding:0 10em;
    }
    .casestudy {
     grid-template-columns: 1fr 3fr;
@@ -121,7 +143,6 @@ body {
 /* grid layout name -----------------------------------*/
 header {
   grid-area: header;
-  width: 100%
 }
 .wrapper{
 	grid-area: wrapper;
@@ -135,7 +156,18 @@ main {
 .casestudydata {
   grid-area: casestudydata;
 }
-
+.homepage{
+  grid-area: homepage;	
+}
+.hero{
+  grid-area: hero;	
+}
+.herocontent{
+  grid-area: herocontent;	
+}
+.profilepic{
+  grid-area: profilepic;	
+}
 main > section .postslist-home > article {
   grid-area: article;
 }
@@ -147,7 +179,7 @@ footer {
 
 /* Layout paddings -----------------------------------*/
 header, main,
-.sidebar,
+.sidebar,.hero,
 .casestudydata,
 footer {
 	padding: 1em;
@@ -240,6 +272,11 @@ header nav li a[data-current="current item"] {
 .sidebar > h3,
 .casestudydata > h3{
 	margin: 0 0 .67em 0;
+}
+
+/* hero */
+.hero {
+
 }
 
 /* Posts List */
