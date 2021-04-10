@@ -21,4 +21,7 @@ tags:
 
 I solve problems for people and businesses via design. My background in psychology and human-computer interaction strengthens my evidence-driven design approach. 
 
-Outside my work, I'm a Springboard design mentor and Skillshare teacher and my class  <a href="https://skl.sh/2TOE5Qc" target="_blank">"How to Create a Storyboard: Bring Your Product/Service Concept to Life in 20 minutes"</a> has won the grand prize in the Skillshare Contest for First Time Business and Technology Teachers. <a href="https://skl.sh/2TOE5Qc" target="_blank"><span>&#x1F440;</span> Watch my class now ></a>
+Outside my work, I'm an <a href="https://adplist.org/mentors/christie-lau" target="_blank">ADPlist</a> design mentor and Skillshare teacher. 
+
+My class  <a href="https://skl.sh/2TOE5Qc" target="_blank">"How to Create a Storyboard: Bring Your Product/Service Concept to Life in 20 minutes"</a> has won the grand prize in the Skillshare Contest for First Time Business and Technology Teachers. 
+<a href="https://skl.sh/2TOE5Qc" target="_blank">Watch my class now <span>&#x1F440;</span> →</a>
