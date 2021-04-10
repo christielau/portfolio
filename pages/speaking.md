@@ -11,6 +11,10 @@ permalink: /speaking/index.html
 I enjoy talking about my design experience in the financial services industry, design thinking, and useful tools to get ideas off the ground. I've given talks and workshops in English to various audiences ranging from design enthusiasts to consultancy partners, and I'm equally happy to deliver in Cantonese or Mandarin Chinese. If you'd like to invite me to speak at your event, please [get in touch](/contact).
 
 # Talks
+## Design for high-net-worth individuals
+Presented at: 
+* <a href="https://www.eventbrite.co.uk/e/ux-crunch-at-home-research-with-complex-user-groups-tickets-138757392095#" target="_blank">Researching with complex user groups</a> at <a href="https://techcircus.io/future_events/ux-crunch/" target="_blank">UX Crunch (Tech Circus)</a>, February 2021
+
 ## Design in fintech and the financial services industy
 Presented at: 
 * <a href="https://www.bigmarker.com/tech-circus-tv/UX-Crunch-at-Home-Designing-for-Fintech" target="_blank">Designing for Fintech</a> at <a href="https://techcircus.io/future_events/ux-crunch/" target="_blank">UX Crunch (Tech Circus)</a>, June 2020

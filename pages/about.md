@@ -9,13 +9,8 @@ permalink: /about/index.html
 ---
 
 
-# CV
-Scan my work history in the good old A4 pdf style <i class="twa twa-eyes"></i>
-<form action="/static/doc/Christie-Lau-CV.pdf" style="margin: 0em 0em; padding: 0;">
-    <button type="submit">See my CV</button>
-</form>
+<a href="/static/doc/Christie-Lau-CV.pdf" target="_blank"> Scan my work history in the good old A4 pdf style</a> <i class="twa twa-eyes"></i> <small>(opens PDF in new tab)</small>
 ... or let me share with you my journey. <span>&#x26F5;</span>
-
 
 
 # My journey
@@ -26,17 +21,6 @@ My empirical psychology background and my experience in business and marketing d
 
 > To me, user experience (UX) includes UI, product, interaction, and service design. (I'm in Don Norman's camp of UX definition.)
 
-## Education
-
-### MSc in Human-Computer Interaction with Ergonomics, 2014-2015
-*University College London*
-
-My MSc thesis project investigated the <a href="https://2018-christie-portfolio.netlify.com/download/MasterSummary.pdf" target="_blank">validity of numerical gamer ratings</a>, in collaboration with Sony Computer Entertainment Europe.
-
-### BSc in Psychology, 2009-2012
-*University College London*
-
-Immersive exposure and practice in theories and research methods in psychology, including applied decision making, cognitive psychology, and organisational behaviour.
 
 ## Work
 
@@ -92,3 +76,15 @@ I focused on mobile responsiveness optimisation of the charity's website and new
 
 In charge of design and marketing: store-front window and shop floor display, print and digital design, social media, photography, branding, and beyond.
 Bonus: Adjusted the arms on customers' glasses, advised customers on luxury optical and fashion brands.
+
+## Education
+
+### MSc in Human-Computer Interaction with Ergonomics, 2014-2015
+*University College London*
+
+My MSc thesis project investigated the <a href="https://2018-christie-portfolio.netlify.com/download/MasterSummary.pdf" target="_blank">validity of numerical gamer ratings</a>, in collaboration with Sony Computer Entertainment Europe.
+
+### BSc in Psychology, 2009-2012
+*University College London*
+
+Immersive exposure and practice in theories and research methods in psychology, including applied decision making, cognitive psychology, and organisational behaviour.
