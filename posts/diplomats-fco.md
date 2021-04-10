@@ -7,12 +7,10 @@ timeframe: 6 months
 image: /static/img/work-diplomats-fco.png
 tags:
   - Enterprise Product
-  - Minimum Viable Product
   - User Research
   - Usability test
-  - Stakeholder Management
   - Workshop Delivery
-  - Desktop web app
+  - Web app
   - Co-Design
 ---
 

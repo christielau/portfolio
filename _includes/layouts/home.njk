@@ -3,12 +3,28 @@ layout: layouts/base.njk
 section: home
 ---
 
-<div class="mainpage">
-<main>
-{{ layoutContent | safe }}
 
-{% set postslist = collections.posts %}
-{% include "components/postslist-home.njk" %}
-</main>
-{% include "components/sidebar.njk" %}
+
+{# <div class="homepage">
+	<div class="hero">
+		{% include "components/hero.njk" %}
+		
+	</div>
+	<div class="mainpage">
+		<main>
+			{{ layoutContent | safe	 }}
+			
+			{% set postslist = collections.posts %}
+			{% include "components/postslist-home.njk" %} 
+
+			#}
+
+			<div class="mainpage">
+			<main>
+
+			{{ layoutContent | safe }}
+
+		</main>
+	{% include "components/sidebar.njk" %}
+	</div>
 </div>

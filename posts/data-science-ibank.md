@@ -7,13 +7,12 @@ timeframe: 8 months
 image: /static/img/work-data-science-ibank.png
 tags:
   - Enterprise Product
-  - Minimum Viable Product 
-  - Desktop web app
+  - Web app
   - User Research
   - Usability test
-  - Stakeholder Management
   - Workshop Delivery
   - Co-Design
+  - Finance
 ---
 
 > Q: Why would a bank need UX people in a data science project? 

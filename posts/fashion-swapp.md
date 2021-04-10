@@ -8,8 +8,7 @@ image: /static/img/work-fashion-swapp.png
 tags:
   - Mobile app
   - Prototyping
-  - Interviews
-  - Surveys
+  - User Research
 ---
 
 To test initial traction and define the market size of a clothes swapping app, I helped created landing pages for different niches, ran surveys to understand the demographics and their fashion habits, and conducted usability tests on the prelaunch app. 

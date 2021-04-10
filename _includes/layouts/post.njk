@@ -13,7 +13,10 @@ section: post
       {{ layoutContent | safe }}
 
     </article>
-
+    
+    {% set postslist = collections.posts %}
+    {% include "components/postslist-home.njk" %}
+    
     <nav>
       <a href="{{ '/work/' | url }}">← See all my work</a>
     </nav>

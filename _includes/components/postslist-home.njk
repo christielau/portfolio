@@ -1,10 +1,9 @@
-<h2>Recent projects <i class="twa twa-information-desk-person"></i></h2>
+<h3>Recent projects <i class="twa twa-information-desk-person"></i></h3>
+
+
 <section class="postslist-home">
-	
 	{% for post in postslist | reverse %}
-	{% for tag in post.data.tags %}
-	{%- if tag == "Stakeholder Management" -%}
-	
+		{%- if tag == "Enterprise Product" -%}
 		<article{% if post.url == url %} data-current="current item"{% endif %}>
 		{% if post.data.image %}
 			<a href="{{ post.url | url }}">
@@ -26,11 +25,6 @@
 				</p>
 			{% endif %}
 		</article>
-	{%- endif -%}
+		{%- endif -%}
 	{% endfor %}
-	{% endfor %}
-
 </section>
-    <nav>
-      <a href="{{ '/work/' | url }}">See all my projects <i class="twa twa-eyes"></i></a>
-    </nav>

@@ -1,12 +1,13 @@
 ---
 layout: layouts/home.njk
-title: Home
+title: 
 date: 2016-01-01T00:00:00.000Z
 permalink: /
 navtitle: Home
 tags:
   - nav
 ---
+
 # Hello, I'm Christie. <span>&#x1F481;&#x200D;&#x2640;&#xFE0F;</span>
 
 <table>
@@ -17,6 +18,7 @@ tags:
 </tr>
 </tbody>
 </table>
-Using qualitative and quantitative research insights, I design products and services to address user needs and business objectives.
+
+I solve problems for people and businesses via design. My background in psychology and human-computer interaction strengthens my evidence-driven design approach. 
 
 Outside my work, I'm a Springboard design mentor and Skillshare teacher and my class  <a href="https://skl.sh/2TOE5Qc" target="_blank">"How to Create a Storyboard: Bring Your Product/Service Concept to Life in 20 minutes"</a> has won the grand prize in the Skillshare Contest for First Time Business and Technology Teachers. <a href="https://skl.sh/2TOE5Qc" target="_blank"><span>&#x1F440;</span> Watch my class now ></a>
