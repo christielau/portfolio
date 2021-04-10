@@ -8,6 +8,7 @@ tags:
   - User Research
   - Physical Prototyping
   - Co-Design
+  - internet of things
 ---
 
 From the user research we found that the gardening community is reluctant to adopt technology - particularly that might disrupt their approaches to gardening and the sense of community amongst gardeners.

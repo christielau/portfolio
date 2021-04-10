@@ -5,9 +5,7 @@ date: 2015-06-27
 timeframe: 48 hours
 image: https://image.slidesharecdn.com/pptfinallink-150628122616-lva1-app6891/95/eventually-presentation-hackthevisual-1-638.jpg?cb=1435520336
 tags:
-  - internet of things
   - hackathon
-  - automation
 ---
 
 ## Problem space
