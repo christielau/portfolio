@@ -4,7 +4,7 @@ tags:
   - nav
 navtitle: About
 section: about
-date: 2020-06-13
+date: Last Modified
 permalink: /about/index.html
 ---
 
@@ -40,11 +40,11 @@ Immersive exposure and practice in theories and research methods in psychology, 
 
 ## Work
 
-### Consultant, <a href="https://www.capco.com/?ref=christie" target="_blank">Capco</a>
+### Senior Consultant, <a href="https://www.capco.com/?ref=christie" target="_blank">Capco</a>
  *September 2019 - now*
 
- Current project: 
- * Product design of private banking services at a global bank for both internal users and external clients
+ Current projects: 
+ * Product design of private banking services at a global bank for front-office staff and high-net-worth individuals (since February 2020)
  * Help building design capabilities under Capco Digital
  * Run design thinking training for colleagues and external clients
  
@@ -52,7 +52,7 @@ Immersive exposure and practice in theories and research methods in psychology, 
  * Strategy and proposition design for a Tier 1 European investment bank, introducing design thinking and co-creation methodologies across operations
 
 
-### Lead UX Designer, <a href="http://www.tobiasandtobias.com/?ref=christie" target="_blank">Tobias & Tobias</a>
+### Lead UX Designer, <a href="https://www.linkedin.com/company/tobias-&-tobias" target="_blank">Tobias & Tobias</a>
  *April 2018 - June 2019*
 
  I had great fun at Tobias & Tobias, a design consultancy who has worked extensively with the financial industry.

@@ -4,14 +4,21 @@ tags:
   - nav
 navtitle: Now
 section: now
-date:  Last Modified
+date:  2021-04-10
 permalink: /now/index.html
 ---
 
 ## My work
-I'm now working as a senior design consultant at Capco, a global management consultancy specialised in financial services. 
 
-Currently I'm designing the journeys associated with account lifecycle management for the private banking group at a global bank. Alonside my project, I help raise awareness of design within Capco and run design thinking trainings. I'm providing pro-bono consulting for the Hackney Foodbank.
+Current client: Private banking group of a global tier-1 bank (since February 2020)
+
+I am designing the alerts and notification system and the onboarding experience of a banking app for high-net-worth individuals. 
+
+Alonside my project, I help raise awareness of design within Capco and run design thinking trainings. Recently I'm writing design blog posts. 
+
+Recently I'm promoted to senior design consultant and I'm grateful for everyone's encouragement and support. <span>&#128522;</span>
+
+[comment]: # (I'm providing pro-bono consulting for the Hackney Foodbank.)
 
 
 ## Outside of work
@@ -19,7 +26,7 @@ Currently I'm designing the journeys associated with account lifecycle managemen
 
 I'm a mentor on <a href="https://adplist.org/mentors/christie-lau" target="_blank">ADPlist</a> and I enjoy meeting with people who're new to the industry about design and career.If you would like a chat about design career, feel free to get in touch. 
 
-Open to new opportunities.
+Open to new opportunities. <span>&#128075;</span>
 
 ## Current interest
 * Design workplace experiences to change people’s work-life from core to surface
