@@ -4,7 +4,7 @@ tags:
   - nav
 navtitle: Now
 section: now
-date:  2021-04-10
+date:  2021-05-11
 permalink: /now/index.html
 ---
 
@@ -12,7 +12,7 @@ permalink: /now/index.html
 
 Current client: Private banking group of a global tier-1 bank (since February 2020)
 
-I am designing the alerts and notification system and the onboarding experience of a banking app for high-net-worth individuals. 
+I'm designing the alerts and notification system and the onboarding experience of a banking app for high-net-worth individuals. 
 
 Alonside my project, I help raise awareness of design within Capco and run design thinking trainings. Recently I'm writing design blog posts. 
 
@@ -26,14 +26,16 @@ Recently I'm promoted to senior design consultant and I'm grateful for everyone'
 
 I'm a mentor on <a href="https://adplist.org/mentors/christie-lau" target="_blank">ADPlist</a> and I enjoy meeting with people who're new to the industry about design and career.If you would like a chat about design career, feel free to get in touch. 
 
-Open to new opportunities. <span>&#128075;</span>
+Open to new design opportunities. <span>&#128075;</span>
+
+Recently bought a second-hand Brompton bike <span>&#57654;</span> - getting ready for a healthier post-pandemic lifestyle while reducing our carbon footprint.
 
 ## Current interest
 * Design workplace experiences to change people’s work-life from core to surface
 * Design beyond human-centred design: planet-centric design
 * Empathise with people via research and participatory methods
-* Make sense of chaos: Information architecture
-* Grow my food, food waste and plastic waste reduction
+* Make sense of chaos: information architecture and system design
+* Reduce food waste and one-off, disposable waste
 
 ### What I want to do more of
 * Play with our hands: Tangible user interfaces
@@ -47,8 +49,8 @@ Open to new opportunities. <span>&#128075;</span>
 
 
 ## My balcony garden (also my video call background) <span>&#x1f33f;</span>
-+ Propagating pilea peperomioides and aloe vera
-+ Growing leafy salads (pak choi, rocket leaves, tomatoes) and herbs
++ Propagating cherry tomato seeds
++ Growing strawberries and herbs
 + Keeping a wormery on my balcony (Est. March 2019)
 
 <hr>
