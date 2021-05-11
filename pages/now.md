@@ -26,9 +26,9 @@ Recently I'm promoted to senior design consultant and I'm grateful for everyone'
 
 I'm a mentor on <a href="https://adplist.org/mentors/christie-lau" target="_blank">ADPlist</a> and I enjoy meeting with people who're new to the industry about design and career.If you would like a chat about design career, feel free to get in touch. 
 
-Open to new design opportunities. <span>&#128075;</span>
+Open to new opportunities. <span>&#128075;</span>
 
-Recently bought a second-hand Brompton bike <span>&#57654;</span> - getting ready for a healthier post-pandemic lifestyle while reducing our carbon footprint.
+Recently bought a second-hand Brompton bike <span>&#128690;</span> - getting ready for a healthier post-pandemic lifestyle while reducing our carbon footprint.
 
 ## Current interest
 * Design workplace experiences to change people’s work-life from core to surface
