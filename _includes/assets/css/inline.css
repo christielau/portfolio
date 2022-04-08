@@ -246,19 +246,34 @@ ul {
 }
 
 /* Header Logo (style as h2) */
-header > em {
+a[href].headerMyName {
+	color: var(--headline);
 	display: block;
-	font-size: 2em;
-	margin: .67em 0;
-	font-weight: bold;
+	/* font-size: 2em; */
+	/* margin: .67em 0; */
+	/* font-weight: bold; */
 	font-style: normal;
+
+	border-bottom: 0.15em solid var(--primary);
+	display: inline-block;
+	line-height: 1;
+}
+a[href].headerMyName:link{
+	text-decoration: none;
+}
+a[href].headerMyName:hover{
+	text-decoration: none;
+	color: var(--primary);
 }
 
-header > em > a {
-  color:var(--primary);
-}
+/* .underline {
+  border-bottom: 0.15rem solid #f5d04c;
+  display: inline-block;
+  line-height: 1;
+} */
 
-header > em > small {
+
+header > headerMyTitle {
 	display: block;
 	font-size: .5em;
 	font-weight: normal;
