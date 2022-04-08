@@ -1,13 +1,13 @@
 /* styles */
 
 :root {
-	--background: #f2f7f5;
-  --headline: #00473e;
-  --paragraph: #475d5b;
+	--background: #FCFCFC;
+  --headline: #0a0a0aff;
+  --paragraph: #0a0a0aff;
 	--white: white;
-	--primary: #faae2b;
-	--secondary: #4fc4cf;
-  --tertiary: #fa5246;
+	--primary: #f5d04c;
+	--secondary: #d46d0d;
+  --tertiary: #f9e69f;
 }
 
 *, *:before, *:after {
@@ -29,14 +29,14 @@ body {
 	height: 100vh;
 	grid-template-columns: 3fr 1fr;*/
 	/*grid-template-rows: auto 1fr auto;*/
-	/*grid-template-areas: 
+	/*grid-template-areas:
     "header header"
     "main sidebar"
     "footer footer";
 	*/
 	display: grid;
 	height: 100vh;
-	grid-template-areas: 
+	grid-template-areas:
     "header"
     "wrapper"
     "footer";
@@ -67,7 +67,7 @@ body {
   body {
     padding:0 2em;
     height: 100vh;
-    grid-template-areas: 
+    grid-template-areas:
       "header"
       "wrapper"
       "footer";
@@ -110,7 +110,7 @@ body {
   	margin: auto;
   	max-width: 1240px;
     height: 100vh;
-    grid-template-areas: 
+    grid-template-areas:
       "header"
       "wrapper"
       "footer";
@@ -131,7 +131,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 1em;
-	grid-template-areas: 
+	grid-template-areas:
     "article article";
 }
     :root {
@@ -161,16 +161,16 @@ main {
   grid-area: casestudydata;
 }
 .homepage{
-  grid-area: homepage;	
+  grid-area: homepage;
 }
 .hero{
-  grid-area: hero;	
+  grid-area: hero;
 }
 .herocontent{
-  grid-area: herocontent;	
+  grid-area: herocontent;
 }
 .profilepic{
-  grid-area: profilepic;	
+  grid-area: profilepic;
 }
 main > section .postslist-home > article {
   grid-area: article;
@@ -401,4 +401,3 @@ blockquote {
 blockquote p {
   display: inline;
 }
-
