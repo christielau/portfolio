@@ -5,7 +5,6 @@ date: 2016-01-01T00:00:00.000Z
 permalink: /
 navtitle: Home
 tags:
-  - nav
 ---
 
 # Hello, I'm Christie. <span>&#x1F481;&#x200D;&#x2640;&#xFE0F;</span>

@@ -249,11 +249,18 @@ ul {
 a[href].headerMyName {
 	color: var(--headline);
 	display: block;
-	/* font-size: 2em; */
 	/* margin: .67em 0; */
 	/* font-weight: bold; */
 	font-style: normal;
-
+	/* h2 styles */
+		display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+		/* end of h2 styles */
 	border-bottom: 0.15em solid var(--primary);
 	display: inline-block;
 	line-height: 1;
@@ -271,14 +278,7 @@ a[href].headerMyName:hover{
   display: inline-block;
   line-height: 1;
 } */
-
-
-header > headerMyTitle {
-	display: block;
-	font-size: .5em;
-	font-weight: normal;
-	font-style: normal;
-}
+/* source for underline code:https://codepen.io/johndjameson/pen/ZpLQqV */
 
 /* Header Nav */
 header nav ul :first-child {
@@ -287,7 +287,11 @@ header nav ul :first-child {
 
 header nav li {
 	display: inline-block;
-	margin: 0 .5em;
+	margin: 0 1em;
+	font-size: small;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+
 }
 
 header nav li a[href]:not(:hover) {
