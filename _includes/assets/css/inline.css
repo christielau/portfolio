@@ -4,6 +4,7 @@
 	--background: #FCFCFC;
   --headline: #0a0a0aff;
   --paragraph: #0a0a0aff;
+	--text50: #939597ff;;
 	--white: white;
 	--primary: #f5d04c;
 	--secondary: #d46d0d;
@@ -200,6 +201,10 @@ h1,h2,h3,h4,h5{
   color: var(--headline);
 }
 
+h6{
+  color: var(--text50);
+}
+
 a[href],
 a[href]:visited {
 	color: var(--secondary);
@@ -212,6 +217,11 @@ a[href]:not(:hover) {
 a[href]:hover {
   color: var(--primary);
 }
+
+a[href].newtab{
+	target:"_blank"
+}
+
 
 main {
 	max-width: 40em;
@@ -248,12 +258,11 @@ ul {
 /* Header Logo (style as h2) */
 a[href].headerMyName {
 	color: var(--headline);
-	display: block;
 	/* margin: .67em 0; */
 	/* font-weight: bold; */
 	font-style: normal;
 	/* h2 styles */
-		display: block;
+		/* display: block; */
     font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0em;
@@ -350,6 +359,7 @@ a[rel="tag"]:visited {
   border: 1px solid var(--primary);
 	background-color: var(--primary);
 	color: var(--white);
+	font-weight: 700;
   border-radius: .25em;
   text-decoration: none;
 	margin: 0 .5em .5em 0;
@@ -393,7 +403,8 @@ textarea {
 button {
 	border: 1px solid var(--primary);
 	background-color: var(--primary);
-	color: var(--white);
+	color: var(--paragraph);
+	font-weight: 700;
 	cursor: pointer;
 }
 
@@ -420,3 +431,5 @@ blockquote {
 blockquote p {
   display: inline;
 }
+
+/* tabs  */
