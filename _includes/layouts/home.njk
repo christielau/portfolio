@@ -4,27 +4,21 @@ section: home
 ---
 
 
+<div class="homepage">
+  {% include "components/hero.njk" %}
 
-{# <div class="homepage">
-	<div class="hero">
-		{% include "components/hero.njk" %}
-		
-	</div>
-	<div class="mainpage">
-		<main>
-			{{ layoutContent | safe	 }}
-			
-			{% set postslist = collections.posts %}
-			{% include "components/postslist-home.njk" %} 
+  <div class = "main">
+    {{ layoutContent | safe	 }}
 
-			#}
+    <div class="tagsList">
+    <h4>Things I've worked on ↓</h4>
+    {% include "components/tagslist.njk" %}
+    </div>
 
-			<div class="mainpage">
-			<main>
+    <div id="wcb" class="carbonbadge"></div>
+    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 
-			{{ layoutContent | safe }}
-
-		</main>
-	{% include "components/sidebar.njk" %}
-	</div>
+  </div>
 </div>
+
+{# {% set postslist = collections.posts %} {% include "components/postslist-home.njk" %} #}

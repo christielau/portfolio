@@ -49,18 +49,30 @@ body {
    	"sidebar";
    }
 
+/* casestudy page layout */
 .casestudy {
     display: grid;
    	grid-template-areas:
    	"casestudydata"
    	"main";
    }
-.hero {
-    display: grid;
-   	grid-template-areas:
-   	"profilepic"
-   	"herocontent";
-   }
+
+/* homepage layout mobile */
+	 .homepage {
+	 	     display: grid;
+				 padding: 0 1em;
+	 	    	grid-template-areas:
+	 				"hero"
+	 				"main";
+	 	    }
+	 .hero {
+	 	padding: 10em;
+	 			   }
+	 .homepage .hero{
+	 	min-height: 5em;
+	 }
+	 /* end homepage layout  */
+
 
 
 /* Layout styles -----------------------------------*/
@@ -77,20 +89,23 @@ body {
     grid-template-columns: 3fr 1fr;
    	grid-template-areas:"main sidebar";
    }
-   .homepage{
-   	grid-template-areas:
-   	"hero"
-   	"mainpage";
-   }
 
-   .hero {
-   	padding:0 6em;
-   	/*Cannot make this part work. Currently breaks the whole tempalte. TBC. */
-   	/*    display: grid;
-    grid-template-columns: 1fr 1fr;
-   	grid-template-areas:
-   	"profilepic herocontent";*/
-   }
+	 /* homepage layout  */
+	 .homepage {
+				 display: grid;
+				 padding: 0 10em;
+					grid-template-areas:
+					"hero"
+					"main";
+				}
+	 .hero {
+		padding: 10em;
+					 }
+	 .homepage .hero{
+		min-height: 10em;
+	 }
+	 /* end homepage layout  */
+	 
 	.casestudy {
     grid-template-columns: 1fr 3fr;
    	grid-template-areas:"casestudydata main";
@@ -121,9 +136,22 @@ body {
    	grid-template-areas:"main sidebar";
    }
 
-   .hero {
-   	padding:0 10em;
-   }
+	 /* homepage layout  */
+	 .homepage {
+	 	     display: grid;
+	 			 padding: 0 10em;
+	 	    	grid-template-areas:
+	 				"hero"
+	 				"main";
+	 	    }
+	 .hero {
+	 	padding: 10em;
+	 			   }
+	 .homepage .hero{
+	 	min-height: 10em;
+	 }
+	 /* end homepage layout  */
+
    .casestudy {
     grid-template-columns: 1fr 3fr;
    	grid-template-areas:"casestudydata main ";
@@ -312,15 +340,15 @@ header nav li a[data-current="current item"] {
 	text-decoration: underline;
 }
 
+/* hero h1  h6 */
+.hero > h6{
+	margin-block-start: 0em;
+}
+
 /* sidebar, casestudydata */
 .sidebar > h3,
 .casestudydata > h3{
 	margin: 0 0 .67em 0;
-}
-
-/* hero */
-.hero {
-
 }
 
 /*divider*/

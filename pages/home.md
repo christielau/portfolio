@@ -6,12 +6,6 @@ permalink: /
 navtitle: Home
 tags:
 ---
-
-# Strive to design a better future for humanity and the planet <span>	&#127759;</span>
-###### ↑ Rather bold statement summing up what I aspire in my career
-
-
-
 Hi, I’m Christie, a product designer (UX) based in London. I solve problems for people and businesses via design. My background in psychology and human-computer interaction strengthens my evidence-driven design approach. <span>&#x1F481;&#x200D;&#x2640;&#xFE0F;</span>
 
 > My class  <a href="https://skl.sh/2TOE5Qc" target="_blank">"How to Create a Storyboard: Bring Your Product/Service Concept to Life in 20 minutes"</a> has won the grand prize in the Skillshare Contest for First Time Business and Technology Teachers.

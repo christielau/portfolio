@@ -14,6 +14,7 @@ module.exports = function(collection) {
           case "nav":
           case "item":
           case "items":
+          case "post":
             return false;
         }
         return true;
