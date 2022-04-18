@@ -106,6 +106,13 @@ body {
 	 }
 	 /* end homepage layout  */
 
+/* header layout */
+.headerNEW {
+ grid-template-columns: 3fr 1fr;
+ grid-template-areas:"MyName nav";
+}
+/* end header layout */
+
 	.casestudy {
     grid-template-columns: 1fr 3fr;
    	grid-template-areas:"casestudydata main";
@@ -177,6 +184,16 @@ body {
 header {
   grid-area: header;
 }
+headerNEW {
+  grid-area: headerNEW;
+}
+nav {
+  grid-area: nav;
+}
+MyName {
+  grid-area: MyName;
+}
+
 .wrapper{
 	grid-area: wrapper;
 }
@@ -211,7 +228,7 @@ footer {
 }
 
 /* Layout paddings -----------------------------------*/
-header, main,
+headerNEW, header, main,
 .sidebar,.hero,
 .casestudydata,
 footer {
@@ -282,6 +299,13 @@ ul {
 	padding: 0;
 	list-style: disc inside;
 }
+
+/* temporary - see .headerNEW layout*/
+/* header layout */
+header{
+	text-align: center;
+}
+
 
 /* Header Logo (style as h2) */
 a[href].headerMyName {
