@@ -2,6 +2,11 @@ const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
+module.exports = function(eleventyConfig) {
+ eleventyConfig.addPlugin(UpgradeHelper);
+};
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");

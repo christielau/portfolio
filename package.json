@@ -28,6 +28,7 @@
     "markdown-it-anchor": "^5.0.2"
   },
   "dependencies": {
+    "@11ty/eleventy-upgrade-help": "^1.0.1",
     "clean-css": "^4.2.1",
     "html-minifier": "^4.0.0",
     "minimist": "^1.2.6",
