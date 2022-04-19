@@ -10,5 +10,3 @@ Hi, I’m Christie, a product designer (UX) based in London. I solve problems fo
 
 > My class  <a href="https://skl.sh/2TOE5Qc" target="_blank">"How to Create a Storyboard: Bring Your Product/Service Concept to Life in 20 minutes"</a> has won the grand prize in the Skillshare Contest for First Time Business and Technology Teachers.
 <a href="https://skl.sh/2TOE5Qc" target="_blank">Watch my class now <span>&#x1F440;</span> →</a>
-
-I see my personal website (this one you're looking at right now <span>&#128521;</span>) as my playground for learning to code. I code this website using <a href="https://www.11ty.dev/" target="_blank"> Eleventy</a>. Still very far from what I've got on my design sketches, getting there.
