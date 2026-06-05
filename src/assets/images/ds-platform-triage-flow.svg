@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Triage: Job or Environment Stalled</title>
+  <desc id="desc">A portfolio-safe flowchart showing how ownership and blockers were made visible so teams could recover or escalate efficiently.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fffdf7; }
+      .title { font: 700 44px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .subtitle { font: 500 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .box { fill: #ffffff; stroke: #e8e2d6; stroke-width: 2; }
+      .diamond { fill: #ffffff; stroke: #ffd84d; stroke-width: 5; }
+      .text { font: 650 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .pill { fill: #111111; }
+      .pillText { font: 700 14px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #ffffff; letter-spacing: 0.03em; }
+      .arrow { stroke: #111111; stroke-width: 3; fill: none; marker-end: url(#arrowHead); }
+      .small { font: 600 16px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+    </style>
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111111" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1000" rx="28" />
+
+  <text class="title" x="96" y="120">Triage: Job / Environment Stalled</text>
+  <text class="subtitle" x="96" y="158">Operational visibility: recover fast, or escalate with the right context.</text>
+
+  <!-- Start -->
+  <g>
+    <rect class="box" x="520" y="250" width="560" height="90" rx="18" />
+    <text class="text" x="800" y="292" text-anchor="middle">Job fails or environment stalls</text>
+    <text class="small" x="800" y="320" text-anchor="middle">Outcome visible in the same workspace</text>
+
+    <rect class="pill" x="545" y="262" width="150" height="28" rx="14" />
+    <text class="pillText" x="620" y="282" text-anchor="middle">DATA SCIENTIST</text>
+  </g>
+
+  <!-- Context -->
+  <g>
+    <rect class="box" x="520" y="370" width="560" height="110" rx="18" />
+    <text class="text" x="800" y="410" text-anchor="middle">Check project / tenant context</text>
+    <text class="small" x="800" y="438" text-anchor="middle">Identify ownership, dependencies, and blockers</text>
+
+    <rect class="pill" x="545" y="382" width="180" height="28" rx="14" />
+    <text class="pillText" x="635" y="402" text-anchor="middle">DELIVERY MANAGER</text>
+  </g>
+
+  <!-- Decision -->
+  <g>
+    <polygon class="diamond" points="800,510 980,600 800,690 620,600" />
+    <text class="text" x="800" y="595" text-anchor="middle">Self-serve fix possible?</text>
+  </g>
+
+  <!-- Left: self-serve -->
+  <g>
+    <rect class="box" x="160" y="720" width="520" height="120" rx="18" />
+    <text class="text" x="420" y="762" text-anchor="middle">Recover in workflow</text>
+    <text class="small" x="420" y="790" text-anchor="middle">Rerun, adjust config, request access</text>
+    <text class="small" x="420" y="814" text-anchor="middle">with clear ownership</text>
+
+    <rect class="pill" x="185" y="732" width="150" height="28" rx="14" />
+    <text class="pillText" x="260" y="752" text-anchor="middle">SELF-SERVE</text>
+
+    <rect class="box" x="160" y="870" width="520" height="70" rx="18" />
+    <text class="text" x="420" y="914" text-anchor="middle">Continue delivery work</text>
+  </g>
+
+  <!-- Right: escalate -->
+  <g>
+    <rect class="box" x="920" y="720" width="520" height="120" rx="18" />
+    <text class="text" x="1180" y="762" text-anchor="middle">Escalate with context</text>
+    <text class="small" x="1180" y="790" text-anchor="middle">Ticket + logs + usage signals</text>
+    <text class="small" x="1180" y="814" text-anchor="middle">(avoid “pinging around”)</text>
+
+    <rect class="pill" x="945" y="732" width="180" height="28" rx="14" />
+    <text class="pillText" x="1035" y="752" text-anchor="middle">ADMIN / SUPPORT</text>
+
+    <rect class="box" x="920" y="870" width="520" height="70" rx="18" />
+    <text class="text" x="1180" y="914" text-anchor="middle">Resolved and traceable</text>
+  </g>
+
+  <!-- Arrows -->
+  <g>
+    <line class="arrow" x1="800" y1="340" x2="800" y2="370" />
+    <line class="arrow" x1="800" y1="480" x2="800" y2="510" />
+
+    <path class="arrow" d="M 700 640 C 560 680 520 690 420 720" />
+    <text class="small" x="610" y="700">YES</text>
+
+    <path class="arrow" d="M 900 640 C 1040 680 1080 690 1180 720" />
+    <text class="small" x="980" y="700">NO</text>
+
+    <line class="arrow" x1="420" y1="840" x2="420" y2="870" />
+    <line class="arrow" x1="1180" y1="840" x2="1180" y2="870" />
+  </g>
+</svg>
+

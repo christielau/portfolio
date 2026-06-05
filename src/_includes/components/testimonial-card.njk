@@ -1,0 +1,9 @@
+<article class="testimonial-card card-shell testimonial-card--{{ testimonial.variant or testimonial.tone or 'brand' }}">
+  <p class="testimonial-card__mark" aria-hidden="true">“</p>
+  <p class="testimonial-card__text">{{ testimonial.quote or testimonial.text }}</p>
+  {%- if testimonial.role %}
+  <footer class="testimonial-card__meta">
+    <p class="testimonial-card__role">{{ testimonial.role }}</p>
+  </footer>
+  {%- endif %}
+</article>

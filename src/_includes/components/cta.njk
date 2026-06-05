@@ -1,0 +1,9 @@
+{% set c = cta or {} %}
+{% set ctaVariant = c.variant or "default" %}
+<div class="container">
+  <div class="cta{% if ctaVariant == 'ink' %} cta--ink{% endif %}">
+    <h2 class="cta__title">{{ c.title or "Have a complex service problem?" }}</h2>
+    <p class="cta__body">{{ c.body or "I help teams make ambiguous, data-heavy services legible and move from discovery into delivery." }}</p>
+    <a class="button button--primary" href="{{ c.href or ('mailto:' + site.email) }}">{{ c.buttonLabel or "Get in touch" }}</a>
+  </div>
+</div>

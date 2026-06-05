@@ -1,0 +1,56 @@
+<div class="about-page">
+<section class="section about-hero">
+  <div class="container about-hero__inner">
+    <div>
+      <p class="eyebrow">{{ about.hero.eyebrow }}</p>
+      <h1 class="about-hero__title">{{ about.hero.title }}</h1>
+      <p class="about-hero__positioning">{{ about.hero.positioning }}</p>
+      <p class="prose">{{ about.hero.intro }}</p>
+      <p class="about-hero__actions">
+        <a class="button button--primary" href="{{ about.hero.cvHref }}">View CV</a>
+      </p>
+    </div>
+    <figure class="about-profile">
+      <img class="about-profile__img" src="{{ about.hero.image.src }}" alt="{{ about.hero.image.alt }}" loading="lazy" />
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>What others say about my work</h2>
+    {% set testimonialItems = testimonials.aboutPage %}
+    {% include "components/testimonial-grid.njk" %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Beyond work</h2>
+    <div class="about-card-grid">
+      {% for card in beyondWorkCards %}
+        {% include "components/about-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>What I like</h2>
+    <ul class="tag-list">
+      {% for item in about.whatILike %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>{{ about.connect.title }}</h2>
+    <p class="prose">{{ about.connect.body }}</p>
+    <p>Explore <a href="/speaking/">speaking and workshops</a> or <a href="mailto:{{ site.email }}">email me directly</a>.</p>
+  </div>
+</section>
+</div>

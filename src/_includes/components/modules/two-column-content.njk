@@ -1,0 +1,26 @@
+{% set m = module or section %}
+{% set twoColVariant = m.variant or "editorial" %}
+<section class="section module-two-column-content module-two-column-content--{{ twoColVariant }}">
+  <div class="container module-two-column-content__inner">
+    <article class="module-two-column-content__panel">
+      {% if m.left and m.left.eyebrow %}<p class="eyebrow">{{ m.left.eyebrow }}</p>{% endif %}
+      {% if m.left and m.left.title %}<h2 class="section__title">{{ m.left.title }}</h2>{% endif %}
+      {% if m.left and m.left.body %}<div class="prose">{{ m.left.body | safe }}</div>{% endif %}
+      {% if m.left and m.left.items and (m.left.items | length) > 0 %}
+      <ul class="module-two-column-content__list">
+        {% for item in m.left.items %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </article>
+    <article class="module-two-column-content__panel">
+      {% if m.right and m.right.eyebrow %}<p class="eyebrow">{{ m.right.eyebrow }}</p>{% endif %}
+      {% if m.right and m.right.title %}<h2 class="section__title">{{ m.right.title }}</h2>{% endif %}
+      {% if m.right and m.right.body %}<div class="prose">{{ m.right.body | safe }}</div>{% endif %}
+      {% if m.right and m.right.items and (m.right.items | length) > 0 %}
+      <ul class="module-two-column-content__list">
+        {% for item in m.right.items %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </article>
+  </div>
+</section>

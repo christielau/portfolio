@@ -1,0 +1,10 @@
+{% set m = module or section %}
+{% set visualSize = m.size or "contained" %}
+<section class="section module-visual-block module-visual-block--{{ visualSize }}">
+  <div class="container">
+    <figure class="module-visual-block__figure">
+      <img src="{{ m.image }}" alt="{{ (m.imageAlt or '') | escape }}" loading="lazy" />
+      {% if m.caption %}<figcaption class="module-visual-block__caption">{{ m.caption }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>

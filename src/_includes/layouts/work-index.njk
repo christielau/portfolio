@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+---
+{% set heroTitle = work.workPageHero.title %}
+{% set heroBody = work.workPageHero.body %}
+{% set eyebrow = work.workPageHero.eyebrow %}
+{% set heroImage = work.workPageHero.image %}
+{% include "components/hero.njk" %}
+
+<section class="section">
+  <div class="container">
+    <ul class="card-grid">
+      {% for project in collections.work %}
+      <li>
+        {% set card = { url: project.url, theme: project.data.theme, data: project.data } %}
+        {% include "components/card.njk" %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

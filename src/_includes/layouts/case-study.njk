@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+---
+<article class="case-study">
+  {% set caseModules = modules or sections or [] %}
+  {% set hasMermaid = false %}
+  {% for m in caseModules %}
+    {% if m.type == "mermaidDiagram" or m.type == "mermaid-diagram" %}
+      {% set hasMermaid = true %}
+    {% endif %}
+  {% endfor %}
+  {% for module in caseModules %}
+    {% if module.type == "hero" %}{% include "components/modules/hero.njk" %}
+    {% elif module.type == "projectSnapshot" %}{% include "components/modules/projectSnapshot.njk" %}
+    {% elif module.type == "imageText" %}{% include "components/modules/imageText.njk" %}
+    {% elif module.type == "metricRow" %}{% include "components/modules/metricRow.njk" %}
+    {% elif module.type == "metrics-row" %}{% include "components/modules/metricRow.njk" %}
+    {% elif module.type == "callout" %}{% include "components/modules/callout.njk" %}
+    {% elif module.type == "processSection" %}{% include "components/modules/processSection.njk" %}
+    {% elif module.type == "process-timeline" %}{% include "components/modules/process-timeline.njk" %}
+    {% elif module.type == "sticky-section-nav" %}{% include "components/modules/sticky-section-nav.njk" %}
+    {% elif module.type == "decisionBlock" %}{% include "components/modules/decisionBlock.njk" %}
+    {% elif module.type == "insight-grid" %}{% include "components/modules/insight-grid.njk" %}
+    {% elif module.type == "reflectionBlock" %}{% include "components/modules/reflectionBlock.njk" %}
+    {% elif module.type == "mediaFigure" %}{% include "components/modules/mediaFigure.njk" %}
+    {% elif module.type == "visual-block" %}{% include "components/modules/visual-block.njk" %}
+    {% elif module.type == "image-strip" %}{% include "components/modules/image-strip.njk" %}
+    {% elif module.type == "two-column-content" %}{% include "components/modules/two-column-content.njk" %}
+    {% elif module.type == "mermaidDiagram" or module.type == "mermaid-diagram" %}{% include "components/modules/mermaid-diagram.njk" %}
+    {% endif %}
+  {% endfor %}
+</article>
+{% if hasMermaid %}
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "default" });
+</script>
+{% endif %}

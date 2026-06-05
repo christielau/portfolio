@@ -1,0 +1,270 @@
+---
+layout: layouts/base.njk
+title: Component Library
+permalink: /component-library/
+description: Internal reference page for reusable components and modules.
+---
+
+{% macro docHeader(item) %}
+  <p class="eyebrow">{{ item.category }}</p>
+  <h3>{{ item.name }}</h3>
+  <p>{{ item.purpose }}</p>
+  <p><strong>When to use:</strong> {{ item.whenToUse }}</p>
+{% endmacro %}
+
+{% macro usageBlock(item) %}
+  {% if item.examples and (item.examples | length) > 0 %}
+    <pre class="component-library-code"><code>{{ item.examples[0] }}</code></pre>
+  {% endif %}
+{% endmacro %}
+
+<section class="section component-library-intro">
+  <div class="container">
+    <p class="eyebrow">Internal reference</p>
+    <h1>{{ componentLibrary.intro.title }}</h1>
+    <p class="prose">{{ componentLibrary.intro.description }}</p>
+    <p class="muted">{{ componentLibrary.intro.note }}</p>
+  </div>
+</section>
+
+<div class="container component-library-page">
+  <aside class="component-library-sidebar" aria-label="Component library sections">
+    <nav class="component-library-sidebar__nav">
+      <p class="eyebrow">On this page</p>
+      <ul>
+        <li><a href="#foundations">Foundations</a></li>
+        <li><a href="#layouts">Layouts</a></li>
+        <li><a href="#case-study-modules">Case study modules</a></li>
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#global-components">Global components</a></li>
+        <li><a href="#cta">CTA</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="component-library-main">
+    <section id="foundations" class="section component-library-section">
+      <h2>Foundations</h2>
+      {% for item in componentLibrary.foundations %}
+      <article class="component-library-doc{% if item.fullWidthContent %} component-library-doc--content-full{% endif %}">
+        <div>
+          {{ docHeader(item) }}
+          {% set props = item.props %}
+          {% include "components/component-library/api-table.njk" %}
+          {{ usageBlock(item) }}
+          <p class="muted">{{ item.previewNote }}</p>
+        </div>
+        <div class="component-library-preview-block">
+          <h4>Preview</h4>
+          <p class="muted">Global primitives shown across all page previews.</p>
+        </div>
+      </article>
+      {% endfor %}
+    </section>
+
+    <section id="layouts" class="section component-library-section">
+      <h2>Layouts</h2>
+      {% for item in componentLibrary.layouts %}
+      <article class="component-library-doc{% if item.fullWidthContent %} component-library-doc--content-full{% endif %}">
+        <div>
+          {{ docHeader(item) }}
+          {% set props = item.props %}
+          {% include "components/component-library/api-table.njk" %}
+          {{ usageBlock(item) }}
+        </div>
+        <div class="component-library-preview-block">
+          <h4>Preview</h4>
+          <p class="muted">{{ item.previewNote }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </section>
+
+    <section id="case-study-modules" class="section component-library-section">
+      <h2>Case study modules</h2>
+      <p class="prose">These modules are the primary building blocks for flexible portfolio case studies.</p>
+      {% for item in componentLibrary.modules %}
+      <article class="component-library-doc{% if item.fullWidthContent %} component-library-doc--content-full{% endif %}">
+        <div>
+          {{ docHeader(item) }}
+          {% set props = item.props %}
+          {% include "components/component-library/api-table.njk" %}
+          {{ usageBlock(item) }}
+          {% if item.notes %}
+          <p class="muted">{{ item.notes }}</p>
+          {% endif %}
+        </div>
+        <div class="component-library-preview-block">
+          <h4>Preview</h4>
+          {% set module = item.sample %}
+          {% if item.name == "projectSnapshot.njk" %}
+            {% include "components/modules/projectSnapshot.njk" %}
+          {% elif item.name == "decisionBlock.njk" %}
+            {% include "components/modules/decisionBlock.njk" %}
+          {% elif item.name == "processSection.njk" %}
+            {% include "components/modules/processSection.njk" %}
+          {% elif item.name == "metricRow.njk" %}
+            {% include "components/modules/metricRow.njk" %}
+          {% elif item.name == "imageText.njk" %}
+            {% include "components/modules/imageText.njk" %}
+          {% elif item.name == "mediaFigure.njk" %}
+            {% include "components/modules/mediaFigure.njk" %}
+          {% elif item.name == "callout.njk" %}
+            {% include "components/modules/callout.njk" %}
+          {% elif item.name == "reflectionBlock.njk" %}
+            {% include "components/modules/reflectionBlock.njk" %}
+          {% elif item.name == "hero.njk" %}
+            {% include "components/modules/hero.njk" %}
+          {% elif item.name == "two-column-content.njk" %}
+            {% include "components/modules/two-column-content.njk" %}
+          {% elif item.name == "process-timeline.njk" %}
+            {% include "components/modules/process-timeline.njk" %}
+          {% elif item.name == "sticky-section-nav.njk" %}
+            {% include "components/modules/sticky-section-nav.njk" %}
+          {% elif item.name == "visual-block.njk" %}
+            {% include "components/modules/visual-block.njk" %}
+          {% elif item.name == "image-strip.njk" %}
+            {% include "components/modules/image-strip.njk" %}
+          {% elif item.name == "insight-grid.njk" %}
+            {% include "components/modules/insight-grid.njk" %}
+          {% elif item.name == "mermaid-diagram.njk" %}
+            {% include "components/modules/mermaid-diagram.njk" %}
+          {% endif %}
+          {% if item.variants and (item.variants | length) > 0 %}
+            {% for variantData in item.variants %}
+            <div class="component-library-preview-variant">
+              <p class="component-library-variant-label">{{ variantData.label }}</p>
+              {% set module = variantData.module %}
+              {% if item.name == "two-column-content.njk" %}
+                {% include "components/modules/two-column-content.njk" %}
+              {% elif item.name == "insight-grid.njk" %}
+                {% include "components/modules/insight-grid.njk" %}
+              {% endif %}
+            </div>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </section>
+
+    <section id="cards" class="section component-library-section">
+      <h2>Cards</h2>
+      {% for item in componentLibrary.cards %}
+      <article class="component-library-doc{% if item.fullWidthContent %} component-library-doc--content-full{% endif %}">
+        <div>
+          {{ docHeader(item) }}
+          {% set props = item.props %}
+          {% include "components/component-library/api-table.njk" %}
+          {{ usageBlock(item) }}
+        </div>
+        <div class="component-library-preview-stack">
+          <section class="component-library-preview-block">
+            <h4>Preview</h4>
+            {% if item.name == "card.njk" %}
+              <ul class="card-grid card-grid--featured">
+                {% for variant in item.variants %}
+                <li>
+                  <p class="component-library-variant-label">{{ variant.label }}</p>
+                  {% set card = variant.card %}
+                  {% include "components/card.njk" %}
+                </li>
+                {% endfor %}
+              </ul>
+            {% elif item.name == "about-card.njk" %}
+              <p class="component-library-variant-label">1-column</p>
+              <div class="component-library-grid-1">
+                {% set card = item.variants[0].card %}
+                {% include "components/about-card.njk" %}
+              </div>
+              <p class="component-library-variant-label">2-column</p>
+              <div class="component-library-grid-2">
+                {% for variant in item.variants %}
+                  {% set card = variant.card %}
+                  {% include "components/about-card.njk" %}
+                {% endfor %}
+              </div>
+              <p class="component-library-variant-label">3-column</p>
+              <div class="component-library-grid-3">
+                {% for variant in item.variants %}
+                  {% set card = variant.card %}
+                  {% include "components/about-card.njk" %}
+                {% endfor %}
+                {% set card = item.variants[1].card %}
+                {% include "components/about-card.njk" %}
+              </div>
+            {% elif item.name == "testimonial-card.njk" %}
+              <div class="testimonial-grid">
+                {% for variant in item.variants %}
+                  {% set testimonial = variant.testimonial %}
+                  {% include "components/testimonial-card.njk" %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </section>
+        </div>
+      </article>
+      {% endfor %}
+    </section>
+
+    <section id="global-components" class="section component-library-section">
+      <h2>Global components</h2>
+      {% for item in componentLibrary.globalComponents %}
+      <article class="component-library-doc{% if item.fullWidthContent %} component-library-doc--content-full{% endif %}">
+        <div>
+          {{ docHeader(item) }}
+          {% set props = item.props %}
+          {% include "components/component-library/api-table.njk" %}
+          {{ usageBlock(item) }}
+        </div>
+        <div class="component-library-preview-stack">
+          <section class="component-library-preview-block">
+            <h4>Preview</h4>
+            {% if item.name == "card-grid.njk" %}
+              <p class="component-library-variant-label">Topic variant</p>
+              {% set variant = "topic" %}
+              {% set items = item.topicItems %}
+              {% set gridClass = "speaking-topic-grid" %}
+              {% include "components/card-grid.njk" %}
+              <p class="component-library-variant-label">Talk variant</p>
+              {% set variant = "talk" %}
+              {% set items = item.talkItems %}
+              {% set gridClass = "about-card-grid speaking-talk-grid" %}
+              {% include "components/card-grid.njk" %}
+            {% elif item.name == "testimonial-grid.njk" %}
+              {% set testimonialItems = item.variants[0].items %}
+              {% include "components/testimonial-grid.njk" %}
+            {% endif %}
+          </section>
+        </div>
+      </article>
+      {% endfor %}
+    </section>
+
+    <section id="cta" class="section component-library-section">
+      <h2>CTA</h2>
+      <article class="component-library-doc">
+        <div>
+          {{ docHeader(componentLibrary.cta) }}
+          {% set props = componentLibrary.cta.props %}
+          {% include "components/component-library/api-table.njk" %}
+          {{ usageBlock(componentLibrary.cta) }}
+        </div>
+        <div class="component-library-preview-stack">
+          {% for variant in componentLibrary.cta.variants %}
+          <section class="component-library-preview-block">
+            <h4>{{ variant.label }}</h4>
+            {% set cta = variant.cta %}
+            {% include "components/cta.njk" %}
+          </section>
+          {% endfor %}
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
+
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "default" });
+</script>

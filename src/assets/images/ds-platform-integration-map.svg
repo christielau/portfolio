@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Service-Layer Integration (Internal Platform)</title>
+  <desc id="desc">A modular integration map showing a central portal and how it connects to surrounding tools and processes without replacing them.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fffdf7; }
+      .title { font: 700 44px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .subtitle { font: 500 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .node { fill: #ffffff; stroke: #e8e2d6; stroke-width: 2; }
+      .nodeAccent { stroke: #ffd84d; stroke-width: 5; }
+      .nodeTitle { font: 750 20px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .nodeBody { font: 500 16px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .arrow { stroke: #111111; stroke-width: 3; fill: none; marker-end: url(#arrowHead); stroke-dasharray: 10 8; opacity: 0.9; }
+      .note { font: 600 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+    </style>
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111111" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1000" rx="28" />
+
+  <text class="title" x="96" y="120">Service-Layer Integration</text>
+  <text class="subtitle" x="96" y="158">Create coherence without pretending one UI replaces the entire estate.</text>
+
+  <!-- Centre -->
+  <g>
+    <rect class="node nodeAccent" x="600" y="420" width="400" height="130" rx="18" />
+    <text class="nodeTitle" x="800" y="470" text-anchor="middle">Portal / Service Layer</text>
+    <text class="nodeBody" x="800" y="498" text-anchor="middle">Launcher, project spaces, usage views</text>
+    <text class="nodeBody" x="800" y="522" text-anchor="middle">Self-serve signals and controls</text>
+  </g>
+
+  <!-- Surrounding nodes -->
+  <g>
+    <rect class="node" x="180" y="300" width="300" height="90" rx="18" />
+    <text class="nodeTitle" x="330" y="340" text-anchor="middle">Data Access</text>
+    <text class="nodeBody" x="330" y="366" text-anchor="middle">Approvals and permissions</text>
+
+    <rect class="node" x="650" y="260" width="300" height="90" rx="18" />
+    <text class="nodeTitle" x="800" y="300" text-anchor="middle">Provisioning</text>
+    <text class="nodeBody" x="800" y="326" text-anchor="middle">Environments and tenants</text>
+
+    <rect class="node" x="1120" y="300" width="300" height="90" rx="18" />
+    <text class="nodeTitle" x="1270" y="340" text-anchor="middle">Documentation</text>
+    <text class="nodeBody" x="1270" y="366" text-anchor="middle">Runbooks and knowledge</text>
+
+    <rect class="node" x="180" y="520" width="300" height="90" rx="18" />
+    <text class="nodeTitle" x="330" y="560" text-anchor="middle">Ticketing / Support</text>
+    <text class="nodeBody" x="330" y="586" text-anchor="middle">Escalation paths</text>
+
+    <rect class="node" x="1120" y="520" width="300" height="90" rx="18" />
+    <text class="nodeTitle" x="1270" y="560" text-anchor="middle">Monitoring</text>
+    <text class="nodeBody" x="1270" y="586" text-anchor="middle">Health and alerts</text>
+
+    <rect class="node" x="250" y="690" width="300" height="90" rx="18" />
+    <text class="nodeTitle" x="400" y="730" text-anchor="middle">Compute &amp; Quotas</text>
+    <text class="nodeBody" x="400" y="756" text-anchor="middle">Usage and cost signals</text>
+
+    <rect class="node" x="1050" y="690" width="300" height="90" rx="18" />
+    <text class="nodeTitle" x="1200" y="730" text-anchor="middle">Job Scheduler</text>
+    <text class="nodeBody" x="1200" y="756" text-anchor="middle">Runs and outcomes</text>
+  </g>
+
+  <!-- Integration arrows -->
+  <g>
+    <line class="arrow" x1="600" y1="460" x2="480" y2="360" />
+    <line class="arrow" x1="800" y1="420" x2="800" y2="350" />
+    <line class="arrow" x1="1000" y1="460" x2="1120" y2="360" />
+    <line class="arrow" x1="600" y1="510" x2="480" y2="565" />
+    <line class="arrow" x1="1000" y1="510" x2="1120" y2="565" />
+    <line class="arrow" x1="660" y1="550" x2="520" y2="690" />
+    <line class="arrow" x1="940" y1="550" x2="1050" y2="690" />
+  </g>
+
+  <text class="note" x="96" y="900">Principle: incremental integration beats big-bang replacement for complex estates.</text>
+</svg>
+

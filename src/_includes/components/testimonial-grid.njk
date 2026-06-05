@@ -1,0 +1,6 @@
+{# testimonial-grid: only <article class="testimonial-card"> elements may be direct children of .testimonial-grid (CSS grid). Do not put Markdown body content or loose block elements inside this wrapper; use testimonial data + testimonial-card partial only. #}
+<div class="testimonial-grid">
+{%- for testimonial in testimonialItems %}
+{% include "components/testimonial-card.njk" %}
+{%- endfor %}
+</div>

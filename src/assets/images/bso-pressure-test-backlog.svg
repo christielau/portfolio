@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">SME Pressure-Test to Validation Backlog</title>
+  <desc id="desc">Three-column diagram showing how hypotheses were pressure-tested with subject matter experts and turned into explicit validation backlog items.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fffdf7; }
+      .title { font: 700 44px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .subtitle { font: 500 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .col { fill: #ffffff; stroke: #e8e2d6; stroke-width: 2; }
+      .colHeader { fill: #fff3bd; stroke: #ffd84d; stroke-width: 2; }
+      .colTitle { font: 800 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; letter-spacing: 0.02em; }
+      .card { fill: #ffffff; stroke: #e8e2d6; stroke-width: 2; }
+      .cardText { font: 650 16px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .arrow { stroke: #111111; stroke-width: 3; fill: none; marker-end: url(#arrowHead); }
+    </style>
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111111" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1000" rx="28" />
+
+  <text class="title" x="96" y="120">SME Pressure-Test → Validation Backlog</text>
+  <text class="subtitle" x="96" y="158">Turning implicit logic into explicit validation items (portfolio-safe examples).</text>
+
+  <!-- Columns -->
+  <g>
+    <rect class="col" x="100" y="260" width="440" height="560" rx="18" />
+    <rect class="colHeader" x="100" y="260" width="440" height="70" rx="18" />
+    <text class="colTitle" x="320" y="304" text-anchor="middle">HYPOTHESES</text>
+
+    <rect class="col" x="580" y="260" width="440" height="560" rx="18" />
+    <rect class="colHeader" x="580" y="260" width="440" height="70" rx="18" />
+    <text class="colTitle" x="800" y="304" text-anchor="middle">SME PRESSURE TESTS</text>
+
+    <rect class="col" x="1060" y="260" width="440" height="560" rx="18" />
+    <rect class="colHeader" x="1060" y="260" width="440" height="70" rx="18" />
+    <text class="colTitle" x="1280" y="304" text-anchor="middle">VALIDATION BACKLOG</text>
+  </g>
+
+  <!-- Cards: Hypotheses -->
+  <g>
+    <rect class="card" x="132" y="360" width="376" height="64" rx="14" />
+    <text class="cardText" x="150" y="398">Which decision moments matter first?</text>
+
+    <rect class="card" x="132" y="440" width="376" height="64" rx="14" />
+    <text class="cardText" x="150" y="478">What assumptions drive the outcome?</text>
+
+    <rect class="card" x="132" y="520" width="376" height="64" rx="14" />
+    <text class="cardText" x="150" y="558">What signals create confidence?</text>
+
+    <rect class="card" x="132" y="600" width="376" height="64" rx="14" />
+    <text class="cardText" x="150" y="638">What options exist (and when)?</text>
+
+    <rect class="card" x="132" y="680" width="376" height="64" rx="14" />
+    <text class="cardText" x="150" y="718">What trade-offs are acceptable?</text>
+  </g>
+
+  <!-- Cards: SME tests -->
+  <g>
+    <rect class="card" x="612" y="360" width="376" height="64" rx="14" />
+    <text class="cardText" x="630" y="398">Walk real scenarios end-to-end</text>
+
+    <rect class="card" x="612" y="440" width="376" height="64" rx="14" />
+    <text class="cardText" x="630" y="478">Challenge weak / missing logic</text>
+
+    <rect class="card" x="612" y="520" width="376" height="64" rx="14" />
+    <text class="cardText" x="630" y="558">Separate “must be expert” vs scaffold</text>
+
+    <rect class="card" x="612" y="600" width="376" height="64" rx="14" />
+    <text class="cardText" x="630" y="638">Test wording + decision framing</text>
+
+    <rect class="card" x="612" y="680" width="376" height="64" rx="14" />
+    <text class="cardText" x="630" y="718">Surface missing data dependencies</text>
+  </g>
+
+  <!-- Cards: Backlog -->
+  <g>
+    <rect class="card" x="1092" y="360" width="376" height="64" rx="14" />
+    <text class="cardText" x="1110" y="398">Decision scope (MVP vs later)</text>
+
+    <rect class="card" x="1092" y="440" width="376" height="64" rx="14" />
+    <text class="cardText" x="1110" y="478">Assumptions to validate (owner + method)</text>
+
+    <rect class="card" x="1092" y="520" width="376" height="64" rx="14" />
+    <text class="cardText" x="1110" y="558">Confidence signals (data quality + traceability)</text>
+
+    <rect class="card" x="1092" y="600" width="376" height="64" rx="14" />
+    <text class="cardText" x="1110" y="638">Trade-offs documented (risk / time / feasibility)</text>
+
+    <rect class="card" x="1092" y="680" width="376" height="64" rx="14" />
+    <text class="cardText" x="1110" y="718">Reporting aligned to decision journeys</text>
+  </g>
+
+  <!-- Direction arrows -->
+  <g>
+    <line class="arrow" x1="540" y1="540" x2="580" y2="540" />
+    <line class="arrow" x1="1020" y1="540" x2="1060" y2="540" />
+  </g>
+</svg>
+

@@ -1,0 +1,9 @@
+<section class="section module-callout">
+  {% set m = module or section %}
+  <div class="container">
+    <blockquote class="callout callout--{{ m.tone or 'brand' }}">
+      {% if m.label %}<p class="callout__label">{{ m.label }}</p>{% endif %}
+      <p class="callout__text">{{ m.text }}{% if m.cite %}; <cite>{{ m.cite }}</cite>{% endif %}</p>
+    </blockquote>
+  </div>
+</section>

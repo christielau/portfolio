@@ -1,0 +1,10 @@
+{% set m = module or section %}
+<nav class="section module-sticky-section-nav{% if m.sticky %} module-sticky-section-nav--enabled{% endif %}" aria-label="{{ m.ariaLabel or 'Case study sections' }}">
+  <div class="container">
+    <ul class="sticky-section-nav">
+      {% for item in m.items %}
+      <li><a href="{{ item.href }}">{{ item.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

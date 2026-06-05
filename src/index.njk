@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+title: Home
+---
+
+{% set heroTitle = work.homeHero.title %}
+{% set heroBody = work.homeHero.body %}
+{% set eyebrow = work.homeHero.eyebrow %}
+{% set heroImage = work.homeHero.image %}
+{% include "components/hero.njk" %}
+
+<section class="section section--home-cases" id="selected-case-studies">
+  <div class="container">
+    <ul class="card-grid card-grid--featured">
+      {% for card in work.featuredCases %}
+      <li>{% include "components/card.njk" %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Strengths</h2>
+    <ul class="tag-list">
+      {% for item in work.homeStrengths %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+<section class="section module-snapshot">
+  {% set m = module or section %}
+  <div class="container">
+    {% if m.title %}<h2 class="section__title">{{ m.title }}</h2>{% endif %}
+    <dl class="snapshot-grid">
+      {% for row in m.items %}
+        <div class="snapshot-grid__row">
+          <dt>{{ row.label }}</dt>
+          <dd>{{ row.value }}</dd>
+        </div>
+      {% endfor %}
+    </dl>
+  </div>
+</section>

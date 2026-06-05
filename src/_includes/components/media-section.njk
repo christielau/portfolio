@@ -1,0 +1,24 @@
+{# Two-column media hero: set `mediaSection` object with eyebrow, headingKey (optional), heading (optional), paragraphs (array), languages (optional array), image {src, alt}, layout classes. #}
+<section class="{{ mediaSection.sectionClass or 'speaking-section speaking-hero' }}">
+  <div class="{{ mediaSection.innerClass or 'speaking-hero__inner' }}">
+    <div>
+      {% if mediaSection.eyebrow %}<p class="eyebrow">{{ mediaSection.eyebrow }}</p>{% endif %}
+      {% if mediaSection.heading %}<h1>{{ mediaSection.heading }}</h1>{% endif %}
+      {%- for paragraph in mediaSection.paragraphs %}
+      <p class="prose">{{ paragraph }}</p>
+      {%- endfor %}
+      {%- if mediaSection.languages and mediaSection.languages.length %}
+      <ul class="tag-list" aria-label="{{ mediaSection.languagesLabel or 'Languages' }}">
+        {%- for language in mediaSection.languages %}
+        <li>{{ language }}</li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+    {%- if mediaSection.image and mediaSection.image.src %}
+    <figure class="{{ mediaSection.figureClass or 'speaking-hero__media' }}">
+      <img src="{{ mediaSection.image.src }}" alt="{{ mediaSection.image.alt or '' }}" />
+    </figure>
+    {%- endif %}
+  </div>
+</section>

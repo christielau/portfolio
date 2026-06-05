@@ -1,0 +1,16 @@
+<section class="section module-decisions">
+  {% set m = module or section %}
+  <div class="container">
+    {% if m.title %}<h2 class="section__title">{{ m.title }}</h2>{% endif %}
+    {% if m.intro %}<p class="lede">{{ m.intro }}</p>{% endif %}
+    <ul class="decision-grid">
+      {% for d in m.decisions %}
+        <li class="decision-card card-shell">
+          <h3>{{ d.title }}</h3>
+          <p>{{ d.body }}</p>
+          {% if d.status %}<span class="tag">{{ d.status }}</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

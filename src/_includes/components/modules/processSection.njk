@@ -1,0 +1,34 @@
+<section class="section module-process">
+  {% set m = module or section %}
+  <div class="container">
+    {% if m.title %}<h2 class="section__title">{{ m.title }}</h2>{% endif %}
+    <ol class="process">
+      {% for step in m.steps %}
+        {% set stepImg = step.image.src if step.image and step.image.src else step.image %}
+        {% set showMedia = stepImg or step.placeholder %}
+        <li class="process__step{% if showMedia %} process__step--split{% endif %}">
+          <div class="process__step__inner">
+            <div class="process__step__copy">
+              <span class="process__num">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
+              <div class="process__step__text">
+                <h3 class="process__title">{{ step.title }}</h3>
+                {% if step.body %}<p>{{ step.body }}</p>{% endif %}
+              </div>
+            </div>
+            {% if showMedia %}
+            <div class="process__step__media">
+              {% if stepImg %}
+                <div class="placeholder placeholder--image">
+                  <img src="{{ stepImg }}" alt="{{ (step.image.alt if step.image and step.image.src else step.alt) | escape }}" loading="lazy" />
+                </div>
+              {% else %}
+                <div class="placeholder" aria-hidden="true">{{ step.placeholder }}</div>
+              {% endif %}
+            </div>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

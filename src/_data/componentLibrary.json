@@ -1,0 +1,719 @@
+{
+  "intro": {
+    "title": "Internal component library",
+    "description": "Internal catalogue for reusable layouts, components, and case-study modules.",
+    "note": "This route is intentionally not linked in primary navigation."
+  },
+  "foundations": [
+    {
+      "name": "Design tokens and global CSS",
+      "category": "Foundations",
+      "purpose": "Defines shared spacing, radius, colors, and typography for components.",
+      "whenToUse": "Use these tokens and base classes before adding one-off values in components.",
+      "props": [
+        { "name": "--space-* / --radius-* / --color-*", "type": "CSS custom properties", "required": true, "default": "Defined in :root", "notes": "Primary source of visual consistency." },
+        { "name": ".container / .section / .prose", "type": "layout utility classes", "required": false, "default": "Available globally", "notes": "Use for predictable page structure and readable text width." }
+      ],
+      "examples": [
+        "/* in main.css */\n:root { --space-md: 2rem; --radius-md: 16px; }",
+        "<section class=\"section\"><div class=\"container\"><p class=\"prose\">…</p></div></section>"
+      ],
+      "previewNote": "Foundations are global primitives and are best reviewed in code + live page context."
+    }
+  ],
+  "layouts": [
+    {
+      "name": "layouts/base.njk",
+      "category": "Layouts",
+      "purpose": "Global page shell with site header, footer, and main content.",
+      "whenToUse": "Default layout for normal pages unless a page needs a custom wrapper.",
+      "props": [
+        { "name": "title", "type": "string", "required": true, "default": "None", "notes": "Used in the document title and page heading contexts." },
+        { "name": "description", "type": "string", "required": false, "default": "None", "notes": "Optional SEO/summary text." },
+        { "name": "content", "type": "HTML", "required": true, "default": "Injected by 11ty", "notes": "Rendered body content." }
+      ],
+      "examples": [
+        "---\nlayout: layouts/base.njk\ntitle: Example page\n---"
+      ],
+      "previewNote": "Layout wrappers are page-level composition and not rendered inline here."
+    },
+    {
+      "name": "layouts/case-study.njk",
+      "category": "Layouts",
+      "purpose": "Renders case-study modules based on module.type values.",
+      "whenToUse": "Use for work detail pages that assemble content from modules.",
+      "props": [
+        { "name": "modules[]", "type": "array", "required": true, "default": "None", "notes": "Each module must include a supported type." },
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Dispatches to module include templates." }
+      ],
+      "examples": [
+        "modules:\n  - type: \"hero\"\n  - type: \"projectSnapshot\"\n  - type: \"decisionBlock\""
+      ],
+      "previewNote": "Preview module output in the Case study modules section below."
+    }
+  ],
+  "cards": [
+    {
+      "name": "card.njk",
+      "category": "Cards",
+      "purpose": "Case-study summary card for home and work indexes.",
+      "whenToUse": "Use for clickable work cards with optional media and tags.",
+      "props": [
+        { "name": "card.url", "type": "string", "required": true, "default": "None", "notes": "Destination path." },
+        { "name": "card.data.title", "type": "string", "required": true, "default": "None", "notes": "Primary card heading." },
+        { "name": "card.theme", "type": "string", "required": false, "default": "cream", "notes": "Theme token (cream/sage/sky/coral)." },
+        { "name": "card.data.summary", "type": "string", "required": false, "default": "None", "notes": "Short supporting copy." },
+        { "name": "card.image or card.data.cardImage", "type": "object", "required": false, "default": "None", "notes": "Optional media object with src/alt/fit." },
+        { "name": "card.showMediaPlaceholder", "type": "boolean", "required": false, "default": "false", "notes": "Displays placeholder block when image is missing." }
+      ],
+      "examples": [
+        "{% set card = { url: '/work/example/', theme: 'sky', data: { title: 'Title' } } %}\n{% include \"components/card.njk\" %}"
+      ],
+      "variants": [
+        {
+          "label": "With image and tags",
+          "card": {
+            "url": "/work/",
+            "theme": "sky",
+            "image": { "src": "/assets/images/payment-recommendation-thumbnail.png", "alt": "Card media sample" },
+            "data": { "client": "Sample client", "title": "Card with image", "summary": "Uses explicit image object.", "tags": ["service", "design"] }
+          }
+        },
+        {
+          "label": "Placeholder enabled",
+          "card": {
+            "url": "/work/",
+            "theme": "cream",
+            "showMediaPlaceholder": true,
+            "data": { "title": "Card placeholder variant", "summary": "No image provided, placeholder shown." }
+          }
+        }
+      ]
+    },
+    {
+      "name": "about-card.njk",
+      "category": "Cards",
+      "purpose": "Flexible content card used in About and Speaking sections.",
+      "whenToUse": "Use for short narrative cards, with optional image and optional link.",
+      "props": [
+        { "name": "card.title", "type": "string", "required": true, "default": "None", "notes": "Card title." },
+        { "name": "card.description", "type": "string", "required": true, "default": "None", "notes": "Body copy." },
+        { "name": "card.image", "type": "object", "required": false, "default": "None", "notes": "Optional image {src,alt}." },
+        { "name": "card.placeholderImage", "type": "string", "required": false, "default": "None", "notes": "Optional fallback image path when no card.image is set." },
+        { "name": "card.link", "type": "object", "required": false, "default": "None", "notes": "Optional link {href,label}." }
+      ],
+      "examples": [
+        "{% set card = { title: 'Title', description: 'Copy' } %}\n{% include \"components/about-card.njk\" %}"
+      ],
+      "variants": [
+        {
+          "label": "With image and link",
+          "card": {
+            "title": "About card rich",
+            "description": "Image, copy, and optional link rendered.",
+            "image": { "src": "/assets/images/christie-profile-3.png", "alt": "Sample" },
+            "link": { "href": "/about/", "label": "Learn more" }
+          }
+        },
+        {
+          "label": "Copy only",
+          "card": {
+            "title": "About card minimal",
+            "description": "No custom image or link; uses placeholder asset in component-library preview.",
+            "placeholderImage": "/assets/images/about-profile-placeholder.svg",
+            "placeholderAlt": "Placeholder profile illustration"
+          }
+        }
+      ]
+    },
+    {
+      "name": "testimonial-card.njk",
+      "category": "Cards",
+      "purpose": "Simple testimonial card for quote + optional role.",
+      "whenToUse": "Use when you only need testimonial quote text and an optional role line.",
+      "props": [
+        { "name": "testimonial.quote", "type": "string", "required": true, "default": "testimonial.text (legacy)", "notes": "Preferred quote field." },
+        { "name": "testimonial.role", "type": "string", "required": false, "default": "None", "notes": "Optional attribution role." },
+        { "name": "testimonial.variant", "type": "string", "required": false, "default": "brand", "notes": "Optional tone class (brand/sage/sky/cream)." }
+      ],
+      "examples": [
+        "{% set testimonial = { quote: 'Great work', role: 'Design Lead' } %}\n{% include \"components/testimonial-card.njk\" %}"
+      ],
+      "variants": [
+        {
+          "label": "With role",
+          "testimonial": {
+            "quote": "Strong systems thinking and clear communication.",
+            "role": "Programme Director",
+            "variant": "sky"
+          }
+        },
+        {
+          "label": "Quote only",
+          "testimonial": {
+            "quote": "Concise testimonial without role field."
+          }
+        }
+      ]
+    }
+  ],
+  "globalComponents": [
+    {
+      "name": "card-grid.njk",
+      "category": "Global components",
+      "purpose": "Variant-driven grid wrapper for speaking topic and talk cards.",
+      "whenToUse": "Use in Speaking pages to render either topic cards or talk cards.",
+      "props": [
+        { "name": "variant", "type": "string", "required": true, "default": "None", "notes": "Allowed values: topic, talk." },
+        { "name": "items", "type": "array", "required": true, "default": "None", "notes": "List rendered by the chosen variant." },
+        { "name": "gridClass", "type": "string", "required": true, "default": "None", "notes": "Container grid class." }
+      ],
+      "examples": [
+        "{% set variant = 'topic' %}\n{% set items = speaking.topics %}\n{% set gridClass = 'speaking-topic-grid' %}\n{% include \"components/card-grid.njk\" %}"
+      ],
+      "topicItems": [
+        { "title": "Topic one", "body": "Topic card body sample." },
+        { "title": "Topic two", "body": "Another topic card body sample." },
+        { "title": "Topic three", "body": "Three-column behavior on wide screens." }
+      ],
+      "talkItems": [
+        {
+          "title": "Talk card one",
+          "description": "Talk cards render through about-card component.",
+          "meta": "Conference 2026",
+          "image": { "src": "/assets/images/speaking-ba-life-2026.png", "alt": "Talk sample" }
+        },
+        {
+          "title": "Talk card two",
+          "description": "This one spans full width on medium layouts.",
+          "fullWidth": true,
+          "image": { "src": "/assets/images/speaking-uxcrunch-complex-users.png", "alt": "Talk sample 2" }
+        }
+      ]
+    },
+    {
+      "name": "testimonial-grid.njk",
+      "category": "Global components",
+      "purpose": "Grid wrapper that renders testimonial-card for each item.",
+      "whenToUse": "Use when you already have testimonialItems data and want the standard testimonial grid.",
+      "props": [
+        { "name": "testimonialItems[]", "type": "array", "required": true, "default": "None", "notes": "Each item supports quote, optional role, optional variant." }
+      ],
+      "examples": [
+        "{% set testimonialItems = testimonials.aboutPage %}\n{% include \"components/testimonial-grid.njk\" %}"
+      ],
+      "variants": [
+        {
+          "label": "Two testimonials",
+          "items": [
+            { "quote": "Two-item grid sample one.", "role": "Product Lead", "variant": "brand" },
+            { "quote": "Two-item grid sample two.", "role": "Engineering Lead", "variant": "sage" }
+          ]
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "name": "processSection.njk",
+      "category": "Case study modules",
+      "purpose": "Process / steps block with numbered 1-2-3-4 style progression.",
+      "whenToUse": "Use for storytelling sections where you need to explain a multi-step approach or delivery sequence.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be processSection." },
+        { "name": "module.title", "type": "string", "required": false, "default": "None", "notes": "Optional section heading." },
+        { "name": "module.steps[]", "type": "array", "required": true, "default": "None", "notes": "Ordered list of process steps." },
+        { "name": "module.steps[].title", "type": "string", "required": true, "default": "None", "notes": "Step heading." },
+        { "name": "module.steps[].body", "type": "string", "required": false, "default": "None", "notes": "Step description text." },
+        { "name": "module.steps[].image / alt", "type": "string|object", "required": false, "default": "None", "notes": "Optional media per step." }
+      ],
+      "examples": [
+        "- type: \"processSection\"\n  title: \"How we worked\"\n  steps:\n    - title: \"Map the current state\"\n      body: \"Captured handoffs and constraints.\""
+      ],
+      "sample": {
+        "type": "processSection",
+        "title": "How we worked",
+        "steps": [
+          { "title": "Map the current state", "body": "Captured handoffs and dependencies across teams." },
+          { "title": "Align decision criteria", "body": "Agreed success measures and constraints with stakeholders." },
+          { "title": "Test options", "body": "Ran structured reviews to compare solution directions." },
+          { "title": "Lock delivery path", "body": "Finalized priorities, ownership, and rollout sequence." }
+        ]
+      }
+    },
+    {
+      "name": "metricRow.njk",
+      "category": "Case study modules",
+      "purpose": "Metrics row for concise numbers + labels storytelling evidence.",
+      "whenToUse": "Use for 3-4 headline outcomes or performance indicators in case studies.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be metricRow." },
+        { "name": "module.title", "type": "string", "required": false, "default": "None", "notes": "Optional section heading." },
+        { "name": "module.caption", "type": "string", "required": false, "default": "None", "notes": "Optional context line above metrics." },
+        { "name": "module.metrics[]", "type": "array", "required": true, "default": "None", "notes": "List of metrics." },
+        { "name": "module.metrics[].value", "type": "string", "required": true, "default": "None", "notes": "Headline number/value." },
+        { "name": "module.metrics[].label", "type": "string", "required": true, "default": "None", "notes": "Metric label." }
+      ],
+      "examples": [
+        "- type: \"metricRow\"\n  title: \"Outcomes\"\n  metrics:\n    - value: \"3\"\n      label: \"workstreams aligned\""
+      ],
+      "sample": {
+        "type": "metricRow",
+        "title": "Outcomes snapshot",
+        "caption": "Indicative metrics for this case-study pattern.",
+        "metrics": [
+          { "value": "3", "label": "workstreams aligned" },
+          { "value": "2 weeks", "label": "to shared decision frame" },
+          { "value": "12+", "label": "stakeholders coordinated" },
+          { "value": "1", "label": "delivery path agreed" }
+        ]
+      },
+      "notes": "This is an existing module used in case studies; documented as the canonical metrics pattern."
+    },
+    {
+      "name": "decisionBlock.njk",
+      "category": "Case study modules",
+      "purpose": "Decision card grid for key choices and rationale.",
+      "whenToUse": "Use in case studies to capture important decisions with optional status tags.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be decisionBlock." },
+        { "name": "module.decisions[]", "type": "array", "required": true, "default": "None", "notes": "Each card row in the decision grid." },
+        { "name": "module.decisions[].title", "type": "string", "required": true, "default": "None", "notes": "Decision heading." },
+        { "name": "module.decisions[].body", "type": "string", "required": true, "default": "None", "notes": "Decision rationale." },
+        { "name": "module.decisions[].status", "type": "string", "required": false, "default": "None", "notes": "Optional small status tag." },
+        { "name": "module.title / module.intro", "type": "string", "required": false, "default": "None", "notes": "Optional section context copy." }
+      ],
+      "examples": [
+        "- type: \"decisionBlock\"\n  title: \"Key decisions\"\n  decisions:\n    - title: \"Scope boundary\"\n      body: \"Defined what ships first.\""
+      ],
+      "sample": {
+        "type": "decisionBlock",
+        "title": "Key decisions",
+        "intro": "Explicit decisions improved delivery confidence.",
+        "decisions": [
+          { "title": "Scope boundary", "body": "Defined what ships first.", "status": "Agreed" },
+          { "title": "Ownership model", "body": "Clarified product vs ops handoff." }
+        ]
+      }
+    },
+    {
+      "name": "projectSnapshot.njk",
+      "category": "Case study modules",
+      "purpose": "Metadata List module for compact project facts.",
+      "whenToUse": "Use for key-value facts (client, scope, timeline). Not intended for large comparison tables.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be projectSnapshot." },
+        { "name": "module.items[]", "type": "array", "required": true, "default": "None", "notes": "Rows with label/value fields." },
+        { "name": "module.items[].label", "type": "string", "required": true, "default": "None", "notes": "Metadata key." },
+        { "name": "module.items[].value", "type": "string", "required": true, "default": "None", "notes": "Metadata value." },
+        { "name": "module.title", "type": "string", "required": false, "default": "None", "notes": "Optional section heading." }
+      ],
+      "examples": [
+        "- type: \"projectSnapshot\"\n  title: \"Project snapshot\"\n  items:\n    - label: \"Client\"\n      value: \"Sample client\""
+      ],
+      "sample": {
+        "type": "projectSnapshot",
+        "title": "Metadata list example",
+        "items": [
+          { "label": "Client", "value": "Sample client" },
+          { "label": "Scope", "value": "Discovery to delivery framing" },
+          { "label": "Timeline", "value": "10 weeks" }
+        ]
+      },
+      "notes": "Best for compact facts, not comparison tables or large tabular datasets."
+    },
+    {
+      "name": "imageText.njk",
+      "category": "Case study modules",
+      "purpose": "Split layout module for image + text storytelling blocks.",
+      "whenToUse": "Use when you need a balanced narrative block with supporting visual and optional reversed layout.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be imageText." },
+        { "name": "module.title or module.heading", "type": "string", "required": true, "default": "None", "notes": "Section heading." },
+        { "name": "module.paragraphs[] or module.body", "type": "array|string", "required": false, "default": "None", "notes": "Structured paragraphs or legacy HTML body." },
+        { "name": "module.image", "type": "string|object", "required": false, "default": "placeholder", "notes": "Image source object or string path." },
+        { "name": "module.layout", "type": "string", "required": false, "default": "default", "notes": "Set image-right for reversed layout." },
+        { "name": "module.imageFrame", "type": "boolean", "required": false, "default": "true", "notes": "Set false for bare image variant." }
+      ],
+      "examples": [
+        "- type: \"imageText\"\n  heading: \"Service framing\"\n  paragraphs:\n    - \"Shared understanding first\"\n  layout: \"image-right\""
+      ],
+      "sample": {
+        "type": "imageText",
+        "layout": "image-right",
+        "heading": "Split layout example (reversed)",
+        "paragraphs": [
+          "This sample documents the image + text split layout.",
+          "Set layout to image-right for the reversed variant."
+        ],
+        "image": {
+          "src": "/assets/images/payment-seller-journey-flow.png",
+          "alt": "Split module sample visual"
+        }
+      }
+    },
+    {
+      "name": "mediaFigure.njk",
+      "category": "Case study modules",
+      "purpose": "Full-width visual block with optional caption/supporting text.",
+      "whenToUse": "Use for standalone visuals that need emphasis between text-heavy modules.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be mediaFigure." },
+        { "name": "module.image", "type": "string|object", "required": true, "default": "None", "notes": "Image source path or object." },
+        { "name": "module.alt", "type": "string", "required": false, "default": "None", "notes": "Fallback alt when image is string." },
+        { "name": "module.caption", "type": "string", "required": false, "default": "None", "notes": "Optional caption text." },
+        { "name": "module.holder", "type": "boolean", "required": false, "default": "false", "notes": "Wrap image in holder frame style." }
+      ],
+      "examples": [
+        "- type: \"mediaFigure\"\n  image: \"/assets/images/example.png\"\n  caption: \"Optional supporting text\""
+      ],
+      "sample": {
+        "type": "mediaFigure",
+        "image": {
+          "src": "/assets/images/accountlifecycle-codesign-workshop-illustration.png",
+          "alt": "Workshop illustration"
+        },
+        "caption": "Example of a full-width visual block with caption."
+      }
+    },
+    {
+      "name": "callout.njk",
+      "category": "Case study modules",
+      "purpose": "Highlighted statement or principle block.",
+      "whenToUse": "Use to punctuate narrative sections with a key takeaway.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be callout." },
+        { "name": "module.text", "type": "string", "required": true, "default": "None", "notes": "Main callout content." },
+        { "name": "module.label", "type": "string", "required": false, "default": "None", "notes": "Optional eyebrow/label." },
+        { "name": "module.cite", "type": "string", "required": false, "default": "None", "notes": "Optional citation text." },
+        { "name": "module.tone", "type": "string", "required": false, "default": "brand", "notes": "Tone variant (brand/muted)." }
+      ],
+      "examples": [
+        "- type: \"callout\"\n  tone: \"brand\"\n  text: \"Shared decisions reduce delivery risk.\""
+      ],
+      "sample": {
+        "type": "callout",
+        "tone": "brand",
+        "label": "Key point",
+        "text": "Shared decision criteria reduced ambiguity and rework across teams."
+      }
+    },
+    {
+      "name": "reflectionBlock.njk",
+      "category": "Case study modules",
+      "purpose": "Narrative reflection module with optional bullets and embedded media.",
+      "whenToUse": "Use for portfolio storytelling sections where context and reflection matter.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be reflectionBlock." },
+        { "name": "module.title", "type": "string", "required": false, "default": "None", "notes": "Optional heading." },
+        { "name": "module.paragraphs[] or module.body", "type": "array|string", "required": true, "default": "None", "notes": "Structured paragraph array or legacy body HTML." },
+        { "name": "module.bullets[]", "type": "array", "required": false, "default": "None", "notes": "Optional bullet list." },
+        { "name": "module.media", "type": "object", "required": false, "default": "None", "notes": "Optional embedded media with image and alt." }
+      ],
+      "examples": [
+        "- type: \"reflectionBlock\"\n  title: \"Reflection\"\n  paragraphs:\n    - \"What worked\"\n    - \"What changed\""
+      ],
+      "sample": {
+        "type": "reflectionBlock",
+        "title": "Reflection sample",
+        "paragraphs": [
+          "Structured reflection content keeps narrative sections readable.",
+          "Use bullets where concise takeaways are clearer."
+        ],
+        "bullets": [
+          "Decision quality improved with shared criteria.",
+          "Cross-team alignment came earlier."
+        ]
+      }
+    },
+    {
+      "name": "hero.njk",
+      "category": "Case study modules",
+      "purpose": "Case-study hero with title, summary, and tags.",
+      "whenToUse": "Use as the opening module for each case study.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be hero." },
+        { "name": "module.title or module.heading", "type": "string", "required": true, "default": "None", "notes": "Primary heading." },
+        { "name": "module.summary or module.subheading", "type": "string", "required": false, "default": "None", "notes": "Optional summary copy." },
+        { "name": "module.tags[]", "type": "array", "required": false, "default": "None", "notes": "Optional tag list." }
+      ],
+      "examples": [
+        "- type: \"hero\"\n  heading: \"Case headline\"\n  subheading: \"Short summary\""
+      ],
+      "sample": {
+        "type": "hero",
+        "eyebrow": "Case module",
+        "heading": "Case-study hero example",
+        "subheading": "A compact opening block for context, scope, and orientation.",
+        "tags": ["service design", "operations"]
+      }
+    },
+    {
+      "name": "two-column-content.njk",
+      "category": "Case study modules",
+      "purpose": "Two-column narrative block for side-by-side context, problem, role, or comparison copy.",
+      "whenToUse": "Use when your story benefits from paired left/right text blocks such as problem and role.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be two-column-content." },
+        { "name": "module.left.title", "type": "string", "required": true, "default": "None", "notes": "Left panel title." },
+        { "name": "module.left.body", "type": "string", "required": true, "default": "None", "notes": "Left panel body (supports HTML)." },
+        { "name": "module.left.eyebrow", "type": "string", "required": false, "default": "None", "notes": "Optional left panel eyebrow." },
+        { "name": "module.right.title", "type": "string", "required": true, "default": "None", "notes": "Right panel title." },
+        { "name": "module.right.body", "type": "string", "required": true, "default": "None", "notes": "Right panel body (supports HTML)." },
+        { "name": "module.right.eyebrow", "type": "string", "required": false, "default": "None", "notes": "Optional right panel eyebrow." },
+        { "name": "module.variant", "type": "string", "required": false, "default": "editorial", "notes": "Optional value cards renders bordered card columns." }
+      ],
+      "examples": [
+        "- type: \"two-column-content\"\n  left:\n    title: \"Problem\"\n    body: \"Complex handoffs caused delays.\"\n  right:\n    title: \"My role\"\n    body: \"I facilitated alignment and decision framing.\""
+      ],
+      "sample": {
+        "type": "two-column-content",
+        "variant": "editorial",
+        "left": {
+          "eyebrow": "Context",
+          "title": "Problem",
+          "body": "<p>Decision ownership was fragmented across teams and handoffs were unclear.</p>",
+          "items": [
+            "Cross-team dependencies were hidden in separate artefacts.",
+            "Delivery priorities drifted without explicit decision criteria."
+          ]
+        },
+        "right": {
+          "eyebrow": "Contribution",
+          "title": "Role",
+          "body": "<p>I aligned stakeholders on decision criteria and sequencing.</p>",
+          "items": [
+            "Facilitated cross-functional playback sessions.",
+            "Translated outcomes into implementable service decisions."
+          ]
+        }
+      },
+      "variants": [
+        {
+          "label": "Optional cards variant",
+          "module": {
+            "type": "two-column-content",
+            "variant": "cards",
+            "left": {
+              "eyebrow": "Context",
+              "title": "Problem",
+              "body": "<p>Use this only when stronger visual separation is needed.</p>"
+            },
+            "right": {
+              "eyebrow": "Contribution",
+              "title": "Role",
+              "body": "<p>The default remains editorial and open.</p>"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "process-timeline.njk",
+      "category": "Case study modules",
+      "purpose": "Compact phase timeline module for process overviews and jump links.",
+      "whenToUse": "Use before deeper sections to show the sequence of phases.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be process-timeline." },
+        { "name": "module.items[]", "type": "array", "required": true, "default": "None", "notes": "Timeline items." },
+        { "name": "module.items[].number", "type": "string|number", "required": false, "default": "loop index", "notes": "Displayed marker value." },
+        { "name": "module.items[].title", "type": "string", "required": true, "default": "None", "notes": "Phase title." },
+        { "name": "module.items[].href", "type": "string", "required": false, "default": "None", "notes": "Optional jump link." },
+        { "name": "module.items[].description", "type": "string", "required": false, "default": "None", "notes": "Optional short description." },
+        { "name": "module.items[].active", "type": "boolean", "required": false, "default": "false", "notes": "Highlights current phase marker." },
+        { "name": "module.showCircle", "type": "boolean", "required": false, "default": "true", "notes": "Toggle circular number marker on or off." },
+        { "name": "module.sticky", "type": "boolean", "required": false, "default": "false", "notes": "Enables sticky in-page phase nav behavior." }
+      ],
+      "examples": [
+        "- type: \"process-timeline\"\n  items:\n    - number: \"01\"\n      title: \"Frame\"\n      href: \"#phase-frame\""
+      ],
+      "sample": {
+        "type": "process-timeline",
+        "title": "Delivery phases",
+        "sticky": true,
+        "items": [
+          { "number": "01", "title": "Frame", "href": "#phase-frame", "description": "Align constraints and outcomes." },
+          { "number": "02", "title": "Explore", "href": "#phase-explore", "description": "Map options and implications.", "active": true },
+          { "number": "03", "title": "Decide", "href": "#phase-decide", "description": "Select the delivery path." },
+          { "number": "04", "title": "Mobilise", "href": "#phase-mobilise", "description": "Prepare implementation handoff." }
+        ]
+      }
+    },
+    {
+      "name": "sticky-section-nav.njk",
+      "category": "Case study modules",
+      "purpose": "Sticky in-page navigation for long case studies.",
+      "whenToUse": "Use in long case studies with clear section anchors.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be sticky-section-nav." },
+        { "name": "module.items[]", "type": "array", "required": true, "default": "None", "notes": "Navigation items." },
+        { "name": "module.items[].label", "type": "string", "required": true, "default": "None", "notes": "Link label." },
+        { "name": "module.items[].href", "type": "string", "required": true, "default": "None", "notes": "Anchor link target." },
+        { "name": "module.sticky", "type": "boolean", "required": false, "default": "false", "notes": "Enables sticky behavior on desktop." }
+      ],
+      "examples": [
+        "- type: \"sticky-section-nav\"\n  items:\n    - label: \"Overview\"\n      href: \"#overview\""
+      ],
+      "sample": {
+        "type": "sticky-section-nav",
+        "sticky": true,
+        "items": [
+          { "label": "Overview", "href": "#overview" },
+          { "label": "Process", "href": "#process" },
+          { "label": "Decisions", "href": "#decisions" },
+          { "label": "Outcomes", "href": "#outcomes" }
+        ]
+      }
+    },
+    {
+      "name": "visual-block.njk",
+      "category": "Case study modules",
+      "purpose": "Simple image + caption visual block with controllable width size.",
+      "whenToUse": "Use for primary visuals where you need quick size control (full, wide, contained).",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be visual-block." },
+        { "name": "module.image", "type": "string", "required": true, "default": "None", "notes": "Image source URL." },
+        { "name": "module.imageAlt", "type": "string", "required": true, "default": "None", "notes": "Image alt text." },
+        { "name": "module.caption", "type": "string", "required": false, "default": "None", "notes": "Optional caption." },
+        { "name": "module.size", "type": "string", "required": false, "default": "contained", "notes": "Allowed values: full, wide, contained." }
+      ],
+      "examples": [
+        "- type: \"visual-block\"\n  image: \"/assets/images/example.png\"\n  imageAlt: \"Diagram\"\n  size: \"wide\""
+      ],
+      "sample": {
+        "type": "visual-block",
+        "image": "/assets/images/accountlifecycle-codesign-workshop-illustration.png",
+        "imageAlt": "Service co-design workshop illustration",
+        "caption": "Visual block sample with caption.",
+        "size": "wide"
+      }
+    },
+    {
+      "name": "image-strip.njk",
+      "category": "Case study modules",
+      "purpose": "Horizontal multi-image strip for visual progression or evidence snapshots.",
+      "whenToUse": "Use when a sequence of related visuals is clearer than a single figure.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be image-strip." },
+        { "name": "module.images[]", "type": "array", "required": true, "default": "None", "notes": "Strip images." },
+        { "name": "module.images[].src", "type": "string", "required": true, "default": "None", "notes": "Image source." },
+        { "name": "module.images[].alt", "type": "string", "required": true, "default": "None", "notes": "Image alt text." },
+        { "name": "module.images[].caption", "type": "string", "required": false, "default": "None", "notes": "Optional per-image caption." }
+      ],
+      "examples": [
+        "- type: \"image-strip\"\n  images:\n    - src: \"/assets/images/one.png\"\n      alt: \"Step one visual\""
+      ],
+      "sample": {
+        "type": "image-strip",
+        "title": "Concept progression",
+        "images": [
+          { "src": "/assets/images/payment-seller-journey-flow.png", "alt": "Journey flow sketch", "caption": "Draft model" },
+          { "src": "/assets/images/data-science-platform-case-card.png", "alt": "Platform visual", "caption": "Refined structure" },
+          { "src": "/assets/images/accountlifecycle-codesign-workshop-illustration.png", "alt": "Workshop artefact", "caption": "Final alignment" }
+        ]
+      }
+    },
+    {
+      "name": "insight-grid.njk",
+      "category": "Case study modules",
+      "fullWidthContent": true,
+      "purpose": "Grid of insight cards for concise findings and implications.",
+      "whenToUse": "Use after research/process sections to summarize key insights.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Must be insight-grid." },
+        { "name": "module.variant", "type": "string", "required": false, "default": "editorial", "notes": "Optional value cards renders bordered card items." },
+        { "name": "module.items[]", "type": "array", "required": true, "default": "None", "notes": "Insight items." },
+        { "name": "module.items[].title", "type": "string", "required": true, "default": "None", "notes": "Insight heading." },
+        { "name": "module.items[].body", "type": "string", "required": true, "default": "None", "notes": "Insight explanation." },
+        { "name": "module.items[].icon", "type": "string", "required": false, "default": "None", "notes": "Optional icon or symbol text." }
+      ],
+      "examples": [
+        "- type: \"insight-grid\"\n  items:\n    - title: \"Constraint visibility\"\n      body: \"Teams made faster choices when trade-offs were explicit.\""
+      ],
+      "sample": {
+        "type": "insight-grid",
+        "variant": "editorial",
+        "title": "Insights",
+        "items": [
+          { "title": "Constraint visibility", "body": "Trade-offs became explicit earlier.", "icon": "01" },
+          { "title": "Decision clarity", "body": "Ownership and sequencing were clearer.", "icon": "02" },
+          { "title": "Delivery readiness", "body": "Handoff quality improved for implementation.", "icon": "03" }
+        ]
+      },
+      "variants": [
+        {
+          "label": "Optional cards variant",
+          "module": {
+            "type": "insight-grid",
+            "variant": "cards",
+            "title": "Insights (cards)",
+            "items": [
+              { "title": "Constraint visibility", "body": "Trade-offs became explicit earlier.", "icon": "01" },
+              { "title": "Decision clarity", "body": "Ownership and sequencing were clearer.", "icon": "02" },
+              { "title": "Delivery readiness", "body": "Handoff quality improved for implementation.", "icon": "03" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "mermaid-diagram.njk",
+      "category": "Case study modules",
+      "purpose": "Mermaid diagram block for process/system relationships.",
+      "whenToUse": "Use when flow, dependencies, or architecture are better shown as a diagram.",
+      "props": [
+        { "name": "module.type", "type": "string", "required": true, "default": "None", "notes": "Use mermaid-diagram or mermaidDiagram." },
+        { "name": "module.title", "type": "string", "required": false, "default": "None", "notes": "Optional section title." },
+        { "name": "module.description", "type": "string", "required": false, "default": "None", "notes": "Optional explanatory text." },
+        { "name": "module.code", "type": "string", "required": true, "default": "None", "notes": "Mermaid diagram source code." },
+        { "name": "module.caption", "type": "string", "required": false, "default": "None", "notes": "Optional caption text." }
+      ],
+      "examples": [
+        "- type: \"mermaid-diagram\"\n  title: \"Decision flow\"\n  code: |\n    flowchart LR\n      Start --> Review\n      Review --> Decide"
+      ],
+      "sample": {
+        "type": "mermaid-diagram",
+        "title": "Decision flow",
+        "description": "Simple example diagram for module preview.",
+        "code": "flowchart LR\n  Discovery --> Alignment\n  Alignment --> Decisions\n  Decisions --> Delivery",
+        "caption": "Mermaid diagram example."
+      }
+    }
+  ],
+  "cta": {
+    "name": "cta.njk",
+    "category": "CTA",
+    "purpose": "Reusable call-to-action block matching the speaking style by default.",
+    "whenToUse": "Use at the end of pages/sections for a clear next action.",
+    "props": [
+      { "name": "cta.title", "type": "string", "required": false, "default": "Have a complex service problem?", "notes": "CTA heading." },
+      { "name": "cta.body", "type": "string", "required": false, "default": "Support copy fallback", "notes": "Optional explanatory copy." },
+      { "name": "cta.buttonLabel", "type": "string", "required": false, "default": "Get in touch", "notes": "Button text." },
+      { "name": "cta.href", "type": "string", "required": false, "default": "mailto:site.email", "notes": "Button destination." },
+      { "name": "cta.variant", "type": "string", "required": false, "default": "default", "notes": "Use ink for the legacy dark style." }
+    ],
+    "examples": [
+      "{% set cta = { title: 'Need support?', body: 'Optional text', buttonLabel: 'Email', href: 'mailto:test@example.com' } %}\n{% include \"components/cta.njk\" %}"
+    ],
+    "variants": [
+      {
+        "label": "Default (speaking-style)",
+        "cta": {
+          "title": "Open to opportunities",
+          "body": "If you are running a session, event, or workshop and want something practical, grounded, and based on real delivery work, I would be glad to collaborate.",
+          "buttonLabel": "Discuss a speaking opportunity"
+        }
+      },
+      {
+        "label": "Optional legacy dark variant",
+        "cta": {
+          "title": "Need help shaping a service?",
+          "body": "We can run a short framing sprint and produce delivery-ready artefacts.",
+          "buttonLabel": "Start a conversation",
+          "href": "/speaking/",
+          "variant": "ink"
+        }
+      }
+    ]
+  }
+}

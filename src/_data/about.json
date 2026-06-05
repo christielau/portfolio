@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "eyebrow": "About",
+    "title": "Hi, I'm Christie 👋",
+    "positioning": "Service designer working on complex systems in financial services.",
+    "intro": "I'm most energised when I can turn ambiguity into clarity and help teams move forward together.",
+    "cvHref": "/cv/",
+    "image": {
+      "src": "/assets/images/christie-profile-2.jpeg",
+      "alt": "Christie Lau smiling in an office setting"
+    }
+  },
+  "whatILike": [
+    "Matcha Basque Cheesecake",
+    "Succulent plants",
+    "Cats",
+    "Cooking new recipes"
+  ],
+  "connect": {
+    "title": "Let's connect",
+    "body": "If you'd like to collaborate, chat, or invite me to speak, I'd love to hear from you."
+  }
+}

@@ -1,0 +1,65 @@
+{# Schema (prefer structured fields; legacy body HTML still supported):
+   - title (optional)
+   - paragraphs[] | paragraphsAfterMedia[] | tailParagraphs[]
+   - bullets[] (optional; alias: list)
+   - media: { image, alt } — full-width figure inside this section
+   Order: paragraphs → media → paragraphsAfterMedia → bullets → tailParagraphs
+   Legacy: body (HTML string) replaces structured output when present.
+#}
+<section class="section module-reflection">
+  {% set m = module or section %}
+  <div class="container">
+    {% if m.title %}<h2 class="section__title">{{ m.title }}</h2>{% endif %}
+
+    {% if m.body %}
+      <div class="prose">{{ m.body | safe }}</div>
+      {% if m.list %}
+      <ul class="reflection-list">
+        {% for item in m.list %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    {% else %}
+      {% if m.paragraphs %}
+      <div class="prose">
+        {% for p in m.paragraphs %}<p>{{ p }}</p>{% endfor %}
+      </div>
+      {% endif %}
+
+      {% if m.media and m.media.image %}
+      <div class="module-reflection__media">
+        <figure class="module-mediafigure__figure">
+          {% set med = m.media %}
+          {% if med.image.src %}
+          <img src="{{ med.image.src }}" alt="{{ (med.image.alt or med.alt or '') | escape }}" loading="lazy" />
+          {% else %}
+          <img src="{{ med.image }}" alt="{{ med.alt | default('') | escape }}" loading="lazy" />
+          {% endif %}
+        </figure>
+      </div>
+      {% endif %}
+
+      {% if m.paragraphsAfterMedia %}
+      <div class="prose">
+        {% for p in m.paragraphsAfterMedia %}<p>{{ p }}</p>{% endfor %}
+      </div>
+      {% endif %}
+
+      {% if m.bullets is defined %}
+        {% set bulletItems = m.bullets %}
+      {% else %}
+        {% set bulletItems = m.list %}
+      {% endif %}
+      {% if bulletItems and (bulletItems | length) > 0 %}
+      <ul class="reflection-list">
+        {% for item in bulletItems %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+
+      {% if m.tailParagraphs %}
+      <div class="prose">
+        {% for p in m.tailParagraphs %}<p>{{ p }}</p>{% endfor %}
+      </div>
+      {% endif %}
+    {% endif %}
+  </div>
+</section>

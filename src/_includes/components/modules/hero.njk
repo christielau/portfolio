@@ -1,0 +1,13 @@
+<section class="section module-hero">
+  {% set m = module or section %}
+  <div class="container">
+    {% if m.eyebrow %}<p class="eyebrow">{{ m.eyebrow }}</p>{% endif %}
+    <h1 class="module-hero__title">{{ m.title or m.heading }}</h1>
+    {% if m.summary or m.subheading %}<p class="module-hero__summary">{{ m.summary or m.subheading }}</p>{% endif %}
+    {% if m.tags %}
+      <ul class="tag-list tag-list--hero">
+        {% for t in m.tags %}<li>{{ t }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</section>

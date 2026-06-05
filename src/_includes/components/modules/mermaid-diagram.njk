@@ -1,0 +1,9 @@
+{% set m = module or section %}
+<section class="section module-mermaid-diagram">
+  <div class="container">
+    {% if m.title %}<h2 class="section__title">{{ m.title }}</h2>{% endif %}
+    {% if m.description %}<p class="prose">{{ m.description }}</p>{% endif %}
+    <pre class="mermaid">{{ m.code }}</pre>
+    {% if m.caption %}<p class="module-mermaid-diagram__caption muted">{{ m.caption }}</p>{% endif %}
+  </div>
+</section>

@@ -1,0 +1,44 @@
+{% set m = module or section %}
+<section class="section module-imagetext{% if m.flip or m.layout == 'image-right' %} module-imagetext--flip{% endif %}">
+  <div class="container module-imagetext__inner">
+    <div class="module-imagetext__copy">
+      {% if m.eyebrow %}<p class="eyebrow">{{ m.eyebrow }}</p>{% endif %}
+      {% if m.title or m.heading %}<h2 class="section__title">{{ m.title or m.heading }}</h2>{% endif %}
+      {% if m.body %}
+      <div class="prose">{{ m.body | safe }}</div>
+      {% else %}
+      <div class="prose">
+        {% if m.paragraphs %}
+        {% for p in m.paragraphs %}<p>{{ p }}</p>{% endfor %}
+        {% endif %}
+        {% if m.bullets and (m.bullets | length) > 0 %}
+        <ul>
+        {% for item in m.bullets %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+    <div class="module-imagetext__media{% if m.image and m.imageFrame == false %} module-imagetext__media--bare{% endif %}">
+      {% if m.image and m.image.src %}
+        {% if m.imageFrame == false %}
+          <img src="{{ m.image.src }}" alt="{{ (m.image.alt or m.alt) | escape }}" loading="lazy" />
+        {% else %}
+          <div class="placeholder placeholder--image">
+            <img src="{{ m.image.src }}" alt="{{ (m.image.alt or m.alt) | escape }}" loading="lazy" />
+          </div>
+        {% endif %}
+      {% elif m.image %}
+        {% if m.imageFrame == false %}
+          <img src="{{ m.image }}" alt="{{ (m.alt or '') | escape }}" loading="lazy" />
+        {% else %}
+          <div class="placeholder placeholder--image">
+            <img src="{{ m.image }}" alt="{{ (m.alt or '') | escape }}" loading="lazy" />
+          </div>
+        {% endif %}
+      {% else %}
+        <div class="placeholder" aria-hidden="true">{{ m.placeholder or 'Visual' }}</div>
+      {% endif %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Recommendation Logic Governance</title>
+  <desc id="desc">A governance model showing roles, controls, and change stages for managing recommendation logic as a capability over time.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fffdf7; }
+      .title { font: 700 44px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .subtitle { font: 500 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .step { fill: #ffffff; stroke: #e8e2d6; stroke-width: 2; }
+      .stepAccent { stroke: #ffd84d; stroke-width: 5; }
+      .stepTitle { font: 800 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .stepBody { font: 600 15px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .arrow { stroke: #111111; stroke-width: 3; fill: none; marker-end: url(#arrowHead); }
+      .pill { fill: #111111; }
+      .pillText { font: 800 14px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #ffffff; letter-spacing: 0.04em; }
+      .note { font: 650 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+    </style>
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111111" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1000" rx="28" />
+
+  <text class="title" x="96" y="120">Recommendation Logic Governance</text>
+  <text class="subtitle" x="96" y="158">Treat recommendation rules as a managed capability, not a spreadsheet.</text>
+
+  <!-- Role pills -->
+  <g>
+    <rect class="pill" x="160" y="250" width="140" height="30" rx="15" />
+    <text class="pillText" x="230" y="271" text-anchor="middle">PRODUCT</text>
+
+    <rect class="pill" x="420" y="250" width="170" height="30" rx="15" />
+    <text class="pillText" x="505" y="271" text-anchor="middle">SELLER OPS</text>
+
+    <rect class="pill" x="730" y="250" width="220" height="30" rx="15" />
+    <text class="pillText" x="840" y="271" text-anchor="middle">DATA / ENGINEERING</text>
+
+    <rect class="pill" x="1020" y="250" width="170" height="30" rx="15" />
+    <text class="pillText" x="1105" y="271" text-anchor="middle">COMPLIANCE</text>
+
+    <rect class="pill" x="1240" y="250" width="220" height="30" rx="15" />
+    <text class="pillText" x="1350" y="271" text-anchor="middle">DATA / ENGINEERING</text>
+  </g>
+
+  <!-- Steps -->
+  <g>
+    <rect class="step" x="115" y="340" width="250" height="170" rx="18" />
+    <text class="stepTitle" x="240" y="385" text-anchor="middle">Define intent</text>
+    <text class="stepBody" x="240" y="415" text-anchor="middle">What decision is supported?</text>
+    <text class="stepBody" x="240" y="438" text-anchor="middle">What “good” looks like</text>
+
+    <rect class="step" x="395" y="340" width="250" height="170" rx="18" />
+    <text class="stepTitle" x="520" y="385" text-anchor="middle">Edit parameters</text>
+    <text class="stepBody" x="520" y="415" text-anchor="middle">Role-based permissions</text>
+    <text class="stepBody" x="520" y="438" text-anchor="middle">Audit visibility</text>
+
+    <rect class="step stepAccent" x="675" y="340" width="250" height="170" rx="18" />
+    <text class="stepTitle" x="800" y="385" text-anchor="middle">Preview impact</text>
+    <text class="stepBody" x="800" y="415" text-anchor="middle">Test outcomes before publish</text>
+    <text class="stepBody" x="800" y="438" text-anchor="middle">Reduce unintended change</text>
+
+    <rect class="step stepAccent" x="955" y="340" width="250" height="170" rx="18" />
+    <text class="stepTitle" x="1080" y="385" text-anchor="middle">Approve</text>
+    <text class="stepBody" x="1080" y="415" text-anchor="middle">Control + governance</text>
+    <text class="stepBody" x="1080" y="438" text-anchor="middle">Release readiness</text>
+
+    <rect class="step" x="1235" y="340" width="250" height="170" rx="18" />
+    <text class="stepTitle" x="1360" y="385" text-anchor="middle">Publish &amp; monitor</text>
+    <text class="stepBody" x="1360" y="415" text-anchor="middle">Versioning + rollback</text>
+    <text class="stepBody" x="1360" y="438" text-anchor="middle">Performance signals</text>
+  </g>
+
+  <!-- Step arrows -->
+  <g>
+    <line class="arrow" x1="365" y1="425" x2="395" y2="425" />
+    <line class="arrow" x1="645" y1="425" x2="675" y2="425" />
+    <line class="arrow" x1="925" y1="425" x2="955" y2="425" />
+    <line class="arrow" x1="1205" y1="425" x2="1235" y2="425" />
+  </g>
+
+  <text class="note" x="96" y="820">Outcome: rules are owned, controlled, previewable, and iterated safely over time.</text>
+</svg>
+

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Platform Strategy Trade-off</title>
+  <desc id="desc">Side-by-side comparison of monolithic replacement versus modular wrapper and integration sequencing, with the chosen approach highlighted.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fffdf7; }
+      .title { font: 700 44px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .subtitle { font: 500 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .panel { fill: #ffffff; stroke: #e8e2d6; stroke-width: 2; }
+      .panelChosen { stroke: #ffd84d; stroke-width: 5; }
+      .header { fill: #111111; }
+      .headerChosen { fill: #111111; }
+      .headerText { font: 800 20px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #ffffff; letter-spacing: 0.02em; }
+      .bullet { fill: #111111; }
+      .text { font: 600 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .muted { font: 500 16px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .badge { fill: #ffd84d; }
+      .badgeText { font: 900 14px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; letter-spacing: 0.08em; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1000" rx="28" />
+
+  <text class="title" x="96" y="120">Platform Strategy Trade-off</text>
+  <text class="subtitle" x="96" y="158">Design choice: replace everything, or create coherence through a service layer.</text>
+
+  <!-- Panels -->
+  <g>
+    <rect class="panel" x="110" y="250" width="650" height="650" rx="18" />
+    <rect class="header" x="110" y="250" width="650" height="86" rx="18" />
+    <text class="headerText" x="435" y="304" text-anchor="middle">MONOLITHIC REPLACEMENT</text>
+    <text class="muted" x="435" y="332" text-anchor="middle">Big-bang unification</text>
+
+    <rect class="panel panelChosen" x="840" y="250" width="650" height="650" rx="18" />
+    <rect class="headerChosen" x="840" y="250" width="650" height="86" rx="18" />
+    <text class="headerText" x="1165" y="304" text-anchor="middle">MODULAR WRAPPER + INTEGRATION</text>
+    <text class="muted" x="1165" y="332" text-anchor="middle">Service layer + sequencing</text>
+
+    <rect class="badge" x="1330" y="266" width="140" height="34" rx="17" />
+    <text class="badgeText" x="1400" y="289" text-anchor="middle">CHOSEN</text>
+  </g>
+
+  <!-- Left bullets -->
+  <g>
+    <circle class="bullet" cx="160" cy="405" r="6" />
+    <text class="text" x="180" y="411">High cost and long timeline</text>
+
+    <circle class="bullet" cx="160" cy="465" r="6" />
+    <text class="text" x="180" y="471">Requires wholesale migration</text>
+
+    <circle class="bullet" cx="160" cy="525" r="6" />
+    <text class="text" x="180" y="531">Hard to maintain parity with upstream</text>
+
+    <circle class="bullet" cx="160" cy="585" r="6" />
+    <text class="text" x="180" y="591">Higher delivery and change risk</text>
+
+    <circle class="bullet" cx="160" cy="645" r="6" />
+    <text class="text" x="180" y="651">Delays operational visibility gains</text>
+  </g>
+
+  <!-- Right bullets -->
+  <g>
+    <circle class="bullet" cx="890" cy="405" r="6" />
+    <text class="text" x="910" y="411">Faster path to day-to-day visibility</text>
+
+    <circle class="bullet" cx="890" cy="465" r="6" />
+    <text class="text" x="910" y="471">Works with existing tools and controls</text>
+
+    <circle class="bullet" cx="890" cy="525" r="6" />
+    <text class="text" x="910" y="531">Integration sequencing reduces risk</text>
+
+    <circle class="bullet" cx="890" cy="585" r="6" />
+    <text class="text" x="910" y="591">Clear ownership: project vs tenant views</text>
+
+    <circle class="bullet" cx="890" cy="645" r="6" />
+    <text class="text" x="910" y="651">Improves coherence without centralising everything</text>
+  </g>
+
+  <text class="muted" x="96" y="940">Portfolio-safe: focuses on the operating-model decision, not internal tool names.</text>
+</svg>
+

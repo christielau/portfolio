@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Explainable Recommendation (Decision Support Slice)</title>
+  <desc id="desc">Workflow diagram showing client context, ranked recommendations, an explanation layer, and seller output suitable for client conversations.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fffdf7; }
+      .title { font: 700 44px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .subtitle { font: 500 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .box { fill: #ffffff; stroke: #e8e2d6; stroke-width: 2; }
+      .accent { stroke: #ffd84d; stroke-width: 5; }
+      .label { font: 800 22px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .small { font: 600 16px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .arrow { stroke: #111111; stroke-width: 3; fill: none; marker-end: url(#arrowHead); }
+      .note { font: 650 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+    </style>
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111111" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1000" rx="28" />
+
+  <text class="title" x="96" y="120">Explainable Recommendation</text>
+  <text class="subtitle" x="96" y="158">Show enough rationale to act, not a data dump.</text>
+
+  <!-- Boxes -->
+  <g>
+    <rect class="box" x="120" y="360" width="320" height="170" rx="18" />
+    <text class="label" x="280" y="412" text-anchor="middle">Client context</text>
+    <text class="small" x="280" y="446" text-anchor="middle">Need / constraint signals</text>
+    <text class="small" x="280" y="470" text-anchor="middle">(portfolio-safe)</text>
+
+    <rect class="box" x="500" y="360" width="320" height="170" rx="18" />
+    <text class="label" x="660" y="412" text-anchor="middle">Ranked options</text>
+    <text class="small" x="660" y="446" text-anchor="middle">Relevant recommendations</text>
+    <text class="small" x="660" y="470" text-anchor="middle">for comparison</text>
+
+    <rect class="box accent" x="880" y="360" width="320" height="170" rx="18" />
+    <text class="label" x="1040" y="412" text-anchor="middle">Why recommended</text>
+    <text class="small" x="1040" y="446" text-anchor="middle">Problem solved + fit signals</text>
+    <text class="small" x="1040" y="470" text-anchor="middle">Progressive disclosure</text>
+
+    <rect class="box" x="1260" y="360" width="320" height="170" rx="18" />
+    <text class="label" x="1420" y="412" text-anchor="middle">Seller output</text>
+    <text class="small" x="1420" y="446" text-anchor="middle">Recommendation story</text>
+    <text class="small" x="1420" y="470" text-anchor="middle">Business case ready</text>
+  </g>
+
+  <!-- Arrows -->
+  <g>
+    <line class="arrow" x1="440" y1="445" x2="500" y2="445" />
+    <line class="arrow" x1="820" y1="445" x2="880" y2="445" />
+    <line class="arrow" x1="1200" y1="445" x2="1260" y2="445" />
+  </g>
+
+  <text class="note" x="96" y="820">Decision-support goal: confidence to recommend, with explainability suitable for client conversations.</text>
+</svg>
+

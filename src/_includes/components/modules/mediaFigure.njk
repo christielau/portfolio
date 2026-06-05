@@ -1,0 +1,21 @@
+{% set m = module or section %}
+<section class="section module-mediafigure">
+  <div class="container">
+    <figure class="module-mediafigure__figure{% if m.holder %} module-mediafigure__figure--holder{% endif %}">
+      {% if m.holder %}
+      <div class="placeholder placeholder--image">
+        {% if m.image.src %}
+        <img src="{{ m.image.src }}" alt="{{ (m.image.alt or m.alt or '') | escape }}" loading="lazy" />
+        {% else %}
+        <img src="{{ m.image }}" alt="{{ (m.alt or '') | escape }}" loading="lazy" />
+        {% endif %}
+      </div>
+      {% elif m.image.src %}
+      <img src="{{ m.image.src }}" alt="{{ (m.image.alt or m.alt or '') | escape }}" loading="lazy" />
+      {% else %}
+      <img src="{{ m.image }}" alt="{{ (m.alt or '') | escape }}" loading="lazy" />
+      {% endif %}
+      {% if m.caption %}<figcaption class="module-mediafigure__caption">{{ m.caption }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>

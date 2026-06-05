@@ -1,0 +1,66 @@
+{
+  "intro": {
+    "heading": "I enjoy sharing the joys of design in real projects."
+  },
+  "languages": ["English", "Cantonese", "Mandarin"],
+  "heroImage": {
+    "src": "/assets/images/speaking-home-desk.png",
+    "alt": "Christie speaking in a home studio setup during an online session."
+  },
+  "topics": [
+    {
+      "title": "Design in financial services",
+      "body": "How design can shape delivery direction by creating shared understanding across product, operations, and technical stakeholders."
+    },
+    {
+      "title": "Practical design thinking and storytelling",
+      "body": "How cross-functional teams can use storyboard methods and design thinking with AI to turn ideas into testable concepts and clearer decisions."
+    }
+  ],
+  "talks": [
+    {
+      "title": "The Design Thinking BA powered by AI",
+      "description": "How design thinking and AI can support business analysts in insight generation, requirement shaping, and rapid prototyping for clearer delivery conversations.",
+      "meta": "BA Life 2026 (co-presented with Martin Lee), April 2026.",
+      "image": {
+        "src": "/assets/images/speaking-ba-life-2026.png",
+        "alt": "BA Life 2026 slide and panel screenshot from The Design Thinking BA powered by AI talk."
+      }
+    },
+    {
+      "title": "Storyboard: Bring Your Product/Service Concept to Life",
+      "description": "A Skillshare class on using storyboarding to make product and service ideas easier to understand, communicate, and test.",
+      "meta": "Skillshare online class, live since 2019.",
+      "image": {
+        "src": "/assets/images/speaking-storyboard-skillshare.png",
+        "alt": "Storyboard course graphic: Create a storyboard, demonstrate your idea through a few key images."
+      }
+    },
+    {
+      "title": "Research with complex user groups",
+      "description": "Practical advice on planning and running research with hard-to-reach user groups, so teams can learn enough to make confident decisions without pretending access is easy.",
+      "meta": "UX Crunch at Home (Tech Circus), February 2021.",
+      "image": {
+        "src": "/assets/images/speaking-uxcrunch-complex-users.png",
+        "alt": "Promotional graphic for UX Crunch at Home: Research with Complex Users, featuring Christie Lau and other speakers."
+      }
+    }
+  ],
+  "workshopsIntro": "I run sessions that give teams practical tools, sharper alignment, and more clarity on messy problems.",
+  "workshopFormats": [
+    "Workshops on journey mapping, service blueprinting, and decision-focused problem framing",
+    "Team sessions for cross-functional facilitation in complex delivery environments"
+  ],
+  "beyondWork": [
+    "Outside client delivery, I enjoy mentoring and contributing to the design community through talks, workshops, and shared learning sessions.",
+    "I also host bilingual events in English, Cantonese, and Mandarin, including wedding master of ceremony engagements."
+  ],
+  "inlineImage": {
+    "src": "/assets/images/speaking-stage.png",
+    "alt": "Christie speaking on stage at a live event."
+  },
+  "opportunitiesText": "If you are running a session, event, or workshop and want something practical, grounded, and based on real delivery work, I would be glad to collaborate.",
+  "cta": {
+    "label": "Discuss a speaking opportunity"
+  }
+}

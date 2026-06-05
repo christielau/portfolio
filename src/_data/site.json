@@ -1,0 +1,12 @@
+{
+  "name": "Christie Lau",
+  "tagline": "Strategic designer simplifying complex systems with evidence-led storytelling.",
+  "email": "christie.phlau@gmail.com",
+  "social": [
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/lauchristie/" },
+    { "label": "Email", "href": "mailto:christie.phlau@gmail.com" }
+  ],
+  "footer": {
+    "note": "Built with Eleventy and Cursor."
+  }
+}

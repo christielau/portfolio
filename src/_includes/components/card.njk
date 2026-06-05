@@ -1,0 +1,25 @@
+{% set mediaImage = card.image or card.data.cardImage %}
+<a class="card card--{{ card.theme or 'cream' }}" href="{{ card.url }}">
+  {% if mediaImage and mediaImage.src %}
+  <div class="card__media{% if mediaImage.fit == 'contain' %} card__media--contain{% endif %}">
+    <img src="{{ mediaImage.src }}" alt="{{ mediaImage.alt | default('') | escape }}" loading="lazy" width="640" height="400" />
+  </div>
+  {% elif card.showMediaPlaceholder %}
+  <div class="card__media" aria-hidden="true">
+    <svg viewBox="0 0 640 400" role="img" focusable="false">
+      <rect x="0" y="0" width="640" height="400" fill="#000" fill-opacity="0.5"></rect>
+    </svg>
+  </div>
+  {% endif %}
+  <div class="card__body">
+    {% if card.data.client %}<p class="eyebrow">{{ card.data.client }}</p>{% endif %}
+    <h3 class="card__title">{{ card.data.title }}</h3>
+    {% if card.data.summary %}<p class="card__summary">{{ card.data.summary }}</p>{% endif %}
+    {% if card.data.tags %}
+      <ul class="tag-list">
+        {% for t in card.data.tags %}<li>{{ t }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+  <span class="card__arrow" aria-hidden="true">→</span>
+</a>

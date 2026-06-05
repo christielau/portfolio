@@ -1,0 +1,87 @@
+{
+  "homeHero": {
+    "eyebrow": "Service Designer  ·  UX Strategist",
+    "title": "Experience & Service design for regulated, data-heavy systems",
+    "body": "My work sits at the intersection of service design, product strategy, and complex financial operations: from private-banking lifecycle services to data-led decision support, risk artefacts, and internal platforms for specialist teams.",
+    "image": {
+      "src": "/assets/images/christie-profile-1.JPG",
+      "alt": "Christie Lau, professional portrait"
+    }
+  },
+  "homeCasesIntro": "Across private banking, payments, risk reporting, adviser servicing, and internal data tooling, I help teams make complex services understandable enough to make decisions and deliver change.",
+  "homeStrengths": [
+    "Service blueprinting",
+    "Journey architecture",
+    "Interaction Design",
+    "Mixed-methods discovery",
+    "Workshop facilitation"
+  ],
+  "workPageHero": {
+    "eyebrow": "Work",
+    "title": "Selected case studies in service and experience design",
+    "body": "Each case is a modular story of how a complex problem became clearer and more actionable.",
+    "image": {
+      "src": "/assets/images/christie-profile-1.JPG",
+      "alt": "Christie Lau, professional portrait"
+    }
+  },
+  "featuredCases": [
+    {
+      "url": "/work/caseStudy-private-banking-accountlifecycle/",
+      "theme": "brand",
+      "image": {
+        "src": "/assets/images/accountlifecycle-Thumbnail.png",
+        "alt": "Private banking account lifecycle app screens showing onboarding and profile update journeys."
+      },
+      "data": {
+        "client": "Global Tier 1 Private Bank",
+        "title": "Private banking lifecycle management",
+        "summary": "End-to-end client and staff journeys across front office, operations, compliance, technology, and legacy constraints.",
+        "tags": ["service blueprint", "UX", "dev handoffs"]
+      }
+    },
+    {
+      "url": "/work/caseStudy-paymentNetwork-sellerPlatform/",
+      "theme": "sky",
+      "image": {
+        "src": "/assets/images/payment-recommendation-thumbnail.png",
+        "alt": "Recommendation interface with client profile, problem identification, scoring engine, and ranked product recommendations."
+      },
+      "data": {
+        "client": "Global Payments Network",
+        "title": "Data-led recommendation and decision support",
+        "summary": "Turning fragmented product and client data into explainable recommendations and measurable enterprise adoption.",
+        "tags": ["decision tools", "data workflows", "enterprise"]
+      }
+    },
+    {
+      "url": "/work/caseStudy-investmentBank-dataSciencePlatform/",
+      "theme": "coral",
+      "image": {
+        "src": "/assets/images/data-science-platform-case-card.png",
+        "alt": "Internal data platform on a laptop: project Jobs view with outcome metrics, VCore usage over time, and job cost tooltip.",
+        "fit": "contain"
+      },
+      "data": {
+        "client": "European Tier 1 Investment Bank",
+        "title": "Internal data-science operations platform",
+        "summary": "Designing a live self-service platform for specialist users to monitor usage, performance, and delivery activity.",
+        "tags": ["data tooling", "user research", "data science"]
+      }
+    },
+    {
+      "url": "/work/caseStudy-banking-stressTesting-balanceSheet/",
+      "theme": "cream",
+      "image": {
+        "src": "/assets/images/stress-testing-balance-sheet-case-card.png",
+        "alt": "Balance Sheet Optimiser desk scene: laptop showing stress-testing workflow, scenario metrics, and decision summary alongside sketches and notes."
+      },
+      "data": {
+        "client": "UK Tier 1 Bank",
+        "title": "Stress-testing and balance-sheet decision artefacts",
+        "summary": "Making risk, reporting, and optimisation concepts tangible through SME-tested design artefacts.",
+        "tags": ["treasury", "data visualisation", "AI Prototyping"]
+      }
+    }
+  ]
+}

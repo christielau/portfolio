@@ -1,0 +1,19 @@
+{% set m = module or section %}
+{% set showCircle = m.showCircle != false %}
+<section class="section module-process-timeline{% if m.sticky %} module-process-timeline--sticky{% endif %}{% if not showCircle %} module-process-timeline--no-circle{% endif %}">
+  <div class="container">
+    {% if m.title %}<h2 class="section__title">{{ m.title }}</h2>{% endif %}
+    {% if m.intro %}<p class="prose">{{ m.intro }}</p>{% endif %}
+    <ol class="process-timeline">
+      {% for item in m.items %}
+      <li class="process-timeline__item{% if item.active %} is-active{% endif %}">
+        {% if item.href %}<a class="process-timeline__link" href="{{ item.href }}">{% endif %}
+          <span class="process-timeline__marker{% if not showCircle %} process-timeline__marker--plain{% endif %}">{{ item.number or loop.index }}</span>
+          <span class="process-timeline__label">{{ item.title }}</span>
+          {% if item.description %}<span class="process-timeline__description">{{ item.description }}</span>{% endif %}
+        {% if item.href %}</a>{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

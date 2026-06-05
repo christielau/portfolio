@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Decision Support Service Map (Pre-mobilisation)</title>
+  <desc id="desc">A portfolio-safe map of teams, artefacts, and handoffs involved in stress testing decision support, highlighting where assumptions and handoff ambiguity created risk.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fffdf7; }
+      .title { font: 700 44px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .subtitle { font: 500 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .node { fill: #ffffff; stroke: #e8e2d6; stroke-width: 2; }
+      .nodeTitle { font: 700 20px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .nodeBody { font: 500 16px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .arrow { stroke: #111111; stroke-width: 3; fill: none; marker-end: url(#arrowHead); }
+      .callout { fill: #fff3bd; stroke: #ffd84d; stroke-width: 2; }
+      .calloutText { font: 700 16px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .label { font: 600 16px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+    </style>
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111111" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1000" rx="28" />
+
+  <text class="title" x="96" y="120">Decision Support Service Map</text>
+  <text class="subtitle" x="96" y="158">Portfolio-safe view of actors, artefacts, and handoffs (pre-mobilisation).</text>
+
+  <!-- Nodes -->
+  <g>
+    <rect class="node" x="650" y="190" width="300" height="90" rx="18" />
+    <text class="nodeTitle" x="800" y="230" text-anchor="middle">Sponsor / Programme Lead</text>
+    <text class="nodeBody" x="800" y="258" text-anchor="middle">Needs decision confidence</text>
+
+    <rect class="node" x="140" y="360" width="300" height="90" rx="18" />
+    <text class="nodeTitle" x="290" y="400" text-anchor="middle">Risk SMEs</text>
+    <text class="nodeBody" x="290" y="428" text-anchor="middle">Authoritative judgement</text>
+
+    <rect class="node" x="140" y="500" width="300" height="90" rx="18" />
+    <text class="nodeTitle" x="290" y="540" text-anchor="middle">Analytics</text>
+    <text class="nodeBody" x="290" y="568" text-anchor="middle">Models / metrics / data</text>
+
+    <rect class="node" x="520" y="430" width="300" height="110" rx="18" />
+    <text class="nodeTitle" x="670" y="468" text-anchor="middle">BA Artefacts</text>
+    <text class="nodeBody" x="670" y="496" text-anchor="middle">Assumptions + requirements</text>
+    <text class="nodeBody" x="670" y="520" text-anchor="middle">(where meaning can drift)</text>
+
+    <rect class="node" x="920" y="430" width="300" height="110" rx="18" />
+    <text class="nodeTitle" x="1070" y="468" text-anchor="middle">Engineering</text>
+    <text class="nodeBody" x="1070" y="496" text-anchor="middle">Implementation constraints</text>
+    <text class="nodeBody" x="1070" y="520" text-anchor="middle">and delivery sequencing</text>
+
+    <rect class="node" x="1180" y="585" width="300" height="90" rx="18" />
+    <text class="nodeTitle" x="1330" y="625" text-anchor="middle">Reporting / BI</text>
+    <text class="nodeBody" x="1330" y="653" text-anchor="middle">Dashboards and outputs</text>
+
+    <rect class="node" x="650" y="720" width="300" height="90" rx="18" />
+    <text class="nodeTitle" x="800" y="760" text-anchor="middle">Decision Conversation</text>
+    <text class="nodeBody" x="800" y="788" text-anchor="middle">Options, trade-offs, action</text>
+  </g>
+
+  <!-- Arrows -->
+  <g>
+    <path class="arrow" d="M 440 405 C 510 405 510 470 520 470" />
+    <text class="label" x="470" y="392" text-anchor="middle">domain logic</text>
+
+    <path class="arrow" d="M 440 545 C 510 545 510 505 520 505" />
+    <text class="label" x="470" y="602" text-anchor="middle">models / metrics</text>
+
+    <line class="arrow" x1="820" y1="485" x2="920" y2="485" />
+    <text class="label" x="870" y="468" text-anchor="middle">handoff</text>
+
+    <path class="arrow" d="M 1220 525 C 1290 525 1290 585 1180 620" />
+    <text class="label" x="1268" y="560" text-anchor="middle">implemented</text>
+
+    <path class="arrow" d="M 1180 630 C 1030 630 1030 235 950 235" />
+    <text class="label" x="1085" y="612" text-anchor="middle">signals</text>
+
+    <line class="arrow" x1="800" y1="280" x2="800" y2="720" />
+    <text class="label" x="818" y="520">decision framing</text>
+  </g>
+
+  <!-- Callouts -->
+  <g>
+    <rect class="callout" x="474" y="330" width="260" height="56" rx="14" />
+    <text class="calloutText" x="604" y="364" text-anchor="middle">Implicit assumptions</text>
+
+    <rect class="callout" x="820" y="560" width="320" height="56" rx="14" />
+    <text class="calloutText" x="980" y="594" text-anchor="middle">Handoff ambiguity (rework)</text>
+  </g>
+</svg>
+

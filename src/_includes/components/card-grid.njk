@@ -1,0 +1,26 @@
+{# Generic grid: set `variant` to topic | talk, `items`, and `gridClass` before including. #}
+<div class="{{ gridClass }}">
+{%- if variant == "topic" %}
+  {%- for topic in items %}
+  <article class="speaking-topic-card">
+    <h3>{{ topic.title }}</h3>
+    <p>{{ topic.body }}</p>
+  </article>
+  {%- endfor %}
+{%- elif variant == "talk" %}
+  {%- for talk in items %}
+  {%- set talkDescription = talk.description %}
+  {%- if talk.meta %}
+    {%- set talkDescription = talkDescription ~ " " ~ talk.meta %}
+  {%- endif %}
+  {%- set card = {
+    "image": talk.image,
+    "title": talk.title,
+    "description": talkDescription
+  } %}
+  <div{% if talk.fullWidth %} class="speaking-talk-span-full"{% endif %}>
+  {% include "components/about-card.njk" %}
+  </div>
+  {%- endfor %}
+{%- endif %}
+</div>

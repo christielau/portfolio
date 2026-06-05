@@ -1,0 +1,68 @@
+<div class="container speaking-page">
+  {% set mediaSection = {
+    sectionClass: "speaking-section speaking-hero",
+    innerClass: "speaking-hero__inner",
+    eyebrow: "Speaking",
+    heading: speaking.intro.heading,
+    paragraphs: speaking.intro.paragraphs,
+    languages: speaking.languages,
+    languagesLabel: "Speaking languages",
+    image: speaking.heroImage,
+    figureClass: "speaking-hero__media"
+  } %}
+  {% include "components/media-section.njk" %}
+
+  <section class="speaking-section">
+    <h2>What I speak about</h2>
+    {% set gridClass = "speaking-topic-grid" %}
+    {% set items = speaking.topics %}
+    {% set variant = "topic" %}
+    {% include "components/card-grid.njk" %}
+  </section>
+
+  <section class="speaking-section">
+    <h2>Selected talks</h2>
+    {% set gridClass = "about-card-grid speaking-talk-grid" %}
+    {% set items = speaking.talks %}
+    {% set variant = "talk" %}
+    {% include "components/card-grid.njk" %}
+  </section>
+
+  <section class="speaking-section speaking-workshops">
+    <h2>Workshops and training</h2>
+    <div class="speaking-workshops__inner">
+      <p class="prose">{{ speaking.workshopsIntro }}</p>
+      <ul class="speaking-workshops__list">
+        {%- for item in speaking.workshopFormats %}
+        <li>{{ item }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="speaking-section">
+    <h2>Speaking beyond project work</h2>
+    <div class="speaking-beyond">
+      <div>
+        {%- for paragraph in speaking.beyondWork %}
+        <p class="prose">{{ paragraph }}</p>
+        {%- endfor %}
+      </div>
+      {% if speaking.inlineImage and speaking.inlineImage.src %}
+      <figure class="speaking-inline-media">
+        <img src="{{ speaking.inlineImage.src }}" alt="{{ speaking.inlineImage.alt or '' }}" />
+      </figure>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="speaking-section section--cta">
+    {% set cta = {
+      "title": "Open to opportunities",
+      "body": speaking.opportunitiesText,
+      "buttonLabel": speaking.cta.label,
+      "href": speaking.cta.href
+    } %}
+    {% include "components/cta.njk" %}
+  </section>
+</div>

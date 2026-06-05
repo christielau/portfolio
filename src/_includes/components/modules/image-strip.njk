@@ -1,0 +1,14 @@
+{% set m = module or section %}
+<section class="section module-image-strip">
+  <div class="container">
+    {% if m.title %}<h2 class="section__title">{{ m.title }}</h2>{% endif %}
+    <div class="image-strip">
+      {% for image in m.images %}
+      <figure class="image-strip__item">
+        <img src="{{ image.src }}" alt="{{ (image.alt or '') | escape }}" loading="lazy" />
+        {% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>

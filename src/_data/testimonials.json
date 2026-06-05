@@ -1,0 +1,28 @@
+{
+  "aboutPage": [
+    {
+      "quote": "Christie has convinced me that every large analytics reporting transformation engagement needs a designer at the table. She brings a fresh design-led approach so our teams can build dashboards people actually want to use.",
+      "role": "Data Transformation Lead",
+      "variant": "brand",
+      "category": "Analytics transformation"
+    },
+    {
+      "quote": "Christie quickly understands the client ask, gathers requirements, and proactively suggests better customer experience options while aligning closely with developers on what is possible.",
+      "role": "Account Lead",
+      "variant": "sage",
+      "category": "Client delivery"
+    },
+    {
+      "quote": "Christie is a highly capable designer who can be trusted to independently work on an assignment with minimal oversight and guidance.",
+      "role": "Design Programme Lead",
+      "variant": "sky",
+      "category": "Design leadership"
+    },
+    {
+      "quote": "Christie consistently delivers designs that exceed client expectations, with strong collaboration across distributed teams and a clear commitment to continuous improvement.",
+      "role": "Change Management Programme Lead",
+      "variant": "cream",
+      "category": "Programme delivery"
+    }
+  ]
+}

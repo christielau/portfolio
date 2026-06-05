@@ -1,0 +1,20 @@
+<article class="about-card card-shell">
+  {% set hasImage = card.image and card.image.src %}
+  {% set placeholderSrc = card.placeholderImage %}
+  {% if hasImage or placeholderSrc %}
+    <div class="about-card__media">
+      {% if hasImage %}
+      <img class="about-card__image" src="{{ card.image.src }}" alt="{{ card.image.alt or '' }}" loading="lazy" />
+      {% else %}
+      <img class="about-card__image" src="{{ placeholderSrc }}" alt="{{ card.placeholderAlt or '' }}" loading="lazy" />
+      {% endif %}
+    </div>
+  {% endif %}
+  <div class="about-card__content">
+    <h3>{{ card.title }}</h3>
+    <p>{{ card.description }}</p>
+    {% if card.link and card.link.href and card.link.label %}
+      <p><a href="{{ card.link.href }}">{{ card.link.label }}</a></p>
+    {% endif %}
+  </div>
+</article>

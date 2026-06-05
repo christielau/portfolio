@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Service Slice: Document Upload to Signing</title>
+  <desc id="desc">A service blueprint slice showing frontstage and backstage steps across authentication, upload, signing, and operations checks, with highlighted failure points.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fffdf7; }
+      .title { font: 700 44px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .subtitle { font: 500 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .grid { fill: #ffffff; stroke: #e8e2d6; stroke-width: 2; }
+      .line { stroke: #e8e2d6; stroke-width: 2; }
+      .header { fill: #111111; }
+      .headerText { font: 800 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #ffffff; letter-spacing: 0.02em; }
+      .rowHead { fill: #fff3bd; stroke: #ffd84d; stroke-width: 2; }
+      .rowHeadText { font: 800 16px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .cellText { font: 600 16px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .cellMuted { font: 500 15px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .risk { stroke: #ffd84d; stroke-width: 5; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1000" rx="28" />
+
+  <text class="title" x="96" y="120">Service Slice Blueprint</text>
+  <text class="subtitle" x="96" y="158">Onboarding: document upload → signing (portfolio-safe view).</text>
+
+  <!-- Grid container -->
+  <g>
+    <!-- Outer -->
+    <rect class="grid" x="120" y="280" width="1360" height="520" rx="18" />
+
+    <!-- Header row background -->
+    <rect class="header" x="120" y="280" width="1360" height="90" rx="18" />
+    <rect class="header" x="120" y="340" width="1360" height="30" />
+
+    <!-- Row header cells (front/back) -->
+    <rect class="rowHead" x="120" y="370" width="240" height="215" rx="0" />
+    <rect class="rowHead" x="120" y="585" width="240" height="215" rx="0" />
+
+    <!-- Vertical lines -->
+    <line class="line" x1="360" y1="280" x2="360" y2="800" />
+    <line class="line" x1="640" y1="280" x2="640" y2="800" />
+    <line class="line" x1="920" y1="280" x2="920" y2="800" />
+    <line class="line" x1="1200" y1="280" x2="1200" y2="800" />
+
+    <!-- Horizontal lines -->
+    <line class="line" x1="120" y1="370" x2="1480" y2="370" />
+    <line class="line" x1="120" y1="585" x2="1480" y2="585" />
+  </g>
+
+  <!-- Column headers -->
+  <g>
+    <text class="headerText" x="240" y="334" text-anchor="middle">LAYER</text>
+    <text class="headerText" x="500" y="334" text-anchor="middle">1. AUTHENTICATE</text>
+    <text class="headerText" x="780" y="334" text-anchor="middle">2. UPLOAD</text>
+    <text class="headerText" x="1060" y="334" text-anchor="middle">3. SIGN</text>
+    <text class="headerText" x="1340" y="334" text-anchor="middle">4. OPS CHECKS</text>
+  </g>
+
+  <!-- Row headers -->
+  <g>
+    <text class="rowHeadText" x="240" y="460" text-anchor="middle">FRONTSTAGE</text>
+    <text class="cellMuted" x="240" y="486" text-anchor="middle">Client / RM</text>
+
+    <text class="rowHeadText" x="240" y="675" text-anchor="middle">BACKSTAGE</text>
+    <text class="cellMuted" x="240" y="701" text-anchor="middle">Ops / Systems</text>
+  </g>
+
+  <!-- Frontstage cells -->
+  <g>
+    <text class="cellText" x="380" y="420">Client authenticates</text>
+    <text class="cellMuted" x="380" y="446">RM assists if needed</text>
+
+    <text class="cellText" x="660" y="420">Upload documents</text>
+    <text class="cellMuted" x="660" y="446">Status and completeness</text>
+
+    <text class="cellText" x="940" y="420">Review and sign</text>
+    <text class="cellMuted" x="940" y="446">Joint signing where needed</text>
+
+    <text class="cellText" x="1220" y="420">Confirmation</text>
+    <text class="cellMuted" x="1220" y="446">Next steps communicated</text>
+  </g>
+
+  <!-- Backstage cells -->
+  <g>
+    <rect class="grid risk" x="360" y="585" width="280" height="215" rx="0" fill="none" />
+    <text class="cellText" x="380" y="635">ID verification checks</text>
+    <text class="cellMuted" x="380" y="661">Contact details validated</text>
+    <text class="cellMuted" x="380" y="685">Failure demand appears here</text>
+
+    <text class="cellText" x="660" y="635">Document storage</text>
+    <text class="cellMuted" x="660" y="661">Metadata + permissions</text>
+
+    <text class="cellText" x="940" y="635">E-sign workflow</text>
+    <text class="cellMuted" x="940" y="661">Audit trail + timestamps</text>
+
+    <text class="cellText" x="1220" y="635">Ops review</text>
+    <text class="cellMuted" x="1220" y="661">CRM updates + handoff</text>
+  </g>
+</svg>
+

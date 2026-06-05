@@ -1,0 +1,16 @@
+{% set m = module or section %}
+{% set insightVariant = m.variant or "editorial" %}
+<section class="section module-insight-grid module-insight-grid--{{ insightVariant }}">
+  <div class="container">
+    {% if m.title %}<h2 class="section__title">{{ m.title }}</h2>{% endif %}
+    <div class="insight-grid insight-grid--{{ insightVariant }}">
+      {% for item in m.items %}
+      <article class="insight-card{% if insightVariant == 'cards' %} card-shell{% endif %}">
+        {% if item.icon %}<p class="insight-card__icon" aria-hidden="true">{{ item.icon }}</p>{% endif %}
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.body }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

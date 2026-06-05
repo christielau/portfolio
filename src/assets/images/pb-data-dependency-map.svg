@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Profile Data Dependencies</title>
+  <desc id="desc">A portfolio-safe system and data dependency map showing how profile data flows across systems and where multiple sources of truth create failures.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fffdf7; }
+      .title { font: 700 44px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .subtitle { font: 500 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .box { fill: #ffffff; stroke: #e8e2d6; stroke-width: 2; }
+      .hub { stroke: #ffd84d; stroke-width: 5; }
+      .label { font: 800 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+      .small { font: 600 15px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #666666; }
+      .arrow { stroke: #111111; stroke-width: 3; fill: none; marker-end: url(#arrowHead); }
+      .dashed { stroke-dasharray: 10 8; opacity: 0.85; }
+      .callout { fill: #fff3bd; stroke: #ffd84d; stroke-width: 2; }
+      .calloutText { font: 800 16px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #111111; }
+    </style>
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111111" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1000" rx="28" />
+
+  <text class="title" x="96" y="120">Profile Data Dependencies</text>
+  <text class="subtitle" x="96" y="158">Why “simple” updates fail without a single source of truth (portfolio-safe).</text>
+
+  <!-- Data objects -->
+  <g>
+    <rect class="box" x="120" y="300" width="360" height="74" rx="18" />
+    <text class="label" x="300" y="345" text-anchor="middle">Email</text>
+
+    <rect class="box" x="120" y="398" width="360" height="74" rx="18" />
+    <text class="label" x="300" y="443" text-anchor="middle">Phone</text>
+
+    <rect class="box" x="120" y="496" width="360" height="74" rx="18" />
+    <text class="label" x="300" y="541" text-anchor="middle">Address</text>
+
+    <rect class="box" x="120" y="594" width="360" height="74" rx="18" />
+    <text class="label" x="300" y="639" text-anchor="middle">Identity records</text>
+    <text class="small" x="300" y="662" text-anchor="middle">Docs / verification states</text>
+  </g>
+
+  <!-- Hub -->
+  <g>
+    <rect class="box hub" x="640" y="420" width="320" height="160" rx="18" />
+    <text class="label" x="800" y="470" text-anchor="middle">Client profile</text>
+    <text class="small" x="800" y="498" text-anchor="middle">What teams believe is “the truth”</text>
+    <text class="small" x="800" y="522" text-anchor="middle">(often stitched across systems)</text>
+  </g>
+
+  <!-- Systems -->
+  <g>
+    <rect class="box" x="1120" y="300" width="360" height="86" rx="18" />
+    <text class="label" x="1300" y="350" text-anchor="middle">CRM</text>
+    <text class="small" x="1300" y="374" text-anchor="middle">Relationship + records</text>
+
+    <rect class="box" x="1120" y="414" width="360" height="86" rx="18" />
+    <text class="label" x="1300" y="464" text-anchor="middle">Onboarding portal</text>
+    <text class="small" x="1300" y="488" text-anchor="middle">Client submissions</text>
+
+    <rect class="box" x="1120" y="528" width="360" height="86" rx="18" />
+    <text class="label" x="1300" y="578" text-anchor="middle">Auth / ID verification</text>
+    <text class="small" x="1300" y="602" text-anchor="middle">Access + controls</text>
+
+    <rect class="box" x="1120" y="642" width="360" height="86" rx="18" />
+    <text class="label" x="1300" y="692" text-anchor="middle">E-sign / Docs</text>
+    <text class="small" x="1300" y="716" text-anchor="middle">Signing + audit trail</text>
+  </g>
+
+  <!-- Arrows: data -> hub -->
+  <g>
+    <line class="arrow" x1="480" y1="337" x2="640" y2="455" />
+    <line class="arrow" x1="480" y1="435" x2="640" y2="480" />
+    <line class="arrow" x1="480" y1="533" x2="640" y2="505" />
+    <line class="arrow" x1="480" y1="631" x2="640" y2="530" />
+  </g>
+
+  <!-- Arrows: hub -> systems -->
+  <g>
+    <line class="arrow" x1="960" y1="455" x2="1120" y2="343" />
+    <line class="arrow" x1="960" y1="480" x2="1120" y2="457" />
+    <line class="arrow" x1="960" y1="505" x2="1120" y2="571" />
+    <line class="arrow" x1="960" y1="530" x2="1120" y2="685" />
+  </g>
+
+  <!-- Conflict signals -->
+  <g>
+    <path class="arrow dashed" d="M 1240 386 C 1180 430 1180 520 1240 556" />
+    <path class="arrow dashed" d="M 1240 500 C 1180 544 1180 634 1240 670" />
+  </g>
+
+  <!-- Callouts -->
+  <g>
+    <rect class="callout" x="585" y="690" width="360" height="56" rx="14" />
+    <text class="calloutText" x="765" y="724" text-anchor="middle">Multiple sources of truth</text>
+
+    <rect class="callout" x="610" y="760" width="310" height="56" rx="14" />
+    <text class="calloutText" x="765" y="794" text-anchor="middle">Stale contact details</text>
+  </g>
+</svg>
+

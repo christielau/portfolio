@@ -1,0 +1,17 @@
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+      <h1 class="hero__title">{{ heroTitle }}</h1>
+      {% if heroBody %}<p class="hero__body">{{ heroBody }}</p>{% endif %}
+      {% if heroCta %}
+        <a class="button button--primary" href="{{ heroCta.href }}">{{ heroCta.label }}</a>
+      {% endif %}
+    </div>
+    {% if heroImage %}
+    <figure class="hero__media">
+      <img src="{{ heroImage.src }}" alt="{{ heroImage.alt }}" loading="eager" />
+    </figure>
+    {% endif %}
+  </div>
+</section>
